@@ -1,0 +1,80 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* global styles */
+.d-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.col {
+  flex-direction: column;
+}
+.text-center {
+  text-align: center;
+}
+.vh-100 {
+  height: 100vh;
+}
+.three-wcards {
+  width: 300px;
+  height: 400px;
+}
+.gap-20 {
+  gap: 80px;
+}
+.w-100 {
+  width: 100%;
+}
+/* custom classes */
+.card {
+  width: 300px;
+  height: 230px;
+  position: relative;
+}
+.card .icon i {
+  font-size: 80px;
+}
+.card .icon {
+  width: 100%;
+  height: 100%;
+  background-color: dodgerblue;
+  color: white;
+  padding: 20px;
+  position: absolute;
+  z-index: 2;
+  transition: all 0.8s ease;
+}
+.card .info {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  color: black;
+  box-shadow: 0 5px 20px 10px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  transition: top 0.8s ease;
+}
+.card .info h2 {
+  font-size: 25px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.card .info::before {
+  content: " ";
+  width: 40px;
+  height: 4px;
+  border-radius: 40px;
+  background-color: dodgerblue;
+  position: absolute;
+  bottom: 10px;
+}
+.card:hover .info {
+  top: 100%;
+}
