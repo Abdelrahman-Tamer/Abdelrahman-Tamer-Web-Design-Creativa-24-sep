@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  position: relative;
+  min-height: 100vh;
+  background-image: url("../assets/images/bg.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.6);
+}
+.flip-container {
+  perspective: 1000px;
+  width: 400px;
+  height: 680px;
+}
+
+.flip-card {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.8s;
+  cursor: pointer;
+}
+
+.flip-container:hover .flip-card {
+  transform: rotateY(180deg);
+}
+
+.flip-container:hover .card-back h2 {
+  animation: backCardAnim 0.5s ease 0.2s 1;
+}
+
+.flip-container:hover .card-front h2 {
+  animation: frontCardAnim 0.2s ease 1;
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+/* FRONT */
+.card-front {
+  background-image: url("../assets/images/Rectangle 5.png");
+  background-size: cover;
+  background-position: center;
+  align-items: flex-end;
+  color: white;
+}
+.card-front h2 {
+  font-size: 2rem;
+  width: 100%;
+}
+.card-front i {
+  font-size: 1rem;
+  color: #19abfe;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 68px;
+  height: 58px;
+  border-radius: 50%;
+  border: 2px solid;
+  margin-bottom: 30px;
+  transform: rotate(-30deg);
+}
+
+/* BACK */
+.card-back {
+  display: flex;
+  flex-direction: column;
+  gap: 85px;
+  transform: rotateY(180deg);
+  background: white;
+}
+.card-back h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  width: 100%;
+}
+.card-back img {
+  padding-top: 100px;
+}
+.card-back p {
+  font-size: 0.8rem;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #333333a5;
+}
+.card-back .RM {
+  color: #19abfe;
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  align-self: flex-end;
+  gap: 20px;
+  transition: all 0.3s ease;
+}
+.card-back .RM i {
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 2px solid;
+  transition: all 0.3s ease;
+}
+.card-back .RM a {
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  z-index: 2;
+}
+.card-back .RM:hover i {
+  background: #19abfe;
+  color: white;
+  border-radius: 30px;
+  padding: 0 25px 0 120px;
+}
+.card-back .RM:hover a {
+  color: white;
+  transform: translateX(120px);
+}
+
+/* ====== ANIMATIONS ====== */
+@keyframes backCardAnim {
+  0% {
+    transform: translate(-20px, 100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0, 0);
+    font-size: 2rem;
+    opacity: 1;
+  }
+}
+
+@keyframes frontCardAnim {
+  0% {
+    transform: translate(0, 0);
+    opacity: 1;
+    font-size: 2rem;
+  }
+  100% {
+    transform: translate(-20px, 100px);
+    opacity: 0;
+  }
+}
