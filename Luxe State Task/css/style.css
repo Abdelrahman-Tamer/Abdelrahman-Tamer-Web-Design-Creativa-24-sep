@@ -1,13 +1,737 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+/* ===== Reset / Base ===== */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box
 }
-.container{
-    width: 80%;
-    margin: 0 auto;
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #1f2a32;
+  background: #ffffff
 }
-ul{
-    list-style: none;
+
+a {
+  text-decoration: none;
+  color: inherit
+}
+
+ul {
+  list-style: none
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto
+}
+
+button {
+  padding: .6rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer
+}
+
+input {
+  border: none;
+  outline: none;
+  padding: .5rem 1rem;
+  border-radius: 0.2rem;
+}
+
+/* ===== Nav ===== */
+nav {
+  padding: 2rem 0;
+}
+
+nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem
+}
+
+nav .logo span {
+  font-size: 1.2rem;
+  font-weight: 600
+}
+
+nav .links ul {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: .85rem;
+  color: #6c6c6c
+}
+
+nav .links li {
+  transition: color .2s ease;
+  cursor: pointer;
+}
+
+nav .links li:hover {
+  color: #1f2a32
+}
+
+nav .btns {
+  display: flex;
+  align-items: center;
+  gap: 10px
+}
+
+nav .btns .btn-1 {
+  background: transparent;
+}
+
+nav .btns .btn-2 {
+  background: #FFCC01;
+}
+
+/* ===== Home Section ===== */
+.home-sec {
+  margin-bottom: 5rem;
+}
+
+.home-sec .container {
+  position: relative;
+  background: url(../assets/images/low-view-modern-skyscrapers-office-buildings.jpg);
+  background-size: 85% 100%;
+  background-position: right;
+  background-repeat: no-repeat;
+  height: 90vh;
+}
+
+.home-sec .title {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.home-sec .title h1 {
+  width: 50%;
+  padding-top: 100px;
+  font-weight: 600;
+}
+
+.home-sec .search {
+  width: 40%;
+  position: relative;
+  margin-top: 2rem;
+}
+
+.home-sec .search input {
+  width: 100%;
+  padding: 1.5rem 2rem;
+  border-radius: 0.2rem;
+  box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.3);
+}
+
+.home-sec .search i {
+  font-size: 0.7rem;
+  color: #6c6c6c;
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.home-sec .search button {
+  position: absolute;
+  right: 0;
+  height: 100%;
+  background: #FFCC01;
+  border-radius: 0 0.2rem 0.2rem 0;
+}
+
+.home-sec .contact {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 1rem 0;
+}
+
+.home-sec .contact {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: fit-content;
+  padding: 1.5rem;
+  background: #FFCC01;
+}
+
+.home-sec .contact .phone {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.home-sec .contact .loc {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.home-sec .contact .phone i,
+.home-sec .contact .loc i {
+  font-size: 1.2rem;
+  color: white;
+}
+
+.home-sec .scroll {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.8rem;
+  position: absolute;
+  bottom: 7%;
+  left: -42px;
+  transform: rotate(90deg);
+  color: #6c6c6c;
+  opacity: 0.7;
+}
+
+/* ===== About Section ===== */
+.about-sec {
+  margin-bottom: 5rem;
+}
+
+.about-sec .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.about-sec .title {
+  width: 50%;
+  padding: 0.5rem 0;
+}
+
+.about-sec .title h2 {
+  width: 50%;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.about-sec .title p {
+  font-size: 1rem;
+  color: #6c6c6c;
+  margin-top: 2rem;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.about-sec .cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.about-sec .cards .card {
+  width: 40%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background: #f5f5f5;
+  padding: 2rem 0.1rem;
+}
+
+.about-sec .cards .card span {
+  color: #FFCC01;
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.about-sec .cards .card p {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #6c6c6c;
+}
+
+/* ===== Appartments Section ===== */
+
+.appartments-sec {
+  margin-bottom: 5rem;
+  padding: 2rem 0;
+  background: #f5f5f5;
+}
+
+.appartments-sec .container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.appartments-sec .title {
+  width: 40%;
+}
+
+.appartments-sec .title h2 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.appartments-sec .cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.appartments-sec .cards .card {
+  width: calc(33.33% - 2rem);
+  height: 450px;
+  background: white;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+}
+
+.appartments-sec .cards .card img {
+  width: 100%;
+  height: 75%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border-radius: 0;
+}
+
+.appartments-sec .cards .card p {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.appartments-sec .cards .card .info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 0 1.5rem;
+}
+
+.appartments-sec .cards .card .info .price {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #FFCC01;
+}
+
+.appartments-sec .cards .card .info i {
+  font-size: 1rem;
+  color: #6c6c6c;
+  margin: 0 8px;
+}
+
+.appartments-sec .search {
+  width: 40%;
+  position: relative;
+  margin-top: 2rem;
+}
+
+.appartments-sec .search input {
+  width: 100%;
+  padding: 1.5rem 2rem;
+  border-radius: 0.2rem;
+}
+
+.appartments-sec .search i {
+  font-size: 0.7rem;
+  color: #6c6c6c;
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.appartments-sec .search-btn {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.appartments-sec .search button {
+  position: absolute;
+  right: 0;
+  height: 100%;
+  background: #FFCC01;
+  border-radius: 0 0.2rem 0.2rem 0;
+}
+
+.appartments-sec .btn-3 {
+  width: 30%;
+  padding: 1.5rem 2rem;
+  border-radius: 0.2rem;
+  background-color: white;
+}
+
+/* ===== How It Works Section ===== */
+
+.how-it-works-sec {
+  margin-bottom: 5rem;
+  padding: 2rem 0;
+}
+
+.how-it-works-sec .container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.how-it-works-sec .title {
+  width: 40%;
+}
+
+.how-it-works-sec .title h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.how-it-works-sec .title p {
+  font-size: 1rem;
+  color: #6c6c6c;
+  line-height: 2;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+.how-it-works-sec .cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.how-it-works-sec .cards .card {
+  width: calc(33.33% - 2rem);
+  height: 350px;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+  border-radius: 0.2rem;
+  overflow: hidden;
+}
+
+.how-it-works-sec .cards .card .index {
+  position: relative;
+  width: 100%;
+  height: 30%;
+}
+
+.how-it-works-sec .cards .card .index span {
+  font-size: 9rem;
+  font-weight: 600;
+  position: absolute;
+  top: -90px;
+  left: -40px;
+}
+
+.how-it-works-sec .cards .card .info {
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 10px;
+  padding: 1rem;
+}
+
+.how-it-works-sec .cards .card .info .content {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.how-it-works-sec .cards .card .info h3 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.how-it-works-sec .cards .card .description p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #6c6c6c;
+  line-height: 2;
+  padding: 0 1.5rem;
+}
+
+.how-it-works-sec .cards .card .info a {
+  display: block;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #000;
+  text-decoration: underline;
+  padding: 0 1.5rem;
+}
+
+/* ===== Services Section ===== */
+
+.services-sec {
+  margin-bottom: 5rem;
+  padding: 2rem 0;
+}
+
+.services-sec .container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.services-sec .title {
+  width: 40%;
+}
+
+.services-sec .title h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.services-sec .title p {
+  font-size: 1rem;
+  color: #6c6c6c;
+  line-height: 2;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+.services-sec .services {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.services-sec .services .card {
+  width: calc(50% - 2rem);
+}
+
+.services-sec .services .image {
+  height: 700px;
+}
+
+.services-sec .services .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.2rem;
+  transform: translateX(-30px);
+}
+
+.services-sec .services .info {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+}
+
+.services-sec .services .info div h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.9rem;
+}
+
+.services-sec .services .info div p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #6c6c6c;
+  line-height: 2;
+}
+
+/* ===== Agents Section ===== */
+
+.agents-sec {
+  margin-bottom: 5rem;
+  padding: 2rem 0;
+  background: #f5f5f5;
+}
+
+.agents-sec .container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.agents-sec .title {
+  width: 40%;
+}
+
+.agents-sec .title h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.agents-sec .title p {
+  font-size: 1rem;
+  color: #6c6c6c;
+  line-height: 2;
+  font-weight: 400;
+}
+
+.agents-sec .cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.agents-sec .cards .card {
+  width: calc(33.33% - 2rem);
+  background: white;
+  overflow: hidden;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+  border-radius: 0.2rem;
+}
+
+.agents-sec .cards .card img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.agents-sec .cards .card .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding: 1rem;
+}
+
+.agents-sec .cards .card .info .social {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.agents-sec .cards .card .info .social p {
+  width: 40%;
+}
+
+.agents-sec .cards .card .info .social .links {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 1.5rem;
+}
+
+.agents-sec .cards .card .info h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.agents-sec .cards .card .info p {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #FFCC01;
+}
+
+/* ===== Contact Section ===== */
+
+.contact-sec {
+  margin-bottom: 5rem;
+  padding: 2rem 0;
+}
+
+.contact-sec .container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.contact-sec .cards {
+  display: flex;
+  flex-direction: column; 
+  gap: 2rem;
+}
+
+.contact-sec .cards .card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.contact-sec .cards .card .image {
+  position: relative;
+  width: 50%;
+}
+.contact-sec .cards .card .info {
+  width: 50%;
+  padding: 1rem;
+}
+
+.contact-sec .cards .card .info h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.contact-sec .cards .card .info p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #6c6c6c;
+  line-height: 2;
+}
+
+.contact-sec .cards .card .image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.contact-sec .cards .card .info button {
+  background: #011b00;
+  color: #fff;
+  font-size: 1rem;
+  margin-top: 1.5rem;
+  padding: 1.5rem 4rem;
+  border-radius: 0.2rem;
+}
+
+.contact-sec .cards .card-1 .image .loc {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  transform: translate(-50%, -50%);
+  width: fit-content;
+  padding: 1.5rem 3rem;
+  background: #FFCC01;
+}
+
+.contact-sec .cards .card-1 .image .loc i {
+  font-size: 1.2rem;
+  color: #fff;
+}
+.contact-sec .cards .card-2 .image .loc {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: absolute;
+  left: 80%;
+  top: 100%;
+  transform: translate(-50%, -50%);
+  width: fit-content;
+  padding: 1.5rem 3rem;
+  background: #FFCC01;
+}
+
+.contact-sec .cards .card-2 .image .loc i {
+  font-size: 1.2rem;
+  color: #fff;
 }
