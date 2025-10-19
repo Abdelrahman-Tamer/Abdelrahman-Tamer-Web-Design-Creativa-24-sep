@@ -1,0 +1,99 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #131313;
+  color: white;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  width: 70%;
+  margin: auto;
+}
+.container .cards {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1rem;
+  gap: 1.5rem;
+}
+.container .cards .card {
+  width: calc(33.33% - 1.5rem);
+  border-radius: 30px;
+  background-color: #252525;
+  padding: 2rem 1.5rem;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+  transition: all 0.8s;
+}
+.container .cards .card h2 {
+  position: relative;
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 0 0.8rem;
+  margin-bottom: 1rem;
+  z-index: 1;
+}
+.container .cards .card p {
+  position: relative;
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 0 0.8rem;
+  z-index: 1;
+}
+.container .cards .card p span {
+  color: #ff9f0d;
+  font-weight: 500;
+  transition: color 0.8s;
+}
+.container .cards .card::after {
+  content: "";
+  width: 50px;
+  height: 50px;
+  /* background-color: #ff9f0d; */
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 0% 100% 0% 100% / 0% 0% 100% 100%;
+  transition: all 0.8s;
+  z-index: 0;
+}
+.bg-orange::after {
+  background-color: #FF9F0D; 
+}
+
+.bg-green::after {
+  background-color: #00C58E; 
+}
+
+.bg-red::after {
+  background-color: #FF4D00;
+}
+
+.bg-purple::after {
+  background-color: #7B3FFF;
+}
+
+.bg-pink::after {
+  background-color: #E043AA;
+}
+
+.container .cards .card:hover::after {
+  content: "";
+  position: absolute;
+  border-radius: 0;
+  transform: scale(20);
+}
+
+.container .cards .card:hover span {
+  color: white;
+}
