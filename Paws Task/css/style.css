@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+.hero-section {
+    background-image: url('../assets/images/hero-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+nav .nav-link {
+    color: #fff !important;
+    font-weight: 500;
+    font-size: 1.1rem;
+
+    &.nav-link:hover {
+        color: #e1e1e1 !important;
+    }
+}
+
+.shop-section .nav-link {
+    color: #000 !important;
+
+    &.nav-link.active {
+        color: #fff !important;
+        background-color: #1a1d29;
+    }
+}
+
+.form-control:focus {
+    box-shadow: 0 0 0 0.25rem #21252940 !important;
+}
+
+.form-check-input:focus {
+    box-shadow: 0 0 0 0.25rem #21252940 !important;
+}
+
+@media (max-width: 768px) {
+    .border-sm-0 {
+        border: none !important;
+    }
+}

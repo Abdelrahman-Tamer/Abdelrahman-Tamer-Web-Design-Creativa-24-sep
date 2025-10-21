@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paws n' Play</title>
+    <link rel="icon" href="assets/images/paw-icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body class="p-0 m-0">
+    <!-- Hero Section -->
+    <section class="hero-section vh-100 mb-5">
+        <nav class="navbar navbar-expand-lg bg-transparent py-4" data-bs-theme="dark">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+                    <img src="assets/images/paw-icon.png" alt="Paw Icon" width="30" height="30">
+                    <span>Paws n' Play</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown px-3">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Shop
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown px-3">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Services
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item px-3">
+                            <a class="nav-link" aria-current="page" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item px-3">
+                            <a class="nav-link" href="#">Blog</a>
+                        </li>
+                        <li class="nav-item px-3">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex" role="search">
+                        <button class="btn bg-light text-dark border-0 rounded-5 px-4 py-2">Get Started</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="container h-75 d-flex align-items-center">
+            <div class="row">
+                <div class="col-lg-6 col-md-8 col-12">
+                    <h1 class="fs-1 fw-bold text-light mb-4">
+                        Pawsitively Perfect: Where Every Pet's Dream Comes True!
+                    </h1>
+                    <p class="text-light lh-base mb-4">
+                        Welcome to Paws n' Play, the ultimate destination for pet lovers!
+                        Explore a world of tail-wagging joy and furry companionship with our wide range of products and
+                        services. From pampering essentials to playful toys, we're here to make every moment with your
+                        pet pawsitively perfect!
+                    </p>
+                    <button class="btn d-inline-flex align-items-center gap-2 bg-transparent text-light border-2 border-light rounded-5 px-4 py-3">
+                        <span>Shop Now</span>
+                        <img src="assets/images/paw-icon.png" alt="Paw Icon" width="20" height="20">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shop Section -->
+    <section class="shop-section mb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 mb-5 px-0">
+                    <!-- Shop Title -->
+                    <div class="d-flex gap-2 border-bottom border-1 border-secondary-subtle py-1 mb-3">
+                        <img src="assets/images/paw-icon-black.png" alt="Paw Icon" width="30" height="30">
+                        <h2>Shop</h2>
+                        <i class="fa-solid fa-magnifying-glass d-lg-none d-sm-block text-secondary fs-5 ms-auto align-self-center p-1"></i>
+                    </div>
+
+                    <!-- Products Container -->
+                    <div class="row border border-1 border-sm-0 border-secondary-subtle rounded-3 mx-lg-3 mx-0 py-4 px-lg-3 px-0">
+                        <!-- Featured Products Header -->
+                        <div class="col-12 d-flex justify-content-between align-items-center mb-4 p-3">
+                            <h3 class="fw-bold fs-2 mb-0">Featured Products</h3>
+                            <div class="d-none d-lg-flex justify-content-end align-items-center position-relative">
+                                <input type="text" class="form-control border-0 bg-secondary-subtle rounded-5 px-sm-4 py-2" placeholder="Search">
+                                <i class="fa-solid fa-magnifying-glass position-absolute start-0 top-50 translate-middle-y text-secondary ms-2"></i>
+                            </div>
+                        </div>
+
+                        <!-- Category Pills -->
+                        <div class="col-12 d-flex justify-content-center mb-4 px-0">
+                            <ul class="nav nav-pills mb-3 px-0" id="pills-tab" role="tablist">
+                                <li class="nav-item px-1 px-lg-2" role="presentation">
+                                    <button class="nav-link active px-2 px-lg-4" id="Random-tab" data-bs-toggle="pill"
+                                        data-bs-target="#Random" type="button" role="tab" aria-controls="Random"
+                                        aria-selected="true">
+                                        Random
+                                    </button>
+                                </li>
+                                <li class="nav-item px-1 px-lg-2" role="presentation">
+                                    <button class="nav-link px-2 px-lg-4" id="Cat-tab" data-bs-toggle="pill"
+                                        data-bs-target="#Cat" type="button" role="tab" aria-controls="Cat"
+                                        aria-selected="false">
+                                        Cat
+                                    </button>
+                                </li>
+                                <li class="nav-item px-1 px-lg-2" role="presentation">
+                                    <button class="nav-link px-2 px-lg-4" id="Dogs-tab" data-bs-toggle="pill"
+                                        data-bs-target="#Dogs" type="button" role="tab" aria-controls="Dogs"
+                                        aria-selected="false">
+                                        Dogs
+                                    </button>
+                                </li>
+                                <li class="nav-item px-1 px-lg-2" role="presentation">
+                                    <button class="nav-link px-2 px-lg-4" id="Fish-tab" data-bs-toggle="pill"
+                                        data-bs-target="#Fish" type="button" role="tab" aria-controls="Fish"
+                                        aria-selected="false">
+                                        Fish
+                                    </button>
+                                </li>
+                                <li class="nav-item px-1 px-lg-2" role="presentation">
+                                    <button class="nav-link px-2 px-lg-4" id="Birds-tab" data-bs-toggle="pill"
+                                        data-bs-target="#Birds" type="button" role="tab" aria-controls="Birds"
+                                        aria-selected="false">
+                                        Birds
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Tab Content -->
+                        <div class="col-12 px-4">
+                            <div class="tab-content" id="pills-tabContent">
+                                <!-- Random Tab -->
+                                <div class="tab-pane fade show active" id="Random" role="tabpanel"
+                                    aria-labelledby="Random-tab" tabindex="0">
+                                    <div class="row g-4">
+                                        <div class="col-lg-4 col-sm-12">
+                                            <div class="product-card d-sm-flex justify-content-sm-center">
+                                                <img src="assets/images/Cat.png" alt="Cat Food" class="img-fluid rounded">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-sm-12">
+                                            <div class="product-card d-sm-flex justify-content-sm-center">
+                                                <img src="assets/images/Dog.png" alt="Dog Food" class="img-fluid rounded">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-sm-12">
+                                            <div class="product-card d-sm-flex justify-content-sm-center">
+                                                <img src="assets/images/Dog.png" alt="Pet Food" class="img-fluid rounded">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Cat Tab -->
+                                <div class="tab-pane fade" id="Cat" role="tabpanel" aria-labelledby="pills-profile-tab"
+                                    tabindex="0">
+                                    <div class="row g-4">
+                                        <div class="col-lg-4 col-sm-12">
+                                            <div class="product-card d-sm-flex justify-content-sm-center">
+                                                <img src="assets/images/Cat.png" alt="Cat Food" class="img-fluid rounded">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-sm-12">
+                                            <div class="product-card d-sm-flex justify-content-sm-center">
+                                                <img src="assets/images/Cat.png" alt="Cat Food" class="img-fluid rounded">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-sm-12">
+                                            <div class="product-card d-sm-flex justify-content-sm-center">
+                                                <img src="assets/images/Cat.png" alt="Cat Food" class="img-fluid rounded">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Fish Tab -->
+                                <div class="tab-pane fade" id="Fish" role="tabpanel" aria-labelledby="Fish-tab"
+                                    tabindex="0">
+                                    <div class="row g-4">
+                                        <div class="col-lg-4 col-sm-12">
+                                            <div class="product-card d-sm-flex justify-content-sm-center">
+                                                <img src="assets/images/Cat.png" alt="Fish Food" class="img-fluid rounded">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-sm-12">
+                                            <div class="product-card d-sm-flex justify-content-sm-center">
+                                                <img src="assets/images/Cat.png" alt="Fish Food" class="img-fluid rounded">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-sm-12">
+                                            <div class="product-card d-sm-flex justify-content-sm-center">
+                                                <img src="assets/images/Cat.png" alt="Fish Food" class="img-fluid rounded">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Dogs Tab -->
+                                <div class="tab-pane fade" id="Dogs" role="tabpanel" aria-labelledby="Dogs-tab"
+                                    tabindex="0">
+                                    <div class="row g-4">
+                                        <div class="col-lg-4 col-sm-12">
+                                            <div class="product-card d-sm-flex justify-content-sm-center">
+                                                <img src="assets/images/Dog.png" alt="Dog Food" class="img-fluid rounded">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-sm-12">
+                                            <div class="product-card d-sm-flex justify-content-sm-center">
+                                                <img src="assets/images/Dog.png" alt="Dog Food" class="img-fluid rounded">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-sm-12">
+                                            <div class="product-card d-sm-flex justify-content-sm-center">
+                                                <img src="assets/images/Dog.png" alt="Dog Food" class="img-fluid rounded">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Birds Tab -->
+                                <div class="tab-pane fade" id="Birds" role="tabpanel" aria-labelledby="Birds-tab"
+                                    tabindex="0">
+                                    <div class="row g-4">
+                                        <div class="col-lg-4 col-sm-12">
+                                            <div class="product-card d-sm-flex justify-content-sm-center">
+                                                <img src="assets/images/Dog.png" alt="Bird Food" class="img-fluid rounded">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-sm-12">
+                                            <div class="product-card d-sm-flex justify-content-sm-center">
+                                                <img src="assets/images/Dog.png" alt="Bird Food" class="img-fluid rounded">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-sm-12">
+                                            <div class="product-card d-sm-flex justify-content-sm-center">
+                                                <img src="assets/images/Dog.png" alt="Bird Food" class="img-fluid rounded">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- View More Link -->
+                        <div class="col-12 d-flex justify-content-end mt-4 px-4">
+                            <a href="#" class="text-decoration-none text-dark fw-bold">View More >>></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="blog-section mb-5">
+        <div class="container">
+            <!-- Blog Title -->
+            <div class="row">
+                <div class="col-12 mb-5 px-0">
+                    <div class="d-flex gap-2 border-bottom border-1 border-sm-0 border-secondary-subtle py-1">
+                        <img src="assets/images/paw-icon-black.png" alt="Paw Icon" width="30" height="30">
+                        <h2>Blog</h2>
+                    </div>
+                </div>
+                <!-- Blog Container -->
+                <div class="row">
+                    <!-- Blog Content -->
+                    <div class="col-lg-6 col-sm-12 px-lg-4">
+                        <!-- Milestone: 20,000 Pets Treated -->
+                        <h2 class="fw-bold fs-4 border-bottom border-1 border-secondary-subtle pb-3">Milestone: 20,000 Pets Treated</h2>
+                        <p class="lh-lg my-lg-5 my-sm-3 text-muted opacity-75">Eget quis mi enim, leo lacinia pharetra,
+                            semper.
+                            Eget in <span class="text-decoration-underline">volutpat mollis</span> at volutpat lectus
+                            velit, sed auctor. Porttitor fames arcu quis fusce augue enim. Quis at habitant diam at.
+                            Suscipit <span class="text-decoration-underline">tristique risus</span>, at donec. In turpis
+                            vel et quam imperdiet. Ipsum molestie aliquet
+                            sodales id est ac volutpat. Eget quis mi enim, leo lacinia pharetra, semper. Eget in
+                            <span class="text-decoration-underline">volutpat mollis</span> at volutpat lectus velit, sed
+                            auctor. Porttitor fames arcu quis fusce augue
+                            enim. Quis at habitant diam at. Suscipit <span class="text-decoration-underline">tristique
+                                risus</span>, at donec. In turpis vel et quam
+                            imperdiet. Ipsum molestie aliquet sodales id est ac volutpat.
+                        </p>
+                        <!-- Renewed target -->
+                        <h3 class="fs-4 fw-bold mb-3">Renewed target</h3>
+                        <p class="lh-lg text-muted opacity-75">
+                            Pharetra morbi libero id aliquam elit massa integer tellus. Quis felis aliquam ullamcorper
+                            porttitor. Pulvinar ullamcorper sit dictumst ut eget a, elementum eu. Maecenas est morbi
+                            mattis id in ac.
+                        </p>
+                        <!-- Read More Button -->
+                        <button class="btn btn-dark rounded-2 px-3 py-2">Read More</button>
+                    </div>
+                    <div class="col-6 d-lg-block d-none px-4">
+                        <div class="position-relative">
+                            <img src="assets/images/blog-image.png" alt="Blog Image" class="img-fluid rounded">
+                            <i class="fa-regular fa-circle-play position-absolute top-50 start-50 translate-middle text-white" style="font-size: 7rem;"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer-section bg-dark text-white pt-5">
+        <div class="border-bottom border-1 border-secondary-subtle pb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 mb-5 px-0">
+                        <div class="d-flex gap-2 border-bottom border-1 border-sm-0 border-secondary-subtle py-1">
+                            <img src="assets/images/paw-icon.png" alt="Paw Icon" width="30" height="30">
+                            <h2>Get in touch</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-lg-6 col-sm-12 order-lg-1 order-2">
+                                <form class="row g-3 text-black bg-light rounded-4 p-lg-5 px-2 px-lg-5 py-3">
+                                    <div class="col-6">
+                                        <label for="inputFirstname" class="form-label">First Name</label>
+                                        <input type="text" class="form-control" id="inputFirstname" placeholder="First name">
+                                    </div>
+                                    <div class="col-6">
+                                        <label for="inputLastname" class="form-label">Last Name</label>
+                                        <input type="text" class="form-control" id="inputLastname" placeholder="Last name">
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="inputEmail" class="form-label">Email</label>
+                                        <input type="email" class="form-control" id="inputEmail" placeholder="you@company.com">
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="inputMessage" class="form-label">Message</label>
+                                        <textarea class="form-control" id="inputMessage" rows="3"></textarea>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="gridCheck">
+                                            <label class="form-check-label" for="gridCheck">
+                                                You agree to our friendly <a href="#" class="text-dark">Privacy Policy</a>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <button type="submit" class="w-100 btn btn-dark rounded-2 px-3 py-2">Send message</button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-lg-6 col-sm-12 order-1 mb-5 d-flex align-items-center justify-content-center">
+                                <div class="row g-3 w-100">
+                                    <div class="col-6 d-flex flex-column">
+                                        <div class="col-12 p-lg-3 p-sm-1  mb-4">
+                                            <i class="fa-regular fa-envelope text-white fs-5"></i>
+                                            <h5 class="fw-bold fs-5 my-3">Email</h5>
+                                            <p class="opacity-75">Our friendly team is here to help.</p>
+                                            <span class="fw-bold">hello@example.com</span>
+                                        </div>
+                                        <div class="col-12 p-lg-3 p-sm-1  mb-4">
+                                            <i class="fa-solid fa-location-dot text-white fs-5"></i>
+                                            <h5 class="fw-bold fs-5 my-3">Address</h5>
+                                            <p class="opacity-75">Come say hello at our office HQ.</p>
+                                            <span class="fw-bold">123, Yaya Abatan st, Ogba Lagos.</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 d-flex flex-column">
+                                        <div class="col-12 p-lg-3 p-sm-1  mb-4">
+                                            <i class="fa-regular fa-comment text-white fs-5"></i>
+                                            <h5 class="fw-bold fs-5 my-3">Live Chat</h5>
+                                            <p class="opacity-75">Our friendly team is here to help.</p>
+                                            <span class="fw-bold">hello@example.com</span>
+                                        </div>
+                                        <div class="col-12 p-lg-3 p-sm-1  mb-4">
+                                            <i class="fa-solid fa-phone text-white fs-5"></i>
+                                            <h5 class="fw-bold fs-5 my-3">Phone</h5>
+                                            <p class="opacity-75">Mon-Fri from 8am to 5pm.</p>
+                                            <span class="fw-bold">+234 901234 384</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container py-5  mb-3">
+            <div class="row align-items-center">
+                <div class="col-lg-8 col-sm-12">
+                    <h4 class="fw-bold fs-5 mb-3">Join our newsletter</h4>
+                    <p class="opacity-75">Be the first to receive latest updates on promo, sales and offers</p>
+                </div>
+                <div class="col-lg-4 col-sm-12">
+                    <form class="row g-3">
+                        <div class="col-lg-8 col-sm-12">
+                            <input type="email" class="form-control bg-secondary-subtle py-2" id="inputEmail" placeholder="Enter your email">
+                        </div>
+                        <div class="col-lg-4 col-sm-12">
+                            <button type="submit" class="w-100 btn btn-light rounded-2 px-2 py-2">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="container pt-5 pb-2">
+            <div class="row mb-5">
+                <div class="col-lg-3 col-sm-12 mb-4 mb-lg-0">
+                    <div class="d-flex align-items-center gap-2 mb-3">
+                        <img src="assets/images/paw-icon.png" alt="Paw Icon" width="30" height="30">
+                        <h5 class="fw-bold mb-0">Paws n' Play</h5>
+                    </div>
+                    <p class="opacity-75 lh-base small">
+                        Where wagging tails and purring hearts reign supreme!
+                    </p>
+                </div>
+
+                <div class="col-6 col-lg-2 col-sm-6 mb-4 mb-lg-0">
+                    <h6 class="fw-bold mb-3 small">Shop</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none opacity-75 small">Pet Adoption</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none opacity-75 small">Nutrition</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none opacity-75 small">Pet Care</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none opacity-75 small">Pet Food</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none opacity-75 small">Pricing</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-lg-2 col-sm-6 mb-4 mb-lg-0">
+                    <h6 class="fw-bold mb-3 small">Company</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none opacity-75 small">About us</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none opacity-75 small">Careers</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none opacity-75 small">Press</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none opacity-75 small">News</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none opacity-75 small">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-lg-2 col-sm-6 mb-4 mb-lg-0">
+                    <h6 class="fw-bold mb-3 small">Services</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none opacity-75 small">Grooming</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none opacity-75 small">Boarding</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none opacity-75 small">Training</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none opacity-75 small">Veterinary</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none opacity-75 small">Support</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-lg-2 col-sm-6 mb-4 mb-lg-0">
+                    <h6 class="fw-bold mb-3 small">Social</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none opacity-75 small">Twitter</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none opacity-75 small">LinkedIn</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none opacity-75 small">Facebook</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none opacity-75 small">AngelList</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none opacity-75 small">Dribble</a></li>
+                    </ul>
+                </div>
+
+
+                <div class="col-6 col-lg-1 col-sm-6 mb-4 mb-lg-0">
+                    <h6 class="fw-bold mb-3 small">Legal</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none opacity-75 small">Terms</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none opacity-75 small">Privacy</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none opacity-75 small">Cookies</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none opacity-75 small">Licenses</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none opacity-75 small">Settings</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="d-flex flex-column flex-lg-row justify-content-between border-top pt-4 mt-4">
+                <div class="col-12 col-lg-6 mb-3 d-flex justify-content-lg-start justify-content-center">
+                    <p class="mb-0 opacity-75 small">© 2024 Paws n' Play. All rights reserved.</p>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="d-flex gap-3 justify-content-lg-end justify-content-center">
+                        <a href="#" class="text-white opacity-75"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white opacity-75"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="text-white opacity-75"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-white opacity-75"><i class="fab fa-github"></i></a>
+                        <a href="#" class="text-white opacity-75"><i class="fab fa-angellist"></i></a>
+                        <a href="#" class="text-white opacity-75"><i class="fab fa-dribbble"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
