@@ -48,6 +48,51 @@ nav .nav-link {
     box-shadow: 0 0 0 0.25rem #21252940 !important;
 }
 
+.product-card {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.product-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.product-overlay {
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(2px);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 8px;
+}
+
+.product-card:hover .product-overlay {
+    opacity: 1;
+}
+
+.product-overlay .fa-heart {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.product-overlay .fa-heart:hover {
+    color: #ff4d4d !important;
+}
+
+.quantity-control button {
+    background: transparent;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: transform 0.2s ease;
+}
+
+
+.quantity-control {
+    min-width: 80px;
+}
+
 @media (max-width: 768px) {
     .border-sm-0 {
         border: none !important;

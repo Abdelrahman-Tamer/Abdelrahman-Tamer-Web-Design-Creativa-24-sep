@@ -93,10 +93,10 @@
     </section>
 
     <!-- Shop Section -->
-    <section class="shop-section mb-5">
+    <section class="shop-section mb-lg-5 mb-sm-2">
         <div class="container">
             <div class="row">
-                <div class="col-12 mb-5 px-0">
+                <div class="col-12 mb-lg-5 mb-sm-2 px-lg-0 px-sm-2">
                     <!-- Shop Title -->
                     <div class="d-flex gap-2 border-bottom border-1 border-secondary-subtle py-1 mb-3">
                         <img src="assets/images/paw-icon-black.png" alt="Paw Icon" width="30" height="30">
@@ -107,7 +107,7 @@
                     <!-- Products Container -->
                     <div class="row border border-1 border-sm-0 border-secondary-subtle rounded-3 mx-lg-3 mx-0 py-4 px-lg-3 px-0">
                         <!-- Featured Products Header -->
-                        <div class="col-12 d-flex justify-content-between align-items-center mb-4 p-3">
+                        <div class="col-12 d-flex justify-content-between align-items-center mb-4 p-lg-3 p-sm-2">
                             <h3 class="fw-bold fs-2 mb-0">Featured Products</h3>
                             <div class="d-none d-lg-flex justify-content-end align-items-center position-relative">
                                 <input type="text" class="form-control border-0 bg-secondary-subtle rounded-5 px-sm-4 py-2" placeholder="Search">
@@ -163,19 +163,83 @@
                                 <div class="tab-pane fade show active" id="Random" role="tabpanel"
                                     aria-labelledby="Random-tab" tabindex="0">
                                     <div class="row g-4">
-                                        <div class="col-lg-4 col-sm-12">
-                                            <div class="product-card d-sm-flex justify-content-sm-center">
-                                                <img src="assets/images/Cat.png" alt="Cat Food" class="img-fluid rounded">
+                                        <div class="col-lg-4 col-sm-12 px-lg-2 px-0">
+                                            <div class="product-card d-sm-flex justify-content-sm-center position-relative overflow-hidden">
+                                                <img src="assets/images/Cat.png" alt="Cat Food" class="img-fluid w-100 h-100 rounded">
+                                                <div class="product-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-between p-3 text-center">
+                                                    <div class="d-flex flex-column justify-content-between h-100">
+                                                        <div class="d-flex justify-content-between ">
+                                                            <span class="product-price text-white fw-bold fs-5">₦15,000.00</span>
+                                                            <i class="fa-regular fa-heart text-white fs-5"></i>
+                                                        </div>
+                                                        <div class="d-flex flex-column">
+                                                            <h5 class="text-white fw-bold mb-2">Multivitamin For Cat</h5>
+                                                            <p class="text-white small mb-3 opacity-75">Lorem ipsum dolor sit amet consectetur. Vitae donec pellentesque ut eget tempor egestas diam.</p>
+                                                        </div>
+                                                        <div class="d-flex gap-2 justify-content-center">
+                                                            <div class="quantity-control d-flex align-items-center bg-dark text-white rounded px-1 py-1">
+                                                                <button class="btn btn-dark text-white p-0 px-2 py-1">+</button>
+                                                                <span class="mx-3">1</span>
+                                                                <button class="btn btn-dark text-white p-0 px-2 py-1">-</button>
+                                                            </div>
+                                                            <button class="btn btn-dark py-1">Add to card</button>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-4 col-sm-12">
-                                            <div class="product-card d-sm-flex justify-content-sm-center">
-                                                <img src="assets/images/Dog.png" alt="Dog Food" class="img-fluid rounded">
+                                        <div class="col-lg-4 col-sm-12 px-lg-2 px-0">
+                                            <div class="product-card d-sm-flex justify-content-sm-center position-relative overflow-hidden">
+                                                <img src="assets/images/Dog.png" alt="Dog Food" class="img-fluid w-100 h-100 rounded">
+                                                <div class="product-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-between p-3 text-center">
+                                                    <div class="d-flex flex-column justify-content-between h-100">
+                                                        <div class="d-flex justify-content-between ">
+                                                            <span class="product-price text-white fw-bold fs-5">₦15,000.00</span>
+                                                            <i class="fa-regular fa-heart text-white fs-5"></i>
+                                                        </div>
+                                                        <div class="d-flex flex-column">
+                                                            <h5 class="text-white fw-bold mb-2">Multivitamin For Cat</h5>
+                                                            <p class="text-white small mb-3 opacity-75">Lorem ipsum dolor sit amet consectetur. Vitae donec pellentesque ut eget tempor egestas diam.</p>
+                                                        </div>
+                                                        <div class="d-flex gap-2 justify-content-center">
+                                                            <div class="quantity-control d-flex align-items-center bg-dark text-white rounded px-1 py-1">
+                                                                <button class="btn btn-dark text-white p-0 px-2 py-1">+</button>
+                                                                <span class="mx-3">1</span>
+                                                                <button class="btn btn-dark text-white p-0 px-2 py-1">-</button>
+                                                            </div>
+                                                            <button class="btn btn-dark py-1">Add to card</button>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
                                             </div>
+                                            
                                         </div>
-                                        <div class="col-lg-4 col-sm-12">
-                                            <div class="product-card d-sm-flex justify-content-sm-center">
-                                                <img src="assets/images/Dog.png" alt="Pet Food" class="img-fluid rounded">
+                                        <div class="col-lg-4 col-sm-12 px-lg-2 px-0">
+                                            <div class="product-card d-sm-flex justify-content-sm-center position-relative overflow-hidden">
+                                                <img src="assets/images/Dog.png" alt="Pet Food" class="img-fluid w-100 h-100 rounded">
+                                                <div class="product-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-between p-3 text-center">
+                                                    <div class="d-flex flex-column justify-content-between h-100">
+                                                        <div class="d-flex justify-content-between ">
+                                                            <span class="product-price text-white fw-bold fs-5">₦15,000.00</span>
+                                                            <i class="fa-regular fa-heart text-white fs-5"></i>
+                                                        </div>
+                                                        <div class="d-flex flex-column">
+                                                            <h5 class="text-white fw-bold mb-2">Multivitamin For Cat</h5>
+                                                            <p class="text-white small mb-3 opacity-75">Lorem ipsum dolor sit amet consectetur. Vitae donec pellentesque ut eget tempor egestas diam.</p>
+                                                        </div>
+                                                        <div class="d-flex gap-2 justify-content-center">
+                                                            <div class="quantity-control d-flex align-items-center bg-dark text-white rounded px-1 py-1">
+                                                                <button class="btn btn-dark text-white p-0 px-2 py-1">+</button>
+                                                                <span class="mx-3">1</span>
+                                                                <button class="btn btn-dark text-white p-0 px-2 py-1">-</button>
+                                                            </div>
+                                                            <button class="btn btn-dark py-1">Add to card</button>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -185,19 +249,82 @@
                                 <div class="tab-pane fade" id="Cat" role="tabpanel" aria-labelledby="pills-profile-tab"
                                     tabindex="0">
                                     <div class="row g-4">
-                                        <div class="col-lg-4 col-sm-12">
-                                            <div class="product-card d-sm-flex justify-content-sm-center">
-                                                <img src="assets/images/Cat.png" alt="Cat Food" class="img-fluid rounded">
+                                        <div class="col-lg-4 col-sm-12 px-lg-2 px-0">
+                                            <div class="product-card d-sm-flex justify-content-sm-center position-relative overflow-hidden">
+                                                <img src="assets/images/Cat.png" alt="Cat Food" class="img-fluid w-100 h-100 rounded">
+                                                <div class="product-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-between p-3 text-center">
+                                                    <div class="d-flex flex-column justify-content-between h-100">
+                                                        <div class="d-flex justify-content-between ">
+                                                            <span class="product-price text-white fw-bold fs-5">₦15,000.00</span>
+                                                            <i class="fa-regular fa-heart text-white fs-5"></i>
+                                                        </div>
+                                                        <div class="d-flex flex-column">
+                                                            <h5 class="text-white fw-bold mb-2">Multivitamin For Cat</h5>
+                                                            <p class="text-white small mb-3 opacity-75">Lorem ipsum dolor sit amet consectetur. Vitae donec pellentesque ut eget tempor egestas diam.</p>
+                                                        </div>
+                                                        <div class="d-flex gap-2 justify-content-center">
+                                                            <div class="quantity-control d-flex align-items-center bg-dark text-white rounded px-1 py-1">
+                                                                <button class="btn btn-dark text-white p-0 px-2 py-1">+</button>
+                                                                <span class="mx-3">1</span>
+                                                                <button class="btn btn-dark text-white p-0 px-2 py-1">-</button>
+                                                            </div>
+                                                            <button class="btn btn-dark py-1">Add to card</button>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-4 col-sm-12">
-                                            <div class="product-card d-sm-flex justify-content-sm-center">
-                                                <img src="assets/images/Cat.png" alt="Cat Food" class="img-fluid rounded">
+                                        <div class="col-lg-4 col-sm-12 px-lg-2 px-0">
+                                            <div class="product-card d-sm-flex justify-content-sm-center position-relative overflow-hidden">
+                                                <img src="assets/images/Cat.png" alt="Cat Food" class="img-fluid w-100 h-100 rounded">
+                                                <div class="product-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-between p-3 text-center">
+                                                    <div class="d-flex flex-column justify-content-between h-100">
+                                                        <div class="d-flex justify-content-between ">
+                                                            <span class="product-price text-white fw-bold fs-5">₦15,000.00</span>
+                                                            <i class="fa-regular fa-heart text-white fs-5"></i>
+                                                        </div>
+                                                        <div class="d-flex flex-column">
+                                                            <h5 class="text-white fw-bold mb-2">Multivitamin For Cat</h5>
+                                                            <p class="text-white small mb-3 opacity-75">Lorem ipsum dolor sit amet consectetur. Vitae donec pellentesque ut eget tempor egestas diam.</p>
+                                                        </div>
+                                                        <div class="d-flex gap-2 justify-content-center">
+                                                            <div class="quantity-control d-flex align-items-center bg-dark text-white rounded px-1 py-1">
+                                                                <button class="btn btn-dark text-white p-0 px-2 py-1">+</button>
+                                                                <span class="mx-3">1</span>
+                                                                <button class="btn btn-dark text-white p-0 px-2 py-1">-</button>
+                                                            </div>
+                                                            <button class="btn btn-dark py-1">Add to card</button>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-4 col-sm-12">
-                                            <div class="product-card d-sm-flex justify-content-sm-center">
-                                                <img src="assets/images/Cat.png" alt="Cat Food" class="img-fluid rounded">
+                                        <div class="col-lg-4 col-sm-12 px-lg-2 px-0">
+                                            <div class="product-card d-sm-flex justify-content-sm-center position-relative overflow-hidden">
+                                                <img src="assets/images/Cat.png" alt="Cat Food" class="img-fluid w-100 h-100 rounded">
+                                                <div class="product-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-between p-3 text-center">
+                                                    <div class="d-flex flex-column justify-content-between h-100">
+                                                        <div class="d-flex justify-content-between ">
+                                                            <span class="product-price text-white fw-bold fs-5">₦15,000.00</span>
+                                                            <i class="fa-regular fa-heart text-white fs-5"></i>
+                                                        </div>
+                                                        <div class="d-flex flex-column">
+                                                            <h5 class="text-white fw-bold mb-2">Multivitamin For Cat</h5>
+                                                            <p class="text-white small mb-3 opacity-75">Lorem ipsum dolor sit amet consectetur. Vitae donec pellentesque ut eget tempor egestas diam.</p>
+                                                        </div>
+                                                        <div class="d-flex gap-2 justify-content-center">
+                                                            <div class="quantity-control d-flex align-items-center bg-dark text-white rounded px-1 py-1">
+                                                                <button class="btn btn-dark text-white p-0 px-2 py-1">+</button>
+                                                                <span class="mx-3">1</span>
+                                                                <button class="btn btn-dark text-white p-0 px-2 py-1">-</button>
+                                                            </div>
+                                                            <button class="btn btn-dark py-1">Add to card</button>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -207,19 +334,82 @@
                                 <div class="tab-pane fade" id="Fish" role="tabpanel" aria-labelledby="Fish-tab"
                                     tabindex="0">
                                     <div class="row g-4">
-                                        <div class="col-lg-4 col-sm-12">
-                                            <div class="product-card d-sm-flex justify-content-sm-center">
-                                                <img src="assets/images/Cat.png" alt="Fish Food" class="img-fluid rounded">
+                                        <div class="col-lg-4 col-sm-12 px-lg-2 px-0">
+                                            <div class="product-card d-sm-flex justify-content-sm-center position-relative overflow-hidden">
+                                                <img src="assets/images/Cat.png" alt="Fish Food" class="img-fluid w-100 h-100 rounded">
+                                                <div class="product-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-between p-3 text-center">
+                                                    <div class="d-flex flex-column justify-content-between h-100">
+                                                        <div class="d-flex justify-content-between ">
+                                                            <span class="product-price text-white fw-bold fs-5">₦15,000.00</span>
+                                                            <i class="fa-regular fa-heart text-white fs-5"></i>
+                                                        </div>
+                                                        <div class="d-flex flex-column">
+                                                            <h5 class="text-white fw-bold mb-2">Multivitamin For Cat</h5>
+                                                            <p class="text-white small mb-3 opacity-75">Lorem ipsum dolor sit amet consectetur. Vitae donec pellentesque ut eget tempor egestas diam.</p>
+                                                        </div>
+                                                        <div class="d-flex gap-2 justify-content-center">
+                                                            <div class="quantity-control d-flex align-items-center bg-dark text-white rounded px-1 py-1">
+                                                                <button class="btn btn-dark text-white p-0 px-2 py-1">+</button>
+                                                                <span class="mx-3">1</span>
+                                                                <button class="btn btn-dark text-white p-0 px-2 py-1">-</button>
+                                                            </div>
+                                                            <button class="btn btn-dark py-1">Add to card</button>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-4 col-sm-12">
-                                            <div class="product-card d-sm-flex justify-content-sm-center">
-                                                <img src="assets/images/Cat.png" alt="Fish Food" class="img-fluid rounded">
+                                        <div class="col-lg-4 col-sm-12 px-lg-2 px-0">
+                                            <div class="product-card d-sm-flex justify-content-sm-center position-relative overflow-hidden">
+                                                <img src="assets/images/Cat.png" alt="Fish Food" class="img-fluid w-100 h-100 rounded">
+                                                <div class="product-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-between p-3 text-center">
+                                                    <div class="d-flex flex-column justify-content-between h-100">
+                                                        <div class="d-flex justify-content-between ">
+                                                            <span class="product-price text-white fw-bold fs-5">₦15,000.00</span>
+                                                            <i class="fa-regular fa-heart text-white fs-5"></i>
+                                                        </div>
+                                                        <div class="d-flex flex-column">
+                                                            <h5 class="text-white fw-bold mb-2">Multivitamin For Cat</h5>
+                                                            <p class="text-white small mb-3 opacity-75">Lorem ipsum dolor sit amet consectetur. Vitae donec pellentesque ut eget tempor egestas diam.</p>
+                                                        </div>
+                                                        <div class="d-flex gap-2 justify-content-center">
+                                                            <div class="quantity-control d-flex align-items-center bg-dark text-white rounded px-1 py-1">
+                                                                <button class="btn btn-dark text-white p-0 px-2 py-1">+</button>
+                                                                <span class="mx-3">1</span>
+                                                                <button class="btn btn-dark text-white p-0 px-2 py-1">-</button>
+                                                            </div>
+                                                            <button class="btn btn-dark py-1">Add to card</button>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-4 col-sm-12">
-                                            <div class="product-card d-sm-flex justify-content-sm-center">
-                                                <img src="assets/images/Cat.png" alt="Fish Food" class="img-fluid rounded">
+                                        <div class="col-lg-4 col-sm-12 px-lg-2 px-0">
+                                            <div class="product-card d-sm-flex justify-content-sm-center position-relative overflow-hidden">
+                                                <img src="assets/images/Cat.png" alt="Fish Food" class="img-fluid w-100 h-100 w-100 h-100 rounded">
+                                                <div class="product-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-between p-3 text-center">
+                                                    <div class="d-flex flex-column justify-content-between h-100">
+                                                        <div class="d-flex justify-content-between ">
+                                                            <span class="product-price text-white fw-bold fs-5">₦15,000.00</span>
+                                                            <i class="fa-regular fa-heart text-white fs-5"></i>
+                                                        </div>
+                                                        <div class="d-flex flex-column">
+                                                            <h5 class="text-white fw-bold mb-2">Multivitamin For Cat</h5>
+                                                            <p class="text-white small mb-3 opacity-75">Lorem ipsum dolor sit amet consectetur. Vitae donec pellentesque ut eget tempor egestas diam.</p>
+                                                        </div>
+                                                        <div class="d-flex gap-2 justify-content-center">
+                                                            <div class="quantity-control d-flex align-items-center bg-dark text-white rounded px-1 py-1">
+                                                                <button class="btn btn-dark text-white p-0 px-2 py-1">+</button>
+                                                                <span class="mx-3">1</span>
+                                                                <button class="btn btn-dark text-white p-0 px-2 py-1">-</button>
+                                                            </div>
+                                                            <button class="btn btn-dark py-1">Add to card</button>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -229,19 +419,82 @@
                                 <div class="tab-pane fade" id="Dogs" role="tabpanel" aria-labelledby="Dogs-tab"
                                     tabindex="0">
                                     <div class="row g-4">
-                                        <div class="col-lg-4 col-sm-12">
-                                            <div class="product-card d-sm-flex justify-content-sm-center">
-                                                <img src="assets/images/Dog.png" alt="Dog Food" class="img-fluid rounded">
+                                        <div class="col-lg-4 col-sm-12 px-lg-2 px-0">
+                                            <div class="product-card d-sm-flex justify-content-sm-center position-relative overflow-hidden">
+                                                <img src="assets/images/Dog.png" alt="Dog Food" class="img-fluid w-100 h-100 rounded">
+                                                <div class="product-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-between p-3 text-center">
+                                                    <div class="d-flex flex-column justify-content-between h-100">
+                                                        <div class="d-flex justify-content-between ">
+                                                            <span class="product-price text-white fw-bold fs-5">₦15,000.00</span>
+                                                            <i class="fa-regular fa-heart text-white fs-5"></i>
+                                                        </div>
+                                                        <div class="d-flex flex-column">
+                                                            <h5 class="text-white fw-bold mb-2">Multivitamin For Cat</h5>
+                                                            <p class="text-white small mb-3 opacity-75">Lorem ipsum dolor sit amet consectetur. Vitae donec pellentesque ut eget tempor egestas diam.</p>
+                                                        </div>
+                                                        <div class="d-flex gap-2 justify-content-center">
+                                                            <div class="quantity-control d-flex align-items-center bg-dark text-white rounded px-1 py-1">
+                                                                <button class="btn btn-dark text-white p-0 px-2 py-1">+</button>
+                                                                <span class="mx-3">1</span>
+                                                                <button class="btn btn-dark text-white p-0 px-2 py-1">-</button>
+                                                            </div>
+                                                            <button class="btn btn-dark py-1">Add to card</button>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-4 col-sm-12">
-                                            <div class="product-card d-sm-flex justify-content-sm-center">
-                                                <img src="assets/images/Dog.png" alt="Dog Food" class="img-fluid rounded">
+                                        <div class="col-lg-4 col-sm-12 px-lg-2 px-0">
+                                            <div class="product-card d-sm-flex justify-content-sm-center position-relative overflow-hidden">
+                                                <img src="assets/images/Dog.png" alt="Dog Food" class="img-fluid w-100 h-100 rounded">
+                                                <div class="product-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-between p-3 text-center">
+                                                    <div class="d-flex flex-column justify-content-between h-100">
+                                                        <div class="d-flex justify-content-between ">
+                                                            <span class="product-price text-white fw-bold fs-5">₦15,000.00</span>
+                                                            <i class="fa-regular fa-heart text-white fs-5"></i>
+                                                        </div>
+                                                        <div class="d-flex flex-column">
+                                                            <h5 class="text-white fw-bold mb-2">Multivitamin For Cat</h5>
+                                                            <p class="text-white small mb-3 opacity-75">Lorem ipsum dolor sit amet consectetur. Vitae donec pellentesque ut eget tempor egestas diam.</p>
+                                                        </div>
+                                                        <div class="d-flex gap-2 justify-content-center">
+                                                            <div class="quantity-control d-flex align-items-center bg-dark text-white rounded px-1 py-1">
+                                                                <button class="btn btn-dark text-white p-0 px-2 py-1">+</button>
+                                                                <span class="mx-3">1</span>
+                                                                <button class="btn btn-dark text-white p-0 px-2 py-1">-</button>
+                                                            </div>
+                                                            <button class="btn btn-dark py-1">Add to card</button>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-4 col-sm-12">
-                                            <div class="product-card d-sm-flex justify-content-sm-center">
-                                                <img src="assets/images/Dog.png" alt="Dog Food" class="img-fluid rounded">
+                                        <div class="col-lg-4 col-sm-12 px-lg-2 px-0">
+                                            <div class="product-card d-sm-flex justify-content-sm-center position-relative overflow-hidden">
+                                                <img src="assets/images/Dog.png" alt="Dog Food" class="img-fluid w-100 h-100 rounded">
+                                                <div class="product-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-between p-3 text-center">
+                                                    <div class="d-flex flex-column justify-content-between h-100">
+                                                        <div class="d-flex justify-content-between ">
+                                                            <span class="product-price text-white fw-bold fs-5">₦15,000.00</span>
+                                                            <i class="fa-regular fa-heart text-white fs-5"></i>
+                                                        </div>
+                                                        <div class="d-flex flex-column">
+                                                            <h5 class="text-white fw-bold mb-2">Multivitamin For Cat</h5>
+                                                            <p class="text-white small mb-3 opacity-75">Lorem ipsum dolor sit amet consectetur. Vitae donec pellentesque ut eget tempor egestas diam.</p>
+                                                        </div>
+                                                        <div class="d-flex gap-2 justify-content-center">
+                                                            <div class="quantity-control d-flex align-items-center bg-dark text-white rounded px-1 py-1">
+                                                                <button class="btn btn-dark text-white p-0 px-2 py-1">+</button>
+                                                                <span class="mx-3">1</span>
+                                                                <button class="btn btn-dark text-white p-0 px-2 py-1">-</button>
+                                                            </div>
+                                                            <button class="btn btn-dark py-1">Add to card</button>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -251,19 +504,82 @@
                                 <div class="tab-pane fade" id="Birds" role="tabpanel" aria-labelledby="Birds-tab"
                                     tabindex="0">
                                     <div class="row g-4">
-                                        <div class="col-lg-4 col-sm-12">
-                                            <div class="product-card d-sm-flex justify-content-sm-center">
-                                                <img src="assets/images/Dog.png" alt="Bird Food" class="img-fluid rounded">
+                                        <div class="col-lg-4 col-sm-12 px-lg-2 px-0">
+                                            <div class="product-card d-sm-flex justify-content-sm-center position-relative overflow-hidden">
+                                                <img src="assets/images/Dog.png" alt="Bird Food" class="img-fluid w-100 h-100 rounded">
+                                                <div class="product-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-between p-3 text-center">
+                                                    <div class="d-flex flex-column justify-content-between h-100">
+                                                        <div class="d-flex justify-content-between ">
+                                                            <span class="product-price text-white fw-bold fs-5">₦15,000.00</span>
+                                                            <i class="fa-regular fa-heart text-white fs-5"></i>
+                                                        </div>
+                                                        <div class="d-flex flex-column">
+                                                            <h5 class="text-white fw-bold mb-2">Multivitamin For Cat</h5>
+                                                            <p class="text-white small mb-3 opacity-75">Lorem ipsum dolor sit amet consectetur. Vitae donec pellentesque ut eget tempor egestas diam.</p>
+                                                        </div>
+                                                        <div class="d-flex gap-2 justify-content-center">
+                                                            <div class="quantity-control d-flex align-items-center bg-dark text-white rounded px-1 py-1">
+                                                                <button class="btn btn-dark text-white p-0 px-2 py-1">+</button>
+                                                                <span class="mx-3">1</span>
+                                                                <button class="btn btn-dark text-white p-0 px-2 py-1">-</button>
+                                                            </div>
+                                                            <button class="btn btn-dark py-1">Add to card</button>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-4 col-sm-12">
-                                            <div class="product-card d-sm-flex justify-content-sm-center">
-                                                <img src="assets/images/Dog.png" alt="Bird Food" class="img-fluid rounded">
+                                        <div class="col-lg-4 col-sm-12 px-lg-2 px-0">
+                                            <div class="product-card d-sm-flex justify-content-sm-center position-relative overflow-hidden">
+                                                <img src="assets/images/Dog.png" alt="Bird Food" class="img-fluid w-100 h-100 rounded">
+                                                <div class="product-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-between p-3 text-center">
+                                                    <div class="d-flex flex-column justify-content-between h-100">
+                                                        <div class="d-flex justify-content-between ">
+                                                            <span class="product-price text-white fw-bold fs-5">₦15,000.00</span>
+                                                            <i class="fa-regular fa-heart text-white fs-5"></i>
+                                                        </div>
+                                                        <div class="d-flex flex-column">
+                                                            <h5 class="text-white fw-bold mb-2">Multivitamin For Cat</h5>
+                                                            <p class="text-white small mb-3 opacity-75">Lorem ipsum dolor sit amet consectetur. Vitae donec pellentesque ut eget tempor egestas diam.</p>
+                                                        </div>
+                                                        <div class="d-flex gap-2 justify-content-center">
+                                                            <div class="quantity-control d-flex align-items-center bg-dark text-white rounded px-1 py-1">
+                                                                <button class="btn btn-dark text-white p-0 px-2 py-1">+</button>
+                                                                <span class="mx-3">1</span>
+                                                                <button class="btn btn-dark text-white p-0 px-2 py-1">-</button>
+                                                            </div>
+                                                            <button class="btn btn-dark py-1">Add to card</button>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-4 col-sm-12">
-                                            <div class="product-card d-sm-flex justify-content-sm-center">
-                                                <img src="assets/images/Dog.png" alt="Bird Food" class="img-fluid rounded">
+                                        <div class="col-lg-4 col-sm-12 px-lg-2 px-0">
+                                            <div class="product-card d-sm-flex justify-content-sm-center position-relative overflow-hidden">
+                                                <img src="assets/images/Dog.png" alt="Bird Food" class="img-fluid w-100 h-100 rounded">
+                                                <div class="product-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-between p-3 text-center">
+                                                    <div class="d-flex flex-column justify-content-between h-100">
+                                                        <div class="d-flex justify-content-between ">
+                                                            <span class="product-price text-white fw-bold fs-5">₦15,000.00</span>
+                                                            <i class="fa-regular fa-heart text-white fs-5"></i>
+                                                        </div>
+                                                        <div class="d-flex flex-column">
+                                                            <h5 class="text-white fw-bold mb-2">Multivitamin For Cat</h5>
+                                                            <p class="text-white small mb-3 opacity-75">Lorem ipsum dolor sit amet consectetur. Vitae donec pellentesque ut eget tempor egestas diam.</p>
+                                                        </div>
+                                                        <div class="d-flex gap-2 justify-content-center">
+                                                            <div class="quantity-control d-flex align-items-center bg-dark text-white rounded px-1 py-1">
+                                                                <button class="btn btn-dark text-white p-0 px-2 py-1">+</button>
+                                                                <span class="mx-3">1</span>
+                                                                <button class="btn btn-dark text-white p-0 px-2 py-1">-</button>
+                                                            </div>
+                                                            <button class="btn btn-dark py-1">Add to card</button>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -286,7 +602,7 @@
         <div class="container">
             <!-- Blog Title -->
             <div class="row">
-                <div class="col-12 mb-5 px-0">
+                <div class="col-12 mb-lg-5 mb-sm-2 px-lg-0 px-sm-2">
                     <div class="d-flex gap-2 border-bottom border-1 border-sm-0 border-secondary-subtle py-1">
                         <img src="assets/images/paw-icon-black.png" alt="Paw Icon" width="30" height="30">
                         <h2>Blog</h2>
@@ -295,7 +611,7 @@
                 <!-- Blog Container -->
                 <div class="row">
                     <!-- Blog Content -->
-                    <div class="col-lg-6 col-sm-12 px-lg-4">
+                    <div class="col-lg-6 col-sm-12 px-lg-4 px-sm-2">
                         <!-- Milestone: 20,000 Pets Treated -->
                         <h2 class="fw-bold fs-4 border-bottom border-1 border-secondary-subtle pb-3">Milestone: 20,000 Pets Treated</h2>
                         <p class="lh-lg my-lg-5 my-sm-3 text-muted opacity-75">Eget quis mi enim, leo lacinia pharetra,
@@ -321,8 +637,8 @@
                         <!-- Read More Button -->
                         <button class="btn btn-dark rounded-2 px-3 py-2">Read More</button>
                     </div>
-                    <div class="col-6 d-lg-block d-none px-4">
-                        <div class="position-relative">
+                    <div class="col-6 d-lg-block d-none px-lg-4 px-sm-2">
+                        <div class="position-relative overflow-hidden">
                             <img src="assets/images/blog-image.png" alt="Blog Image" class="img-fluid rounded">
                             <i class="fa-regular fa-circle-play position-absolute top-50 start-50 translate-middle text-white" style="font-size: 7rem;"></i>
                         </div>
@@ -337,7 +653,7 @@
         <div class="border-bottom border-1 border-secondary-subtle pb-5">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 mb-5 px-0">
+                    <div class="col-12 mb-lg-5 mb-sm-2 px-lg-0 px-sm-2">
                         <div class="d-flex gap-2 border-bottom border-1 border-sm-0 border-secondary-subtle py-1">
                             <img src="assets/images/paw-icon.png" alt="Paw Icon" width="30" height="30">
                             <h2>Get in touch</h2>
