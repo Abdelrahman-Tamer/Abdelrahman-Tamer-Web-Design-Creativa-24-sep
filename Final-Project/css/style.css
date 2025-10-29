@@ -1,0 +1,397 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+/* global css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.outline-none {
+  outline: none !important;
+}
+
+.bg-purple {
+  background-color: #f2edfe !important;
+}
+
+.bg-green {
+  background-color: #f1faf3;
+}
+
+.bg-green-dark {
+  background-color: #e9f5f4;
+}
+
+.bg-blue {
+  background-color: #e9f8fb !important;
+}
+
+.bg-yellow {
+  background-color: #e6f9f2 !important;
+}
+
+.bg-red {
+  background-color: #ffe8e8 !important;
+}
+
+.bg-orange {
+  background-color: #fff4e9 !important;
+}
+
+.bg-pink {
+  background-color: #ffe9f3 !important;
+}
+
+.bg-gray {
+  background-color: #f5f5f5 !important;
+}
+
+.btn-primary {
+  background: linear-gradient(
+    90.08deg,
+    #0e82fd 0.09%,
+    #06aed4 70.28%
+  ) !important;
+}
+
+.btn-dark {
+  background: #012047 !important;
+  border-color: #012047 !important;
+  box-shadow: none;
+  color: #fff;
+}
+
+.text-dark {
+  color: #012047 !important;
+}
+
+.small {
+  font-size: 0.9rem !important;
+}
+
+.grow-1 {
+  flex: 1 0 0;
+  border-radius: 5px !important;
+}
+
+.icon-position {
+  top: -10%;
+  right: -10%;
+}
+
+/* custom css */
+.nav-link.active {
+  color: #0e82fd !important;
+
+  &::after {
+    color: #0e82fd !important;
+  }
+}
+
+.dropdown-toggle::after {
+  content: "\f078" !important;
+  font-family: "Font Awesome 6 Free" !important;
+  font-weight: 900 !important;
+  vertical-align: middle !important;
+  font-size: 12px !important;
+  color: #012047 !important;
+  border: none !important;
+}
+
+.hero-section {
+  background: url(../assets/images/Home/ban-bg.png) no-repeat center center;
+  background-size: cover;
+  background-blend-mode: multiply;
+  background-color: #007ade08;
+}
+
+.float-div-1 {
+  min-width: 215px;
+  min-height: 60px;
+  top: 40%;
+  left: 15%;
+  animation: float 2s ease-in-out infinite;
+  pointer-events: none;
+
+  & .form-check-input {
+    width: 30px;
+    height: 30px;
+    margin-top: 0 !important;
+  }
+}
+
+.float-div-2 {
+  min-width: 160px;
+  min-height: 200px;
+  top: 30%;
+  right: 15%;
+  animation: float 4s ease-in-out infinite;
+
+  &.float-div-2 img {
+    width: 60px;
+    height: 60px;
+  }
+
+  pointer-events: none;
+}
+
+.hero-form {
+  min-width: 800px !important;
+
+  & input.form-control {
+    border-radius: 0;
+    padding: 0 1rem;
+
+    &:focus {
+      box-shadow: none;
+    }
+  }
+}
+
+.specialities-section span {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.specialities-section .col-lg-3 {
+  cursor: pointer;
+  transition: all 0.5s ease;
+
+  & img {
+    transition: all 0.5s ease;
+  }
+}
+
+.specialities-section .col-lg-3:nth-child(1):hover {
+  background-color: #f2edfe !important;
+
+  & img {
+    transform: rotateY(360deg);
+  }
+}
+
+.specialities-section .col-lg-3:nth-child(2):hover {
+  background-color: #f1faf3 !important;
+
+  & img {
+    transform: rotateY(360deg);
+  }
+}
+
+.specialities-section .col-lg-3:nth-child(3):hover {
+  background-color: #e9f8fb !important;
+
+  & img {
+    transform: rotateY(360deg);
+  }
+}
+
+.specialities-section .col-lg-3:nth-child(4):hover {
+  background-color: #ffe8e8 !important;
+
+  & img {
+    transform: rotateY(360deg);
+  }
+}
+
+.specialities-section .col-lg-3:nth-child(5):hover {
+  background-color: #e9f5f4 !important;
+
+  & img {
+    transform: rotateY(360deg);
+  }
+}
+
+.specialities-section .col-lg-3:nth-child(6):hover {
+  background-color: #ffe9f3 !important;
+
+  & img {
+    transform: rotateY(360deg);
+  }
+}
+
+.specialities-section .col-lg-3:nth-child(7):hover {
+  background-color: #fff4e9 !important;
+
+  & img {
+    transform: rotateY(360deg);
+  }
+}
+
+.specialities-row .col-lg-2 {
+  cursor: pointer;
+  transition: all 0.5s ease;
+
+  & img {
+    transition: all 0.5s ease;
+  }
+}
+
+.specialities-row span {
+  background-color: #e2edff;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease;
+}
+
+.specialities-row .col-lg-2:hover span {
+  background-color: #0e82fd !important;
+
+  & img {
+    transform: rotateY(360deg);
+    filter: brightness(0) invert(1);
+  }
+}
+
+.best-doctors-section .card-body .small {
+  font-size: 0.7rem !important;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-15px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Plan Rotate Animation */
+/* حجم وشكل الـ span الدوار (تقدر تعدل الحدود / الخلفية حسب التصميم) */
+.plan-rotate{
+  width: 68px;              /* ضبّط الحجم بحيث يكون خلف الصورة */
+  height: 68px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* مركّز */
+  border-radius: 50%;
+  border: 2px solid rgba(25, 171, 254, 0.15); /* مثال: حلقة رقيقة */
+  z-index: 1;               /* تحت الصورة */
+  transform-origin: center;
+  pointer-events: none;     /* عشان ميأثرش على الكليك */
+  transform: translate(-50%, -50%) rotate(0deg);
+}
+.plan-rotate:hover {
+  transform: rotate(360deg);
+}
+
+/* تأكد الصورة ثابتة وظاهرة فوق الحلقة */
+.fixed-icon {
+  z-index: 2 !important;
+  transform: translate(-50%, -50%)  !important; /* يحافظ على التمركز */
+}
+
+
+
+/* Pricing Cards Hover Effects */
+.pricing-section .card {
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+.mobile-app-section .container {
+  background: linear-gradient(
+    90.08deg,
+    #0e82fd 0.09%,
+    #06aed4 70.28%
+  ) !important;
+}
+.mobile-app-section .container > .row {
+  min-height: 550px !important;
+}
+
+.how-it-works-section {
+  background-color: #007ade08 !important;
+}
+.how-it-works-section:before {
+    content: "";
+    background: url(../assets/images/Home/doctor-shape-img1-ygD6Rm6j.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 213px;
+    height: 335px;
+    opacity: 0.5;
+    z-index: -1;
+}
+.how-it-works-section:after {
+    content: "";
+    background: url(../assets/images/Home/doctor-shape-img2-BiH_Rs31.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 213px;
+    height: 335px;
+    opacity: 0.5;
+    z-index: -1;
+}
+/* FAQ Accordion Styles */
+.faq-section .accordion-header {
+  background-color: #e2edff !important;
+}
+.faq-section .accordion-button {
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.faq-section .accordion-button:focus {
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.faq-section .accordion-button:not(.collapsed) {
+  background-color: transparent !important;
+}
+
+.faq-section .accordion-button::after {
+  content: "+";
+  font-family: inherit;
+  font-size: 1.5em;
+  padding: 10px;
+  font-weight: 600;
+  color: #fff;
+  background: #0e82fd !important;
+  background-image: none !important;
+  width: 32px;
+  height: 32px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+  transform: rotate(0deg);
+}
+
+.faq-section .accordion-button:not(.collapsed)::after {
+  content: "−";
+  transform: rotate(180deg);
+  background-color: white !important;
+  color: #0e82fd;
+}
