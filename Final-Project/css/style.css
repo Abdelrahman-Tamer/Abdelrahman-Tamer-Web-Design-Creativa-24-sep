@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
-/* global css */
+/* Global Styles */
 * {
   margin: 0;
   padding: 0;
@@ -14,10 +14,30 @@ body {
   font-style: normal;
 }
 
+/* Utility Classes */
 .outline-none {
   outline: none !important;
 }
 
+.text-dark {
+  color: #012047 !important;
+}
+
+.small {
+  font-size: 0.9rem !important;
+}
+
+.grow-1 {
+  flex: 1 0 0;
+  border-radius: 5px !important;
+}
+
+.icon-position {
+  top: -10%;
+  right: -10%;
+}
+
+/* Background Colors */
 .bg-purple {
   background-color: #f2edfe !important;
 }
@@ -32,6 +52,10 @@ body {
 
 .bg-blue {
   background-color: #e9f8fb !important;
+}
+
+.bg-blue-dark {
+  background-color: #3e9bfd !important;
 }
 
 .bg-yellow {
@@ -54,12 +78,37 @@ body {
   background-color: #f5f5f5 !important;
 }
 
+/* Button Styles */
 .btn-primary {
   background: linear-gradient(
     90.08deg,
     #0e82fd 0.09%,
     #06aed4 70.28%
   ) !important;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  border: none !important;
+  z-index: 2;
+}
+
+.btn-primary:before {
+  content: "";
+  position: absolute;
+  background: linear-gradient(90.08deg, #0e82fd 0.09%, #06aed4 70.28%);
+  transform: scaleX(0);
+  transform-origin: right center;
+  transition: transform 0.24s ease-in-out;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.btn-primary:hover:before {
+  transform: scaleX(1);
+  transform-origin: left center;
 }
 
 .btn-dark {
@@ -69,31 +118,13 @@ body {
   color: #fff;
 }
 
-.text-dark {
-  color: #012047 !important;
-}
-
-.small {
-  font-size: 0.9rem !important;
-}
-
-.grow-1 {
-  flex: 1 0 0;
-  border-radius: 5px !important;
-}
-
-.icon-position {
-  top: -10%;
-  right: -10%;
-}
-
-/* custom css */
+/* Navigation */
 .nav-link.active {
   color: #0e82fd !important;
+}
 
-  &::after {
-    color: #0e82fd !important;
-  }
+.nav-link.active::after {
+  color: #0e82fd !important;
 }
 
 .dropdown-toggle::after {
@@ -106,6 +137,7 @@ body {
   border: none !important;
 }
 
+/* Hero Section */
 .hero-section {
   background: url(../assets/images/Home/ban-bg.png) no-repeat center center;
   background-size: cover;
@@ -113,6 +145,20 @@ body {
   background-color: #007ade08;
 }
 
+.hero-form {
+  min-width: 800px !important;
+}
+
+.hero-form input.form-control {
+  border-radius: 0;
+  padding: 0 1rem;
+}
+
+.hero-form input.form-control:focus {
+  box-shadow: none;
+}
+
+/* Floating Elements */
 .float-div-1 {
   min-width: 215px;
   min-height: 60px;
@@ -120,12 +166,12 @@ body {
   left: 15%;
   animation: float 2s ease-in-out infinite;
   pointer-events: none;
+}
 
-  & .form-check-input {
-    width: 30px;
-    height: 30px;
-    margin-top: 0 !important;
-  }
+.float-div-1 .form-check-input {
+  width: 30px;
+  height: 30px;
+  margin-top: 0 !important;
 }
 
 .float-div-2 {
@@ -134,28 +180,15 @@ body {
   top: 30%;
   right: 15%;
   animation: float 4s ease-in-out infinite;
-
-  &.float-div-2 img {
-    width: 60px;
-    height: 60px;
-  }
-
   pointer-events: none;
 }
 
-.hero-form {
-  min-width: 800px !important;
-
-  & input.form-control {
-    border-radius: 0;
-    padding: 0 1rem;
-
-    &:focus {
-      box-shadow: none;
-    }
-  }
+.float-div-2 img {
+  width: 60px;
+  height: 60px;
 }
 
+/* Specialities Section */
 .specialities-section span {
   width: 70px;
   height: 70px;
@@ -168,75 +201,52 @@ body {
 .specialities-section .col-lg-3 {
   cursor: pointer;
   transition: all 0.5s ease;
+}
 
-  & img {
-    transition: all 0.5s ease;
-  }
+.specialities-section .col-lg-3 img {
+  transition: all 0.5s ease;
+}
+
+.specialities-section .col-lg-3:hover img {
+  transform: rotateY(360deg);
 }
 
 .specialities-section .col-lg-3:nth-child(1):hover {
   background-color: #f2edfe !important;
-
-  & img {
-    transform: rotateY(360deg);
-  }
 }
 
 .specialities-section .col-lg-3:nth-child(2):hover {
   background-color: #f1faf3 !important;
-
-  & img {
-    transform: rotateY(360deg);
-  }
 }
 
 .specialities-section .col-lg-3:nth-child(3):hover {
   background-color: #e9f8fb !important;
-
-  & img {
-    transform: rotateY(360deg);
-  }
 }
 
 .specialities-section .col-lg-3:nth-child(4):hover {
   background-color: #ffe8e8 !important;
-
-  & img {
-    transform: rotateY(360deg);
-  }
 }
 
 .specialities-section .col-lg-3:nth-child(5):hover {
   background-color: #e9f5f4 !important;
-
-  & img {
-    transform: rotateY(360deg);
-  }
 }
 
 .specialities-section .col-lg-3:nth-child(6):hover {
   background-color: #ffe9f3 !important;
-
-  & img {
-    transform: rotateY(360deg);
-  }
 }
 
 .specialities-section .col-lg-3:nth-child(7):hover {
   background-color: #fff4e9 !important;
-
-  & img {
-    transform: rotateY(360deg);
-  }
 }
 
+/* Specialities Row */
 .specialities-row .col-lg-2 {
   cursor: pointer;
   transition: all 0.5s ease;
+}
 
-  & img {
-    transition: all 0.5s ease;
-  }
+.specialities-row .col-lg-2 img {
+  transition: all 0.5s ease;
 }
 
 .specialities-row span {
@@ -252,64 +262,89 @@ body {
 
 .specialities-row .col-lg-2:hover span {
   background-color: #0e82fd !important;
-
-  & img {
-    transform: rotateY(360deg);
-    filter: brightness(0) invert(1);
-  }
 }
 
+.specialities-row .col-lg-2:hover span img {
+  transform: rotateY(360deg);
+  filter: brightness(0) invert(1);
+}
+
+/* Best Doctors Section */
 .best-doctors-section .card-body .small {
   font-size: 0.7rem !important;
 }
 
-@keyframes float {
-  0% {
-    transform: translateY(0);
-  }
-
-  50% {
-    transform: translateY(-15px);
-  }
-
-  100% {
-    transform: translateY(0);
-  }
-}
-
-/* Plan Rotate Animation */
-/* حجم وشكل الـ span الدوار (تقدر تعدل الحدود / الخلفية حسب التصميم) */
-.plan-rotate{
-  width: 68px;              /* ضبّط الحجم بحيث يكون خلف الصورة */
-  height: 68px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); /* مركّز */
-  border-radius: 50%;
-  border: 2px solid rgba(25, 171, 254, 0.15); /* مثال: حلقة رقيقة */
-  z-index: 1;               /* تحت الصورة */
-  transform-origin: center;
-  pointer-events: none;     /* عشان ميأثرش على الكليك */
-  transform: translate(-50%, -50%) rotate(0deg);
-}
-.plan-rotate:hover {
-  transform: rotate(360deg);
-}
-
-/* تأكد الصورة ثابتة وظاهرة فوق الحلقة */
-.fixed-icon {
-  z-index: 2 !important;
-  transform: translate(-50%, -50%)  !important; /* يحافظ على التمركز */
-}
-
-
-
-/* Pricing Cards Hover Effects */
+/* Pricing Section */
 .pricing-section .card {
   transition: all 0.4s ease;
   cursor: pointer;
 }
 
+/* Pricing Icons */
+.pricing-section .pricing-icon {
+  width: 70px;
+  height: 70px;
+}
+
+.pricing-section .pricing-icon .pricing-icon-bg {
+  transition: all 0.5s ease;
+  z-index: 1;
+  transform: rotate(0deg);
+}
+
+.pricing-section .pricing-icon img {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  z-index: 2;
+}
+
+/* Pricing List Items */
+.pricing-section .card-body ul li::before {
+  content: "\f058";
+  font-family: "Font Awesome 6 Free" !important;
+  font-weight: 900 !important;
+  font-size: 16px !important;
+  color: #0e82fd !important;
+  margin-right: 10px;
+}
+
+/* Active Card (Popular Plan) */
+.pricing-section .card-body.active ul li::before {
+  color: #fff !important;
+}
+
+.pricing-section .card-body.active .pricing-btn a {
+  background: #fff !important;
+  color: #012047 !important;
+}
+
+.pricing-section .card-body.active span {
+  transform: none !important;
+}
+
+/* Pricing Card Hover Effects */
+.pricing-section .pricing-card:hover {
+  background-color: #0e82fd !important;
+  color: #fff !important;
+  border-color: #0e82fd !important;
+}
+
+.pricing-section .pricing-card:hover .pricing-icon-bg {
+  transform: rotate(90deg);
+}
+
+.pricing-section .pricing-card:hover .pricing-list ul li,
+.pricing-section .pricing-card:hover .pricing-list ul li:before {
+  color: #fff !important;
+}
+
+.pricing-section .pricing-card:hover .pricing-btn a {
+  background: #fff !important;
+  color: #012047 !important;
+}
+
+/* Mobile App Section */
 .mobile-app-section .container {
   background: linear-gradient(
     90.08deg,
@@ -317,45 +352,51 @@ body {
     #06aed4 70.28%
   ) !important;
 }
+
 .mobile-app-section .container > .row {
   min-height: 550px !important;
 }
 
+/* How It Works Section */
 .how-it-works-section {
   background-color: #007ade08 !important;
 }
+
 .how-it-works-section:before {
-    content: "";
-    background: url(../assets/images/Home/doctor-shape-img1-ygD6Rm6j.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: left;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 213px;
-    height: 335px;
-    opacity: 0.5;
-    z-index: -1;
+  content: "";
+  background: url(../assets/images/Home/doctor-shape-img1-ygD6Rm6j.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 213px;
+  height: 335px;
+  opacity: 0.5;
+  z-index: -1;
 }
+
 .how-it-works-section:after {
-    content: "";
-    background: url(../assets/images/Home/doctor-shape-img2-BiH_Rs31.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: right;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 213px;
-    height: 335px;
-    opacity: 0.5;
-    z-index: -1;
+  content: "";
+  background: url(../assets/images/Home/doctor-shape-img2-BiH_Rs31.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 213px;
+  height: 335px;
+  opacity: 0.5;
+  z-index: -1;
 }
-/* FAQ Accordion Styles */
+
+/* FAQ Section */
 .faq-section .accordion-header {
   background-color: #e2edff !important;
 }
+
 .faq-section .accordion-button {
   box-shadow: none !important;
   outline: none !important;
@@ -372,16 +413,13 @@ body {
 
 .faq-section .accordion-button::after {
   content: "+";
-  font-family: inherit;
-  font-size: 1.5em;
-  padding: 10px;
+  font-size: 1.5rem;
   font-weight: 600;
   color: #fff;
   background: #0e82fd !important;
-  background-image: none !important;
-  width: 32px;
-  height: 32px;
-  border-radius: 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -394,4 +432,57 @@ body {
   transform: rotate(180deg);
   background-color: white !important;
   color: #0e82fd;
+}
+
+/* Testimonials Section */
+.testimonials-section {
+  background-color: #007ade08 !important;
+}
+
+.testimonials-section:before {
+  content: "";
+  background: url(../assets/images/Home/doctor-shape-img1-ygD6Rm6j.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 213px;
+  height: 335px;
+  opacity: 0.5;
+  z-index: 0;
+}
+
+.testimonials-section:after {
+  content: "";
+  background: url(../assets/images/Home/doctor-shape-img2-BiH_Rs31.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 213px;
+  height: 335px;
+  opacity: 0.5;
+  z-index: 0;
+}
+
+.testimonials-section .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* Animations */
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }

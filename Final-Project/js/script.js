@@ -18,30 +18,30 @@ $(function () {
   $(".autoplay-2").slick({
     slidesToShow: 4,
     slidesToScroll: 1,
-    spaceBetween: 10,
     autoplaySpeed: 2000,
+    arrows: false,
+    dots: false,
+  });
+});
+$(function () {
+  $(".autoplay-3").slick({
+    slidesToShow: 6,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
     arrows: false,
     dots: false,
   });
 });
 
 $(function () {
-  $(".autoplay-3").slick({
+  $(".testimonial-slider").slick({
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 5000,
+    speed: 1800,
     arrows: true,
-    prevArrow: $(".testimonial-prev"),
-    nextArrow: $(".testimonial-next"),
     dots: false,
-    fade: true,
-    speed: 800,
+    prevArrow: $("#testimonialsArrowPrev"),
+    nextArrow: $("#testimonialsArrowNext"),
   });
 });
-
-
-
-
-
-
