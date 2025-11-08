@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="Icon" href="../../assets/images/favicon.png" />
+    <link rel="stylesheet" href="../../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="stylesheet" href="doctor-profile-settings.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet"
+        href="../../bootstrap-tagsinput-latest/bootstrap-tagsinput-latest/src/bootstrap-tagsinput.css">
+
+    <title>Doccure</title>
+</head>
+
+<body class="position-relative">
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar navbar-expand-lg bg-white shadow-sm fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="../../index.html"><img src="../../assets/images/Home/imgi_1_logo.svg"
+                        alt="logo" width="160" /></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0 mx-auto ms-lg-auto">
+                        <li class="nav-item dropdown mx-lg-1">
+                            <a class="nav-link small fw-normal dropdown-toggle" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Home
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../index.html">Home 1</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown mx-lg-1">
+                            <a class="nav-link small fw-normal dropdown-toggle active" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Doctors
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../doctor-dashboard/doctor-dashboard.html">Doctor
+                                        Dashboard</a></li>
+                                <li><a class="dropdown-item" href="doctor-profile-settings.html">Doctor Profile
+                                        Settings</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown mx-lg-1">
+                            <a class="nav-link small fw-normal dropdown-toggle" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Patients
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../doctor-profile/doctor-profile.html">Doctor
+                                        Profile 1</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown mx-lg-1">
+                            <a class="nav-link small fw-normal dropdown-toggle" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Pharmacy
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider" />
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown mx-lg-1">
+                            <a class="nav-link small fw-normal dropdown-toggle" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Pages
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider" />
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown mx-lg-1">
+                            <a class="nav-link small fw-normal dropdown-toggle" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Blog
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider" />
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown mx-lg-1">
+                            <a class="nav-link small fw-normal dropdown-toggle" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Admin
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider" />
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="d-lg-flex align-items-center gap-3 d-none">
+                        <span
+                            class="text-dark p-0 header-icon header-icon-search d-flex align-items-center justify-content-center rounded-circle">
+                            <i class="fas fa-search"></i>
+                        </span>
+
+                        <span
+                            class="text-dark p-0 header-icon header-icon-settings d-flex align-items-center justify-content-center rounded-circle bg-secondary-subtle">
+                            <i class="fa-regular fa-sun text-success"></i>
+                        </span>
+
+                        <span
+                            class="text-dark p-0 position-relative header-icon header-icon-circle d-flex align-items-center justify-content-center rounded-circle bg-secondary-subtle">
+                            <i class="fa-regular fa-bell"></i>
+                            <span class="header-badge bg-danger"></span>
+                        </span>
+
+                        <span
+                            class="text-dark p-0 position-relative header-icon header-icon-circle d-flex align-items-center justify-content-center rounded-circle bg-secondary-subtle">
+                            <i class="fa-regular fa-comment"></i>
+                            <span class="header-badge bg-success"></span>
+                        </span>
+
+                        <span
+                            class="text-dark p-0 position-relative header-icon header-icon-circle d-flex align-items-center justify-content-center rounded-circle bg-secondary-subtle">
+                            <i class="fa-solid fa-shopping-cart"></i>
+                            <span class="header-badge bg-purple-badge"></span>
+                        </span>
+
+                        <div class="dropdown">
+                            <button class="btn p-0 border-0" data-bs-toggle="dropdown">
+                                <img src="../../assets/images/Doctor Profile/imgi_25_doctor-profile-img.jpg"
+                                    alt="Profile" class="rounded-circle header-profile-img" width="40" height="40"
+                                    style="object-fit: cover;" />
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li><a class="dropdown-item" href="#">Profile</a></li>
+                                <li><a class="dropdown-item" href="#">Settings</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Logout</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Breadcrumb -->
+    <section class="breadcrumb-section py-5 mt-5 position-relative overflow-hidden d-flex align-items-center"
+        style="min-height: 200px;">
+        <div class="breadcrumb-bg-shape-1 position-absolute top-0 start-0  bottom-0"></div>
+        <div class="breadcrumb-bg-shape-2 position-absolute bottom-0 end-0 top-0"></div>
+        <div class="breadcrumb-icon position-absolute top-50 translate-middle-y" style="right: 15%;"></div>
+        <div class="container position-relative z-1">
+            <nav aria-label="breadcrumb">
+                <div class="d-flex flex-column align-items-center justify-content-center">
+                    <ol class="breadcrumb mb-3 bg-transparent p-0 d-flex align-items-center gap-2">
+                        <li class="breadcrumb-item">
+                            <a href="../../index.html" class="text-decoration-none text-dark">
+                                <i class="fas fa-home text-primary"></i>
+                            </a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="doctor-profile-settings.html" class="text-decoration-none text-dark">Doctor</a>
+                        </li>
+                        <li class="breadcrumb-item active text-muted" aria-current="page">Doctor Profile</li>
+                    </ol>
+                    <h2 class="mb-0 fw-bold text-dark fs-1">Doctor Profile</h2>
+                </div>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="main-content py-4">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-3">
+                    <div class="bg-white rounded-3 shadow-sm overflow-hidden">
+                        <div class="doctor-card text-center">
+                            <div class="doctor-bg"></div>
+                            <div class="doctor-profile-wrapper">
+                                <div class="position-relative d-inline-block">
+                                    <img src="../../assets/images/Doctor Profile/imgi_25_doctor-profile-img.jpg"
+                                        alt="Dr Edalin Hendry" class="doctor-avatar rounded-circle" />
+                                    <span class="online-status"></span>
+                                </div>
+                                <h5 class="mt-3 mb-1 fw-bold text-dark">Dr Edalin Hendry</h5>
+                                <p class="text-muted small mb-2">BDS, MDS - Oral & Maxillofacial Surgery</p>
+                                <p class="text-dark small mb-3 d-flex align-items-center justify-content-center gap-2 ">
+                                    <i class="fas fa-circle text-dark" style="font-size: 6px;"></i> Dentist
+                                </p>
+
+                                <div class="availability-dropdown mb-3">
+                                    <label class="text-muted small d-block mb-1">Availability *</label>
+                                    <select class="form-select form-select-sm">
+                                        <option>I am Available Now</option>
+                                        <option>Not Available</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-3 px-lg-4">
+                            <a href="../doctor-dashboard/doctor-dashboard.html"
+                                class="sidebar-item d-flex align-items-center text-decoration-none p-3 position-relative">
+                                <i class="fas fa-th-large me-3"></i>
+                                <span>Dashboard</span>
+                            </a>
+                            <a href="#"
+                                class="sidebar-item d-flex align-items-center text-decoration-none p-3 position-relative">
+                                <i class="fas fa-file-alt me-3"></i>
+                                <span>Requests</span>
+                                <span class="notification-badge rounded-circle ms-auto">2</span>
+                            </a>
+                            <a href="#"
+                                class="sidebar-item d-flex align-items-center text-decoration-none p-3 position-relative">
+                                <i class="far fa-calendar-check me-3"></i>
+                                <span>Appointments</span>
+                            </a>
+                            <a href="#"
+                                class="sidebar-item d-flex align-items-center text-decoration-none p-3 position-relative">
+                                <i class="far fa-clock me-3"></i>
+                                <span>Available Timings</span>
+                            </a>
+                            <a href="#"
+                                class="sidebar-item d-flex align-items-center text-decoration-none p-3 position-relative">
+                                <i class="fas fa-user-friends me-3"></i>
+                                <span>My Patients</span>
+                            </a>
+                            <a href="#"
+                                class="sidebar-item d-flex align-items-center text-decoration-none p-3 position-relative">
+                                <i class="fas fa-hospital me-3"></i>
+                                <span>Specialties & Services</span>
+                            </a>
+                            <a href="#"
+                                class="sidebar-item d-flex align-items-center text-decoration-none p-3 position-relative">
+                                <i class="far fa-star me-3"></i>
+                                <span>Reviews</span>
+                            </a>
+                            <a href="#"
+                                class="sidebar-item d-flex align-items-center text-decoration-none p-3 position-relative">
+                                <i class="fas fa-wallet me-3"></i>
+                                <span>Accounts</span>
+                            </a>
+                            <a href="#"
+                                class="sidebar-item d-flex align-items-center text-decoration-none p-3 position-relative">
+                                <i class="fas fa-file-invoice me-3"></i>
+                                <span>Invoices</span>
+                            </a>
+                            <a href="#"
+                                class="sidebar-item d-flex align-items-center text-decoration-none p-3 position-relative">
+                                <i class="fas fa-credit-card me-3"></i>
+                                <span>Payout Settings</span>
+                            </a>
+                            <a href="#"
+                                class="sidebar-item d-flex align-items-center text-decoration-none p-3 position-relative">
+                                <i class="far fa-comment me-3"></i>
+                                <span>Message</span>
+                                <span class="notification-badge rounded-circle ms-auto">7</span>
+                            </a>
+                            <a href="#"
+                                class="sidebar-item active d-flex align-items-center text-decoration-none p-3 position-relative">
+                                <i class="fas fa-user-cog me-3"></i>
+                                <span>Profile Settings</span>
+                            </a>
+                            <a href="#"
+                                class="sidebar-item d-flex align-items-center text-decoration-none p-3 position-relative">
+                                <i class="fas fa-share-alt me-3"></i>
+                                <span>Social Media</span>
+                            </a>
+                            <a href="#"
+                                class="sidebar-item d-flex align-items-center text-decoration-none p-3 position-relative">
+                                <i class="fas fa-key me-3"></i>
+                                <span>Change Password</span>
+                            </a>
+                            <a href="#"
+                                class="sidebar-item d-flex align-items-center text-decoration-none p-3 position-relative">
+                                <i class="fas fa-sign-out-alt me-3"></i>
+                                <span>Logout</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-9">
+                    <div class=" p-4">
+                        <h4 class="mb-4 fw-bold text-dark">Profile Settings</h4>
+
+                        <ul class="nav profile-tabs mb-4 shadow rounded-4 p-3" role="tablist">
+                            <li class="nav-item">
+                                <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#basic-details">
+                                    Basic Details
+                                </button>
+                            </li>
+                            <li class="nav-item">
+                                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#experience">
+                                    Experience
+                                </button>
+                            </li>
+                            <li class="nav-item">
+                                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#education">
+                                    Education
+                                </button>
+                            </li>
+                            <li class="nav-item">
+                                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#awards">
+                                    Awards
+                                </button>
+                            </li>
+                            <li class="nav-item">
+                                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#insurances">
+                                    Insurances
+                                </button>
+                            </li>
+                            <li class="nav-item">
+                                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#clinics">
+                                    Clinics
+                                </button>
+                            </li>
+                            <li class="nav-item">
+                                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#business-hours">
+                                    Business Hours
+                                </button>
+                            </li>
+                        </ul>
+
+                        <div class="tab-content pt-4">
+                            <div class="tab-pane fade show active" id="basic-details">
+                                <h6 class="fw-bold text-dark mb-4" style="font-size: 15px;">Profile</h6>
+
+                                <div class="profile-section mb-4 p-lg-4 border border-1 rounded-4">
+                                    <div class="d-flex align-items-start gap-4">
+                                        <div class="profile-image-placeholder position-relative"
+                                            id="profileImagePreview">
+                                            <i class="fas fa-image" id="placeholderIcon"></i>
+                                            <img id="previewImage" src="" alt="Profile Preview"
+                                                style="display: none; width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <h6 class="fw-semibold mb-2">Profile Image</h6>
+                                            <div class="mb-2">
+                                                <input type="file" id="profileImageInput"
+                                                    accept="image/jpeg,image/jpg,image/png,image/svg+xml"
+                                                    style="display: none;">
+                                                <a href="#" id="uploadNewLink"
+                                                    class="text-primary text-decoration-none me-3 fw-medium">Upload
+                                                    New</a>
+                                                <a href="#" id="removeImageLink"
+                                                    class="text-danger text-decoration-none fw-medium">Remove</a>
+                                            </div>
+                                            <p class="text-muted mb-0">Your Image should Below 4 MB, Accepted
+                                                format jpg,png,svg</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <h6 class="fw-bold text-dark mb-3" style="font-size: 15px;">Information</h6>
+                                <form id="profileForm" class="p-lg-4 border border-1 rounded-4">
+                                    <div class="row g-3 mb-3">
+                                        <div class="col-md-4">
+                                            <label class="form-label small">First Name <span
+                                                    class="text-danger">*</span></label>
+                                            <input type="text" id="firstName" class="form-control" required />
+                                            <div class="invalid-feedback">Please enter your first name.</div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label class="form-label small">Last Name <span
+                                                    class="text-danger">*</span></label>
+                                            <input type="text" id="lastName" class="form-control" required />
+                                            <div class="invalid-feedback">Please enter your last name.</div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label class="form-label small">Display Name <span
+                                                    class="text-danger">*</span></label>
+                                            <input type="text" id="displayName" class="form-control" required />
+                                            <div class="invalid-feedback">Please enter your display name.</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row g-3 mb-4">
+                                        <div class="col-md-4">
+                                            <label class="form-label small">Designation <span
+                                                    class="text-danger">*</span></label>
+                                            <input type="text" id="designation" class="form-control" required />
+                                            <div class="invalid-feedback">Please enter your designation.</div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label class="form-label small">Phone Numbers <span
+                                                    class="text-danger">*</span></label>
+                                            <input type="tel" id="phoneNumbers" class="form-control" required />
+                                            <div class="invalid-feedback">Please enter your phone number.</div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label class="form-label small">Email Address <span
+                                                    class="text-danger">*</span></label>
+                                            <input type="email" id="emailAddress" class="form-control" required />
+                                            <div class="invalid-feedback">Please enter a valid email address.</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="mb-4 pb-4 border-bottom">
+                                        <div class="d-flex justify-content-between align-items-center mb-3">
+                                            <label class="form-label mb-0">Known Languages <span
+                                                    class="text-danger">*</span></label>
+
+                                        </div>
+                                        <div class="tagsinput p-lg-2 border border-1 rounded-3">
+                                            <input type="text" value="HTML5, CSS3, JavaScript, jQuery"
+                                                data-role="tagsinput" id="knownLanguages" class="w-100 border-0"
+                                                placeholder="Add a tag">
+                                        </div>
+                                    </div>
+
+                                    <h6 class="fw-bold text-dark mb-3">Memberships</h6>
+                                    <div id="membershipsContainer">
+                                        <div class="membership-item mb-3 p-lg-4 border border-1 rounded-4"
+                                            data-membership-index="0">
+                                            <div class="row g-3 align-items-end">
+                                                <div class="col-md-5">
+                                                    <label class="form-label small">Title <span
+                                                            class="text-danger">*</span></label>
+                                                    <input type="text" name="membershipTitle[]"
+                                                        class="form-control membership-title" placeholder="Add Title" />
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label class="form-label small">About Membership</label>
+                                                    <input type="text" name="membershipAbout[]"
+                                                        class="form-control membership-about" />
+                                                </div>
+                                                <div class="col-md-1 text-end">
+                                                    <button type="button"
+                                                        class="btn btn-link text-danger p-0 text-decoration-none small delete-membership"
+                                                        onclick="deleteMembershipRow(this)">
+                                                        Delete
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button type="button" id="addMembershipBtn"
+                                        class="btn btn-link text-primary p-0 text-decoration-none mb-4 small w-100 text-end">
+                                        Add New
+                                    </button>
+
+                                    <div class="d-flex justify-content-end gap-2 pt-3 border-top mt-4">
+                                        <button type="button" class="btn btn-outline-secondary px-4">Cancel</button>
+                                        <button type="submit" id="saveProfileChanges" class="btn btn-primary px-4">Save
+                                            Changes</button>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <div class="tab-pane fade" id="experience">
+                                <div class="d-flex justify-content-between align-items-center mb-4">
+                                    <h5 class="fw-bold text-dark mb-0">Experience</h5>
+                                    <button type="button" id="addNewExperience"
+                                        class="btn btn-primary rounded-pill px-4 py-2 small">
+                                        Add New Experience
+                                    </button>
+                                </div>
+
+                                <div class="accordion" id="experienceAccordion">
+                                    <div class="accordion-item bg-white border  rounded-4 mb-3 shadow-sm">
+                                        <h2 class="accordion-header px-3 py-2 ">
+                                            <button class="accordion-button shadow-none bg-white py-3 px-4"
+                                                type="button" data-bs-toggle="collapse" data-bs-target="#collapse1"
+                                                aria-expanded="true">
+                                                <div
+                                                    class="d-flex justify-content-between align-items-center w-100 pe-2">
+                                                    <span class="fw-semibold text-dark small">Experience</span>
+                                                    <span class="text-danger small fw-semibold">
+                                                        Delete <i class="fas fa-chevron-up text-dark"></i>
+                                                    </span>
+                                                </div>
+                                            </button>
+                                        </h2>
+                                        <div id="collapse1" class="accordion-collapse collapse show"
+                                            data-bs-parent="#experienceAccordion">
+                                            <div class="accordion-body px-4 pb-4 pt-3 border-top">
+                                                <div class="mb-4">
+                                                    <label class="form-label fw-semibold mb-3">Hospital Logo</label>
+                                                    <div class="d-flex align-items-start gap-3">
+                                                        <div class="bg-light border border-2 border-dashed rounded-3 d-flex align-items-center justify-content-center"
+                                                            style="width: 80px; height: 80px; min-width: 80px;">
+                                                            <i class="fas fa-image text-muted fs-3"></i>
+                                                        </div>
+                                                        <div>
+                                                            <div class="mb-2">
+                                                                <a href="#"
+                                                                    class="text-primary text-decoration-none me-3 small fw-semibold">Upload
+                                                                    New</a>
+                                                                <a href="#"
+                                                                    class="text-danger text-decoration-none small fw-semibold">Remove</a>
+                                                            </div>
+                                                            <p class="text-muted small mb-0">Your Image should Below
+                                                                4 MB, Accepted format jpg,png,svg</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="row g-3 mb-3">
+                                                    <div class="col-md-6">
+                                                        <label class="form-label small fw-semibold">Title <span
+                                                                class="text-danger">*</span></label>
+                                                        <input type="text" id="hospitalTitle" class="form-control"
+                                                            placeholder="Hospital *">
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <label class="form-label small fw-semibold">Year of
+                                                            Experience <span class="text-danger">*</span></label>
+                                                        <input type="text" id="yearOfExperience" class="form-control">
+                                                    </div>
+                                                </div>
+
+                                                <div class="row g-3 mb-3">
+                                                    <div class="col-md-6">
+                                                        <label class="form-label small fw-semibold">Location <span
+                                                                class="text-danger">*</span></label>
+                                                        <input type="text" id="location" class="form-control">
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <label class="form-label small fw-semibold">Employment</label>
+                                                        <select id="employment" class="form-select">
+                                                            <option selected>Part Time</option>
+                                                            <option>Full Time</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+
+                                                <div class="mb-4">
+                                                    <label class="form-label small fw-semibold">Job Description
+                                                        <span class="text-danger">*</span></label>
+                                                    <textarea id="jobDescription" class="form-control"
+                                                        rows="4"></textarea>
+                                                </div>
+
+                                                <div class="row g-3 mb-3">
+                                                    <div class="col-md-5">
+                                                        <label class="form-label small fw-semibold">Start Date <span
+                                                                class="text-danger">*</span></label>
+                                                        <input type="date" id="startDate" class="form-control"
+                                                            placeholder="dd/mm/yyyy">
+                                                    </div>
+                                                    <div class="col-md-5">
+                                                        <label class="form-label small fw-semibold">End Date <span
+                                                                class="text-danger">*</span></label>
+                                                        <input type="date" id="endDate" class="form-control"
+                                                            placeholder="dd/mm/yyyy">
+                                                    </div>
+                                                    <div class="col-md-2 d-flex align-items-end">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox"
+                                                                id="currentlyWorkingHere1">
+                                                            <label class="form-check-label small" for="currently1">
+                                                                I Currently Working Here
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="text-end">
+                                                    <button type="button"
+                                                        class="btn btn-link text-danger p-0 text-decoration-none small fw-semibold">
+                                                        Reset
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion-item bg-white border  rounded-4 mb-3 shadow-sm">
+                                        <h2 class="accordion-header px-3 py-2 ">
+                                            <button class="accordion-button collapsed shadow-none bg-white py-3 px-4"
+                                                type="button" data-bs-toggle="collapse" data-bs-target="#collapse2"
+                                                aria-expanded="false">
+                                                <div
+                                                    class="d-flex justify-content-between align-items-center w-100 pe-2">
+                                                    <span class="fw-semibold text-dark small">Hill Medical Hospital,
+                                                        Newcastle (15 Mar 2021 - 24 Jan 2023 )</span>
+                                                    <span class="text-danger small fw-semibold">
+                                                        Delete <i class="fas fa-chevron-up text-dark"></i>
+                                                    </span>
+                                                </div>
+                                            </button>
+                                        </h2>
+                                        <div id="collapse2" class="accordion-collapse collapse"
+                                            data-bs-parent="#experienceAccordion">
+                                            <div class="accordion-body px-4 pb-4 pt-3 border-top">
+                                                <div class="mb-4">
+                                                    <label class="form-label fw-semibold mb-3">Hospital Logo</label>
+                                                    <div class="d-flex align-items-start gap-3">
+                                                        <div class="bg-light border border-2 border-dashed rounded-3 d-flex align-items-center justify-content-center"
+                                                            style="width: 80px; height: 80px; min-width: 80px;">
+                                                            <i class="fas fa-image text-muted fs-3"></i>
+                                                        </div>
+                                                        <div>
+                                                            <div class="mb-2">
+                                                                <a href="#"
+                                                                    class="text-primary text-decoration-none me-3 small fw-semibold">Upload
+                                                                    New</a>
+                                                                <a href="#"
+                                                                    class="text-danger text-decoration-none small fw-semibold">Remove</a>
+                                                            </div>
+                                                            <p class="text-muted small mb-0">Your Image should Below
+                                                                4 MB, Accepted format jpg,png,svg</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="row g-3 mb-3">
+                                                    <div class="col-md-6">
+                                                        <label class="form-label small fw-semibold">Title <span
+                                                                class="text-danger">*</span></label>
+                                                        <input type="text" class="form-control" placeholder="Hospital *"
+                                                            value="Hospital">
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <label class="form-label small fw-semibold">Year of
+                                                            Experience <span class="text-danger">*</span></label>
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                </div>
+
+                                                <div class="row g-3 mb-3">
+                                                    <div class="col-md-6">
+                                                        <label class="form-label small fw-semibold">Location <span
+                                                                class="text-danger">*</span></label>
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <label class="form-label small fw-semibold">Employment</label>
+                                                        <select class="form-select">
+                                                            <option selected>Part Time</option>
+                                                            <option>Full Time</option>
+                                                            <option>Contract</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+
+                                                <div class="mb-4">
+                                                    <label class="form-label small fw-semibold">Job Description
+                                                        <span class="text-danger">*</span></label>
+                                                    <textarea class="form-control" rows="4"></textarea>
+                                                </div>
+
+                                                <div class="row g-3 mb-3">
+                                                    <div class="col-md-5">
+                                                        <label class="form-label small fw-semibold">Start Date <span
+                                                                class="text-danger">*</span></label>
+                                                        <input type="date" class="form-control"
+                                                            placeholder="dd/mm/yyyy">
+                                                    </div>
+                                                    <div class="col-md-5">
+                                                        <label class="form-label small fw-semibold">End Date <span
+                                                                class="text-danger">*</span></label>
+                                                        <input type="date" class="form-control"
+                                                            placeholder="dd/mm/yyyy">
+                                                    </div>
+                                                    <div class="col-md-2 d-flex align-items-end">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox"
+                                                                id="currently2">
+                                                            <label class="form-check-label small" for="currently2">
+                                                                I Currently Working Here
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="text-end">
+                                                    <button type="button"
+                                                        class="btn btn-link text-danger p-0 text-decoration-none small fw-semibold">
+                                                        Reset
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex justify-content-end gap-3 mt-4 pt-3">
+                                    <button type="button" class="btn btn-light border px-4 py-2">Cancel</button>
+                                    <button type="submit" class="btn btn-primary px-4 py-2">Save Changes</button>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="education">
+                                <h6 class="fw-bold text-dark mb-4">Education</h6>
+                                <p class="text-muted">Education details will be shown here.</p>
+                            </div>
+
+                            <div class="tab-pane fade" id="awards">
+                                <h6 class="fw-bold text-dark mb-4">Awards</h6>
+                                <p class="text-muted">Awards details will be shown here.</p>
+                            </div>
+
+                            <div class="tab-pane fade" id="insurances">
+                                <h6 class="fw-bold text-dark mb-4">Insurances</h6>
+                                <p class="text-muted">Insurances details will be shown here.</p>
+                            </div>
+
+                            <div class="tab-pane fade" id="clinics">
+                                <h6 class="fw-bold text-dark mb-4">Clinics</h6>
+                                <p class="text-muted">Clinics details will be shown here.</p>
+                            </div>
+
+                            <div class="tab-pane fade" id="business-hours">
+                                <h6 class="fw-bold text-dark mb-4">Business Hours</h6>
+                                <p class="text-muted">Business hours details will be shown here.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-section py-5 mt-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-2 col-md-6">
+                    <div class="footer-widget">
+                        <h5 class="fw-bold text-dark mb-4">Company</h5>
+                        <ul class="list-unstyled">
+                            <li class="mb-3">
+                                <a href="#" class="text-muted text-decoration-none">About</a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="#" class="text-muted text-decoration-none">Features</a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="#" class="text-muted text-decoration-none">Works</a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="#" class="text-muted text-decoration-none">Careers</a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="#" class="text-muted text-decoration-none">Locations</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-6">
+                    <div class="footer-widget">
+                        <h5 class="fw-bold text-dark mb-4">Treatments</h5>
+                        <ul class="list-unstyled">
+                            <li class="mb-3">
+                                <a href="#" class="text-muted text-decoration-none">Dental</a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="#" class="text-muted text-decoration-none">Cardiac</a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="#" class="text-muted text-decoration-none">Spinal Cord</a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="#" class="text-muted text-decoration-none">Hair Growth</a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="#" class="text-muted text-decoration-none">Anemia & Disorder</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-6">
+                    <div class="footer-widget">
+                        <h5 class="fw-bold text-dark mb-4">Specialities</h5>
+                        <ul class="list-unstyled">
+                            <li class="mb-3">
+                                <a href="#" class="text-muted text-decoration-none">Transplant</a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="#" class="text-muted text-decoration-none">Cardiologist</a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="#" class="text-muted text-decoration-none">Oncology</a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="#" class="text-muted text-decoration-none">Pediatrics</a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="#" class="text-muted text-decoration-none">Gynaecology</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-6">
+                    <div class="footer-widget">
+                        <h5 class="fw-bold text-dark mb-4">Utilities</h5>
+                        <ul class="list-unstyled">
+                            <li class="mb-3">
+                                <a href="#" class="text-muted text-decoration-none">Pricing</a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="#" class="text-muted text-decoration-none">Contact</a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="#" class="text-muted text-decoration-none">Request A Quote</a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="#" class="text-muted text-decoration-none">Premium Membership</a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="#" class="text-muted text-decoration-none">Integrations</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-12">
+                    <div class="footer-widget">
+                        <h5 class="fw-bold text-dark mb-4">Newsletter</h5>
+                        <p class="text-muted mb-3">Subscribe & Stay Updated from the Doccure</p>
+                        <form action="#" class="newsletter-form position-relative mb-4">
+                            <input type="email" class="form-control newsletter-input" placeholder="Enter Email Address"
+                                required />
+                            <button type="submit" class="btn btn-primary newsletter-btn">
+                                <i class="fas fa-paper-plane me-2"></i>Send
+                            </button>
+                        </form>
+
+                        <h6 class="fw-bold text-dark mb-3">Connect With Us</h6>
+                        <div class="social-links d-flex gap-3">
+                            <a href="#" class="social-icon">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="social-icon">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="social-icon">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="social-icon">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="#" class="social-icon">
+                                <i class="fab fa-pinterest-p"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="border-top mt-5 pt-4" style="border-color: #E5E7EB !important;">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-4 text-center text-md-start mb-3 mb-md-0">
+                        <p class="text-muted mb-0 small">Copyright © 2025 Doccure. All Rights Reserved</p>
+                    </div>
+                    <div class="col-md-4 text-center mb-3 mb-md-0">
+                        <div class="footer-links d-flex align-items-center justify-content-center gap-2">
+                            <a href="#" class="text-muted text-decoration-none small">Legal Notice</a>
+                            <span class="text-muted">•</span>
+                            <a href="#" class="text-muted text-decoration-none small">Privacy Policy</a>
+                            <span class="text-muted">•</span>
+                            <a href="#" class="text-muted text-decoration-none small">Refund Policy</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-center text-md-end">
+                        <div
+                            class="payment-icons d-flex align-items-center justify-content-center justify-content-md-end gap-2 flex-wrap">
+                            <img src="../../assets/images/Doctor Profile/imgi_35_card-01.svg" alt="Visa" height="18">
+                            <img src="../../assets/images/Doctor Profile/imgi_36_card-02.svg" alt="Amex" height="18">
+                            <img src="../../assets/images/Doctor Profile/imgi_37_card-03.svg" alt="Discover"
+                                height="18">
+                            <img src="../../assets/images/Doctor Profile/imgi_38_card-04.svg" alt="Mastercard"
+                                height="18">
+                            <img src="../../assets/images/Doctor Profile/imgi_39_card-05.svg" alt="Stripe" height="18">
+                            <img src="../../assets/images/Doctor Profile/imgi_40_card-06.svg" alt="PayPal" height="18">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../js/bootstrap.bundle.min.js"></script>
+    <script src="../../js/script.js"></script>
+    <script src="doctor-profile-settings.js"></script>
+    <script src="../../bootstrap-tagsinput-latest/bootstrap-tagsinput-latest/src/bootstrap-tagsinput.js"></script>
+</body>
+
+</html>

@@ -24,14 +24,12 @@
 
   <!-- Circle Progress -->
   <script src="https://cdn.jsdelivr.net/npm/js-circle-progress/dist/circle-progress.min.js" type="module"></script>
-  <!-- Magic Mouse -->
-  <script type="text/javascript"
-    src="https://res.cloudinary.com/veseylab/raw/upload/v1684982764/magicmouse-2.0.0.cdn.min.js"></script>
 
   <title>Doccure</title>
 </head>
 
-<body class="mt-5 position-relative">
+<body class=" position-relative">
+  <!-- Header -->
   <header>
     <nav class="navbar navbar-expand-lg bg-white shadow-sm fixed-top">
       <div class="container">
@@ -40,21 +38,15 @@
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse d-flex" id="navbarSupportedContent">
-          <ul class="navbar-nav mb-2 mb-lg-0 mx-auto">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-2 mb-lg-0 mx-auto ms-lg-auto">
             <li class="nav-item dropdown mx-lg-1">
               <a class="nav-link small fw-normal dropdown-toggle active" href="#" role="button"
                 data-bs-toggle="dropdown" aria-expanded="false">
                 Home
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li>
-                  <hr class="dropdown-divider" />
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
+                <li><a class="dropdown-item" href="index.html">Home 1</a>
                 </li>
               </ul>
             </li>
@@ -64,13 +56,11 @@
                 Doctors
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li>
-                  <hr class="dropdown-divider" />
+                <li><a class="dropdown-item"
+                    href="components/doctor-dashboard/doctor-dashboard.html">Doctor Dashboard</a>
                 </li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
+                <li><a class="dropdown-item"
+                    href="components/doctor-profile-seetings/doctor-profile-settings.html">Doctor Profile Settings</a>
                 </li>
               </ul>
             </li>
@@ -80,14 +70,9 @@
                 Patients
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li>
-                  <hr class="dropdown-divider" />
+                <li><a class="dropdown-item" href="components/doctor-profile/doctor-profile.html">Doctor Profile 1</a>
                 </li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
+
               </ul>
             </li>
             <li class="nav-item dropdown mx-lg-1">
@@ -155,7 +140,7 @@
               </ul>
             </li>
           </ul>
-          <div class="d-flex gap-2">
+          <div class="d-flex gap-2 ms-lg-auto">
             <a href="#" class="btn rounded-5 btn-dark text-white px-lg-3 py-lg-2">Register</a>
             <a href="#" class="btn rounded-5 btn-primary text-white px-lg-3 py-lg-2">Login</a>
           </div>
@@ -165,65 +150,69 @@
   </header>
 
   <!-- Hero Section -->
-  <section class="hero-section py-lg-5">
+  <section class="hero-section py-5 py-lg-5">
     <div class="container">
       <div class="row">
-        <div class="col-lg-6 d-flex flex-column justify-content-center pb-lg-5">
-          <div class="position-relative">
-            <span class="display-5 fw-bold mb-lg-3 text-dark position-relative">Consult <span class="text-primary">Best
+        <div class="col-lg-6 d-flex flex-column justify-content-center pb-4 pb-lg-5">
+          <div class="position-relative mb-3 mb-lg-0">
+            <span class="display-6 display-lg-5 fw-bold mb-3 mb-lg-3 text-dark position-relative d-block">Consult <span
+                class="text-primary">Best
                 Doctors</span> Your
               Nearby Location.
             </span>
-            <img src="assets/images/Home/imgi_18_header-icon.svg" width="60" alt="icon"
-              class="img-fluid position-absolute translate-middle icon-position" />
+            <img src="assets/images/Home/imgi_18_header-icon.svg" width="40" alt="icon"
+              class="img-fluid position-absolute translate-middle icon-position d-none d-lg-block" />
           </div>
-          <p class="mb-lg-5 fs-5 fw-bold opacity-75 text-muted">
+          <p class="mb-4 mb-lg-5 fs-6 fs-lg-5 fw-bold opacity-75 text-muted">
             Embark on your healing journey with Doccure
           </p>
-          <div class="d-flex align-items-center gap-2 mb-lg-5">
+          <div class="d-flex align-items-center gap-2 mb-4 mb-lg-5 flex-wrap">
             <a href="#"
-              class="btn rounded-5 btn-primary text-white px-lg-5 py-lg-3 fs-5 fw-bold object-fit-contain">Start a
+              class="btn rounded-5 btn-primary text-white px-4 px-lg-5 py-2 py-lg-3 fs-6 fs-lg-5 fw-bold">Start a
               Consult</a>
-            <img src="assets/images/Home/imgi_19_down-arrow-img.png" alt="icon" class="img-fluid mt-4" />
+            <img src="assets/images/Home/imgi_19_down-arrow-img.png" alt="icon"
+              class="img-fluid mt-2 mt-lg-4 d-none d-md-block" style="max-width: 80px;" />
           </div>
           <div
-            class="py-lg-4 p-lg-5 bg-white rounded-3 shadow-sm border border-1 border-secondary-subtle position-relative z-1 hero-form">
-            <form action="#" class="row align-items-center opacity-75 g-lg-3">
-              <div class="col-lg-4">
+            class="py-3 py-lg-4 p-3 p-lg-5 bg-white rounded-3 shadow-sm border border-1 border-secondary-subtle position-relative z-1 hero-form">
+            <form action="#" class="row align-items-center opacity-75 g-3 g-lg-3">
+              <div class="col-12 col-lg-4">
                 <input type="search"
-                  class="form-control px-lg-2 text-start py-lg-2 border-0 border-end border-2 border-secondary-subtle"
+                  class="form-control px-2 px-lg-2 text-start py-2 py-lg-2 border-0 border-lg-end border-2 border-secondary-subtle"
                   placeholder="Search doctors, clinics, hospitals, etc" />
               </div>
-              <div class="col-lg-3  ">
+              <div class="col-6 col-lg-3">
                 <input type="text"
-                  class="form-control px-lg-2 text-start py-lg-2 border-0 border-end border-2 border-secondary-subtle"
+                  class="form-control px-2 px-lg-2 text-start py-2 py-lg-2 border-0 border-lg-end border-2 border-secondary-subtle"
                   placeholder="Location" />
               </div>
-              <div class="col-lg-3 ">
-                <input type="text" id="datepicker" class="form-control px-lg-2 text-start py-lg-2 border-0"
+              <div class="col-6 col-lg-3">
+                <input type="text" id="datepicker" class="form-control px-2 px-lg-2 text-start py-2 py-lg-2 border-0"
                   placeholder="From" />
               </div>
-              <div class="col-lg-2 text-end">
-                <button class="btn btn-primary rounded-5 px-lg-3">
+              <div class="col-12 col-lg-2 text-center text-lg-end">
+                <button class="btn btn-primary rounded-5 px-4 px-lg-3 w-100 w-lg-auto">
                   Search
                 </button>
               </div>
             </form>
           </div>
         </div>
-        <div class="col-lg-6 d-flex justify-content-center align-items-center position-relative">
+        <div class="col-lg-6 d-flex justify-content-center align-items-center position-relative mt-4 mt-lg-0">
           <img src="assets/images/Home//imgi_20_banner-img.png" alt="hero-image" class="img-fluid" />
-          <div class="float-div-1 position-absolute bg-white py-3 px-4 rounded-3 shadow d-flex align-items-center">
+          <div
+            class="float-div-1 position-absolute bg-white py-2 py-lg-3 px-3 px-lg-4 rounded-3 shadow d-flex align-items-center d-none d-md-flex">
             <input type="checkbox" checked class="form-check-input me-2" />
-            <label class="form-check-label"> Regular Check-up </label>
+            <label class="form-check-label small"> Regular Check-up </label>
           </div>
           <div
-            class="float-div-2 position-absolute d-flex flex-column align-items-center gap-2 bg-white py-4 px-3 rounded-3 shadow w-25">
+            class="float-div-2 position-absolute d-flex flex-column align-items-center gap-2 bg-white py-3 py-lg-4 px-2 px-lg-3 rounded-3 shadow d-none d-md-flex"
+            style="width: 150px;">
             <img src="assets/images/div-2-img.jpg" alt="icon"
-              class="img-fluid rounded-circle object-fit-cover shadow-sm" />
-            <span class="fw-bold text-center">John Doe</span>
-            <span class="text-muted text-center small">MBBS, Cardiologist</span>
-            <button class="btn bg-secondary-subtle small rounded-3 text-primary px-3 py-1">
+              class="img-fluid rounded-circle object-fit-cover shadow-sm" style="width: 80px; height: 80px;" />
+            <span class="fw-bold text-center small">John Doe</span>
+            <span class="text-muted text-center" style="font-size: 0.75rem;">MBBS, Cardiologist</span>
+            <button class="btn bg-secondary-subtle rounded-3 text-primary px-2 py-1" style="font-size: 0.75rem;">
               Book Now
             </button>
           </div>
@@ -233,80 +222,88 @@
   </section>
 
   <!-- Specialities Section -->
-  <section class="specialities-section py-lg-5">
+  <section class="specialities-section py-4 py-lg-5">
     <div class="container">
-      <div class="row gap-5 mb-lg-5">
+      <div class="row g-3 g-lg-5 mb-4 mb-lg-5 justify-content-center">
         <div
-          class="col-lg-3 border border-1 grow-1 bg-white rounded-4 shadow-sm p-lg-4 d-flex flex-column align-items-center justify-content-center">
+          class=" col-sm-12 col-md-4 col-lg-3 border border-1 grow-1 bg-white rounded-4 shadow-sm p-3 p-lg-4 d-flex flex-column align-items-center justify-content-center">
           <span class="text-center bg-purple mb-2">
-            <img src="assets/images/Home/imgi_24_service-01.svg" alt="icon" class="img-fluid" />
+            <img src="assets/images/Home/imgi_24_service-01.svg" alt="icon" class="img-fluid"
+              style="max-width: 50px;" />
           </span>
           <h4 class="text-center small mb-2">Book Appointment</h4>
         </div>
         <div
-          class="col-lg-3 border border-1 grow-1 bg-white rounded-4 shadow-sm p-lg-4 d-flex flex-column align-items-center justify-content-center">
+          class=" col-sm-12 col-md-4 col-lg-3 border border-1 grow-1 bg-white rounded-4 shadow-sm p-3 p-lg-4 d-flex flex-column align-items-center justify-content-center">
           <span class="text-center bg-green mb-2">
-            <img src="assets/images/Home/imgi_25_service-02.svg" alt="icon" class="img-fluid" />
+            <img src="assets/images/Home/imgi_25_service-02.svg" alt="icon" class="img-fluid"
+              style="max-width: 50px;" />
           </span>
           <h4 class="text-center small mb-2">Lap Testing Services</h4>
         </div>
         <div
-          class="col-lg-3 border border-1 grow-1 bg-white rounded-4 shadow-sm p-lg-4 d-flex flex-column align-items-center justify-content-center">
+          class=" col-sm-12 col-md-4 col-lg-3 border border-1 grow-1 bg-white rounded-4 shadow-sm p-3 p-lg-4 d-flex flex-column align-items-center justify-content-center">
           <span class="text-center bg-blue mb-2">
-            <img src="assets/images/Home/imgi_26_service-03.svg" alt="icon" class="img-fluid" />
+            <img src="assets/images/Home/imgi_26_service-03.svg" alt="icon" class="img-fluid"
+              style="max-width: 50px;" />
           </span>
           <h4 class="text-center small mb-2">Medicines & Supplies</h4>
         </div>
         <div
-          class="col-lg-3 border border-1 grow-1 bg-white rounded-4 shadow-sm p-lg-4 d-flex flex-column align-items-center justify-content-center">
+          class=" col-sm-12 col-md-4 col-lg-3 border border-1 grow-1 bg-white rounded-4 shadow-sm p-3 p-lg-4 d-flex flex-column align-items-center justify-content-center">
           <span class="text-center bg-red mb-2">
-            <img src="assets/images/Home/imgi_27_service-04.svg" alt="icon" class="img-fluid" />
+            <img src="assets/images/Home/imgi_27_service-04.svg" alt="icon" class="img-fluid"
+              style="max-width: 50px;" />
           </span>
           <h4 class="text-center small mb-2">Hospitals / Clinics</h4>
         </div>
         <div
-          class="col-lg-3 border border-1 grow-1 bg-white rounded-4 shadow-sm p-lg-4 d-flex flex-column align-items-center justify-content-center">
+          class="col-6 col-sm-12 col-md-4 col-lg-3 border border-1 grow-1 bg-white rounded-4 shadow-sm p-3 p-lg-4 d-flex flex-column align-items-center justify-content-center">
           <span class="text-center bg-green-dark mb-2">
-            <img src="assets/images/Home/imgi_28_service-05.svg" alt="icon" class="img-fluid" />
+            <img src="assets/images/Home/imgi_28_service-05.svg" alt="icon" class="img-fluid"
+              style="max-width: 50px;" />
           </span>
           <h4 class="text-center small mb-2">Health Care Services</h4>
         </div>
         <div
-          class="col-lg-3 border border-1 grow-1 bg-white rounded-4 shadow-sm p-lg-4 d-flex flex-column align-items-center justify-content-center">
+          class=" col-sm-12 col-md-4 col-lg-3 border border-1 grow-1 bg-white rounded-4 shadow-sm p-3 p-lg-4 d-flex flex-column align-items-center justify-content-center">
           <span class="text-center bg-pink mb-2">
-            <img src="assets/images/Home/imgi_29_service-06.svg" alt="icon" class="img-fluid" />
+            <img src="assets/images/Home/imgi_29_service-06.svg" alt="icon" class="img-fluid"
+              style="max-width: 50px;" />
           </span>
           <h4 class="text-center small mb-2">Talk to Doctor's</h4>
         </div>
         <div
-          class="col-lg-3 border border-1 grow-1 bg-white rounded-4 shadow-sm p-lg-4 d-flex flex-column align-items-center justify-content-center">
+          class=" col-sm-12 col-md-4 col-lg-3 border border-1 grow-1 bg-white rounded-4 shadow-sm p-3 p-lg-4 d-flex flex-column align-items-center justify-content-center">
           <span class="text-center bg-orange mb-2">
-            <img src="assets/images/Home/imgi_30_service-07.svg" alt="icon" class="img-fluid" />
+            <img src="assets/images/Home/imgi_30_service-07.svg" alt="icon" class="img-fluid"
+              style="max-width: 50px;" />
           </span>
           <h4 class="text-center small mb-2">Home Care Services</h4>
         </div>
       </div>
 
       <div class="row specialities-row">
-        <div class="col-lg-2 mb-lg-2">
+        <div class="col-12 col-lg-2 mb-3 mb-lg-2">
           <div class="position-relative d-inline-block">
             <h3 class="text-dark fw-bold">Specialities</h3>
             <img src="assets/images/Home/imgi_18_header-icon.svg" alt="icon"
-              class="img-fluid position-absolute top-0 end-0" width="35" style="transform: translate(70%, -50%)" />
+              class="img-fluid position-absolute top-0 end-0 d-none d-lg-block" width="35"
+              style="transform: translate(70%, -50%)" />
           </div>
         </div>
-        <div class="">
-          <!-- Arrows -->
-          <div class="d-flex justify-content-end align-items-center mb-3 mx-2">
-            <button id="myPrev" type="button" class="btn bg-secondary-subtle rounded-circle me-4" aria-label="Previous">
+        <div class="col-12">
+          <div class="d-flex justify-content-center justify-content-lg-end align-items-center mb-3 mx-2">
+            <button id="myPrev" type="button" class="btn bg-secondary-subtle rounded-circle me-2 me-lg-4"
+              aria-label="Previous">
               <i class="fas fa-chevron-left"></i>
             </button>
-            <button id="myNext" type="button" class="btn bg-secondary-subtle rounded-circle ms-4" aria-label="Next">
+            <button id="myNext" type="button" class="btn bg-secondary-subtle rounded-circle ms-2 ms-lg-4"
+              aria-label="Next">
               <i class="fas fa-chevron-right"></i>
             </button>
           </div>
 
-          <!-- Specialities Slider -->
           <div class="autoplay-1 row mb-lg-5">
             <div class="col-lg-2 px-2">
               <div
@@ -317,7 +314,7 @@
                 <p class="text-dark fw-bold small">Cardiology</p>
               </div>
             </div>
-            <div class="col-lg-2 px-2">
+            <div class="col-lg-2  px-2">
               <div
                 class="border border-1 grow-1 bg-white rounded-4 shadow-sm p-4 d-flex flex-column align-items-center justify-content-center">
                 <span class="mb-3">
@@ -428,12 +425,13 @@
       </div>
 
       <div class="autoplay-2 row">
-        <!-- Doctor Card 1 -->
         <div class="col-lg-3 col-md-6 px-2">
           <div class="card border-0 shadow-sm rounded-3 overflow-hidden">
             <div class="position-relative">
-              <img src="assets/images/Home/imgi_41_doctor-03.jpg" alt="Dr. Downer"
-                class="card-img-top object-fit-cover" />
+              <div class="overflow-hidden">
+                <img src="assets/images/Home/imgi_41_doctor-03.jpg" alt="Dr. Downer"
+                  class="card-img-top object-fit-cover" />
+              </div>
               <div class="position-absolute top-0 end-0 m-3 bg-white px-3 rounded-3 shadow-sm">
                 <span class="fw-bold text-dark small">$200</span>
               </div>
@@ -465,12 +463,13 @@
           </div>
         </div>
 
-        <!-- Doctor Card 2 -->
         <div class="col-lg-3 col-md-6 px-2">
           <div class="card border-0 shadow-sm rounded-3 overflow-hidden">
             <div class="position-relative">
-              <img src="assets/images/Home/imgi_37_doctor-02.jpg" alt="Dr. John Doe"
-                class="card-img-top object-fit-cover" />
+              <div class="overflow-hidden">
+                <img src="assets/images/Home/imgi_37_doctor-02.jpg" alt="Dr. John Doe"
+                  class="card-img-top object-fit-cover" />
+              </div>
               <div class="position-absolute top-0 end-0 m-3 bg-white px-3 rounded-3 shadow-sm">
                 <span class="fw-bold text-dark small">$300</span>
               </div>
@@ -502,12 +501,13 @@
           </div>
         </div>
 
-        <!-- Doctor Card 3 -->
         <div class="col-lg-3 col-md-6 px-2">
           <div class="card border-0 shadow-sm rounded-3 overflow-hidden">
             <div class="position-relative">
-              <img src="assets/images/Home/imgi_38_doctor-04.jpg" alt="Dr. Aviles"
-                class="card-img-top object-fit-cover" />
+              <div class="overflow-hidden">
+                <img src="assets/images/Home/imgi_38_doctor-04.jpg" alt="Dr. Aviles"
+                  class="card-img-top object-fit-cover" />
+              </div>
               <div class="position-absolute top-0 end-0 m-3 bg-white px-3 rounded-3 shadow-sm">
                 <span class="fw-bold text-dark small">$100</span>
               </div>
@@ -539,12 +539,13 @@
           </div>
         </div>
 
-        <!-- Doctor Card 4 -->
         <div class="col-lg-3 col-md-6 px-2">
           <div class="card border-0 shadow-sm rounded-3 overflow-hidden">
             <div class="position-relative">
-              <img src="assets/images/Home/imgi_39_doctor-05.jpg" alt="Dr. Palmore"
-                class="card-img-top object-fit-cover" />
+              <div class="overflow-hidden">
+                <img src="assets/images/Home/imgi_39_doctor-05.jpg" alt="Dr. Palmore"
+                  class="card-img-top object-fit-cover" />
+              </div>
               <div class="position-absolute top-0 end-0 m-3 bg-white px-3 rounded-3 shadow-sm">
                 <span class="fw-bold text-dark small">$250</span>
               </div>
@@ -577,12 +578,13 @@
           </div>
         </div>
 
-        <!-- Doctor Card 5 -->
         <div class="col-lg-3 col-md-6 px-2">
           <div class="card border-0 shadow-sm rounded-3 overflow-hidden">
             <div class="position-relative">
-              <img src="assets/images/Home/imgi_40_doctor-01.jpg" alt="Dr. Patel"
-                class="card-img-top object-fit-cover" />
+              <div class="overflow-hidden">
+                <img src="assets/images/Home/imgi_40_doctor-01.jpg" alt="Dr. Patel"
+                  class="card-img-top object-fit-cover" />
+              </div>
               <div class="position-absolute top-0 end-0 m-3 bg-white px-3 rounded-3 shadow-sm">
                 <span class="fw-bold text-dark small">$880</span>
               </div>
@@ -618,21 +620,22 @@
     </div>
   </section>
 
-  <!-- Pricing Plan Section -->
-  <section class="pricing-section py-lg-5">
+  <!-- Pricing Plan Section  -->
+  <section class="pricing-section py-4 py-lg-5">
     <div class="container">
       <div class="row">
-        <div class="col-md-12 text-center mb-5">
+        <div class="col-12 text-center mb-4 mb-lg-5">
           <div class="position-relative d-inline-block">
             <h3 class="text-dark fw-bold">Pricing Plan</h3>
             <img src="assets/images/Home/imgi_18_header-icon.svg" alt="icon"
-              class="img-fluid position-absolute top-0 end-0" width="35" style="transform: translate(70%, -50%)" />
+              class="img-fluid position-absolute top-0 end-0 d-none d-lg-block" width="35"
+              style="transform: translate(70%, -50%)" />
           </div>
         </div>
       </div>
-      <div class="row justify-content-center align-items-center">
-        <div class="col-lg-4 col-sm-12">
-          <div class="card pricing-card border-1 rounded-5 py-lg-4 px-lg-3">
+      <div class="row justify-content-center align-items-stretch g-4">
+        <div class="col-12 col-md-6 col-lg-4 order-1 order-md-1 order-lg-1">
+          <div class="card pricing-card border-1 rounded-5 py-3 py-lg-4 px-3 px-lg-3">
             <div class="card-body py-lg-3">
               <div class="pricing-header mb-4">
                 <div class="d-flex align-items-center justify-content-start gap-2">
@@ -648,7 +651,7 @@
               <div class="pricing-info">
                 <div class="pricing-amount mb-4">
                   <h2>$99 <sub class="small text-muted">/monthly</sub></h2>
-                  <h6 class="mb-4 fs-4">What’s included</h6>
+                  <h6 class="mb-4 fs-4">What's included</h6>
                 </div>
                 <div class="pricing-list">
                   <ul class="list-unstyled">
@@ -664,10 +667,11 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-sm-12">
-          <div class="card pricing-card border-1 bg-primary text-white rounded-5 py-lg-4 px-lg-3">
+        <div class="col-12 col-md-6 col-lg-4 order-2 order-md-3 order-lg-2">
+          <div class="card pricing-card border-1 bg-primary text-white rounded-5 py-3 py-lg-4 px-3 px-lg-3 h-100">
             <div class="card-body py-lg-3 active">
-              <div class="badge bg-blue-dark text-white px-4 py-2 position-absolute top-0 end-0 m-3">Popular</div>
+              <div class="badge bg-blue-dark text-white px-3 px-lg-4 py-2 position-absolute top-0 end-0 m-3 small">
+                Popular</div>
               <div class="pricing-header mb-4">
                 <div class="d-flex align-items-center justify-content-start gap-2">
                   <div class="pricing-icon d-flex align-items-center justify-content-center position-relative">
@@ -683,7 +687,7 @@
                 <div class="pricing-amount mb-4">
                   <h2>$199 <sub class="small text-muted">/monthly</sub></h2>
                   <div class="pricing-list">
-                    <h6 class="mb-4 fs-4">What’s included</h6>
+                    <h6 class="mb-4 fs-4">What's included</h6>
                     <ul class="list-unstyled">
                       <li class="mb-2 text-white">Profile Creation</li>
                       <li class="mb-2 text-white">Appointment Booking</li>
@@ -701,8 +705,8 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-sm-12">
-          <div class="card pricing-card border-1 rounded-5 py-lg-4 px-lg-3">
+        <div class="col-12 col-md-6 col-lg-4 order-3 order-md-2 order-lg-3">
+          <div class="card pricing-card border-1 rounded-5 py-3 py-lg-4 px-3 px-lg-3">
             <div class="card-body py-lg-3">
               <div class="pricing-header mb-4">
                 <div class="d-flex align-items-center justify-content-start gap-2">
@@ -719,7 +723,7 @@
                 <div class="pricing-amount mb-4">
                   <h2>$299 <sub class="small text-muted">/monthly</sub></h2>
                 </div>
-                <h6 class="mb-4 fs-4">What’s included</h6>
+                <h6 class="mb-4 fs-4">What's included</h6>
                 <div class="pricing-list">
                   <ul class="list-unstyled">
                     <li class="mb-2 text-muted">All Basic Plan Features</li>
@@ -739,21 +743,16 @@
     </div>
   </section>
 
-  <!-- How It Works Section -->
-  <section class="how-it-works-section position-relative">
+  <!-- How It Works Section  -->
+  <section class="how-it-works-section position-relative py-4 py-lg-5">
     <div class="container">
-      <!-- Header -->
-
-      <!-- Content -->
       <div class="row align-items-center">
-        <!-- Left Side - Image -->
-        <div class="col-lg-5 mb-4 mb-lg-0">
+        <div class="col-12 col-lg-5 mb-4 mb-lg-0">
           <img src="assets/images/Home/imgi_45_work-img.png" alt="How it works" class="img-fluid rounded-4" />
         </div>
 
-        <!-- Right Side - Steps -->
-        <div class="col-lg-7">
-          <div class="row g-4">
+        <div class="col-12 col-lg-7">
+          <div class="row g-3 g-lg-4">
             <div class="col-12">
               <p class="text-primary small fw-bold mb-2">How it Works</p>
               <div class="position-relative d-inline-block">
@@ -761,16 +760,16 @@
                   4 easy steps to get your solution
                 </h3>
                 <img src="assets/images/Home/imgi_18_header-icon.svg" alt="icon"
-                  class="img-fluid position-absolute top-0 end-0" width="35" style="transform: translate(70%, -50%)" />
+                  class="img-fluid position-absolute top-0 end-0 d-none d-lg-block" width="35"
+                  style="transform: translate(70%, -50%)" />
               </div>
             </div>
-            <!-- Step 1 -->
-            <div class="col-md-6">
+            <div class="col-12 col-md-6">
               <div class="d-flex gap-3">
                 <div
                   class="bg-primary bg-opacity-10 rounded-3 d-flex align-items-center justify-content-center flex-shrink-0"
-                  style="width: 70px; height: 70px">
-                  <img src="assets/images/Home/imgi_46_work-01.svg" alt="Search Doctor" width="35" />
+                  style="width: 60px; height: 60px; min-width: 60px;">
+                  <img src="assets/images/Home/imgi_46_work-01.svg" alt="Search Doctor" width="30" />
                 </div>
                 <div>
                   <h5 class="text-dark fw-bold mb-2">Search Doctor</h5>
@@ -782,13 +781,12 @@
               </div>
             </div>
 
-            <!-- Step 2 -->
-            <div class="col-md-6">
+            <div class="col-12 col-md-6">
               <div class="d-flex gap-3">
                 <div
                   class="bg-primary bg-opacity-10 rounded-3 d-flex align-items-center justify-content-center flex-shrink-0"
-                  style="width: 70px; height: 70px">
-                  <img src="assets/images/Home/imgi_47_work-02.svg" alt="Check Doctor Profile" width="35" />
+                  style="width: 60px; height: 60px; min-width: 60px;">
+                  <img src="assets/images/Home/imgi_47_work-02.svg" alt="Check Doctor Profile" width="30" />
                 </div>
                 <div>
                   <h5 class="text-dark fw-bold mb-2">Check Doctor Profile</h5>
@@ -800,13 +798,12 @@
               </div>
             </div>
 
-            <!-- Step 3 -->
-            <div class="col-md-6">
+            <div class="col-12 col-md-6">
               <div class="d-flex gap-3">
                 <div
                   class="bg-primary bg-opacity-10 rounded-3 d-flex align-items-center justify-content-center flex-shrink-0"
-                  style="width: 70px; height: 70px">
-                  <img src="assets/images/Home/imgi_48_work-03.svg" alt="Schedule Appointment" width="35" />
+                  style="width: 60px; height: 60px; min-width: 60px;">
+                  <img src="assets/images/Home/imgi_48_work-03.svg" alt="Schedule Appointment" width="30" />
                 </div>
                 <div>
                   <h5 class="text-dark fw-bold mb-2">Schedule Appointment</h5>
@@ -818,13 +815,12 @@
               </div>
             </div>
 
-            <!-- Step 4 -->
-            <div class="col-md-6">
+            <div class="col-12 col-md-6">
               <div class="d-flex gap-3">
                 <div
                   class="bg-primary bg-opacity-10 rounded-3 d-flex align-items-center justify-content-center flex-shrink-0"
-                  style="width: 70px; height: 70px">
-                  <img src="assets/images/Home/imgi_49_work-04.svg" alt="Get Your Solution" width="35" />
+                  style="width: 60px; height: 60px; min-width: 60px;">
+                  <img src="assets/images/Home/imgi_49_work-04.svg" alt="Get Your Solution" width="30" />
                 </div>
                 <div>
                   <h5 class="text-dark fw-bold mb-2">Get Your Solution</h5>
@@ -842,29 +838,30 @@
   </section>
 
   <!-- Latest Articles Section -->
-  <section class="latest-articles-section py-lg-5 bg-white">
+  <section class="latest-articles-section py-4 py-lg-5 bg-white">
     <div class="container">
-      <!-- Section Header -->
-      <div class="row mb-5">
+      <div class="row mb-4 mb-lg-5">
         <div class="col-12 text-center">
           <div class="position-relative d-inline-block">
             <h3 class="text-dark fw-bold">Latest Articles</h3>
             <img src="assets/images/Home/imgi_18_header-icon.svg" alt="icon"
-              class="img-fluid position-absolute top-0 end-0" width="35" style="transform: translate(70%, -50%)" />
+              class="img-fluid position-absolute top-0 end-0 d-none d-lg-block" width="35"
+              style="transform: translate(70%, -50%)" />
           </div>
         </div>
       </div>
 
-      <div class="row g-4">
-        <!-- Article 1 -->
-        <div class="col-lg-6">
+      <div class="row g-3 g-lg-4">
+        <div class="col-12 col-lg-6">
           <div class="card d-flex align-items-center border-0 shadow-sm rounded-4 overflow-hidden h-100">
             <div class="row g-0 align-items-center">
-              <div class="col-md-5 p-3">
-                <img src="assets/images/Home/imgi_50_blog-11.jpg" alt="Article"
-                  class="img-fluid rounded-4 object-fit-cover" />
+              <div class="col-12 col-md-5 p-3">
+                <div class="overflow-hidden rounded-4">
+                  <img src="assets/images/Home/imgi_50_blog-11.jpg" alt="Article"
+                    class="img-fluid rounded-4 object-fit-cover" />
+                </div>
               </div>
-              <div class="col-md-7">
+              <div class="col-12 col-md-7">
                 <div class="card-body p-4 d-flex flex-column">
                   <div class="mb-3">
                     <div class="d-flex align-items-center gap-2 mb-2">
@@ -889,15 +886,16 @@
           </div>
         </div>
 
-        <!-- Article 2 -->
-        <div class="col-lg-6">
+        <div class="col-12 col-lg-6">
           <div class="card d-flex align-items-center border-0 shadow-sm rounded-4 overflow-hidden h-100">
             <div class="row g-0 align-items-center">
-              <div class="col-md-5 p-3">
-                <img src="assets/images/Home/imgi_51_blog-24.jpg" alt="Article"
-                  class="img-fluid rounded-4 object-fit-cover" />
+              <div class="col-12 col-md-5 p-3">
+                <div class="overflow-hidden rounded-4">
+                  <img src="assets/images/Home/imgi_51_blog-24.jpg" alt="Article"
+                    class="img-fluid rounded-4 object-fit-cover" />
+                </div>
               </div>
-              <div class="col-md-7">
+              <div class="col-12 col-md-7">
                 <div class="card-body p-4 d-flex flex-column">
                   <div class="mb-3">
                     <div class="d-flex align-items-center gap-2 mb-2">
@@ -922,15 +920,16 @@
           </div>
         </div>
 
-        <!-- Article 3 -->
-        <div class="col-lg-6">
+        <div class="col-12 col-lg-6">
           <div class="card d-flex align-items-center border-0 shadow-sm rounded-4 overflow-hidden h-100">
             <div class="row g-0 align-items-center">
-              <div class="col-md-5 p-3">
-                <img src="assets/images/Home/imgi_52_blog-25.jpg" alt="Article"
-                  class="img-fluid rounded-4 object-fit-cover" />
+              <div class="col-12 col-md-5 p-3">
+                <div class="overflow-hidden rounded-4">
+                  <img src="assets/images/Home/imgi_52_blog-25.jpg" alt="Article"
+                    class="img-fluid rounded-4 object-fit-cover" />
+                </div>
               </div>
-              <div class="col-md-7">
+              <div class="col-12 col-md-7">
                 <div class="card-body p-4 d-flex flex-column">
                   <div class="mb-3">
                     <div class="d-flex align-items-center gap-2 mb-2">
@@ -956,15 +955,16 @@
           </div>
         </div>
 
-        <!-- Article 4 -->
-        <div class="col-lg-6">
+        <div class="col-12 col-lg-6">
           <div class="card d-flex align-items-center border-0 shadow-sm rounded-4 overflow-hidden h-100">
             <div class="row g-0 align-items-center">
-              <div class="col-md-5 p-3">
-                <img src="assets/images/Home/imgi_53_blog-12.jpg" alt="Article"
-                  class="img-fluid rounded-4 object-fit-cover" />
+              <div class="col-12 col-md-5 p-3">
+                <div class="overflow-hidden rounded-4">
+                  <img src="assets/images/Home/imgi_53_blog-12.jpg" alt="Article"
+                    class="img-fluid rounded-4 object-fit-cover" />
+                </div>
               </div>
-              <div class="col-md-7">
+              <div class="col-12 col-md-7">
                 <div class="card-body p-4 d-flex flex-column">
                   <div class="mb-3">
                     <div class="d-flex align-items-center gap-2 mb-2">
@@ -994,76 +994,76 @@
   </section>
 
   <!-- Mobile App Section -->
-  <section class="mobile-app-section py-lg-5 bg-white">
-    <div class="container rounded-3 px-lg-5 position-relative">
+  <section class="mobile-app-section py-4 py-lg-5 bg-white">
+    <div class="container rounded-3 px-3 px-lg-5 position-relative overflow-hidden">
       <img src="assets/images/Home/app-bgs-DNPCKH_p.png" alt="Mobile App"
-        class="img-fluid position-absolute top-0 start-0 w-100 z-0" />
+        class="img-fluid position-absolute top-0 start-0 w-100 h-100 z-0 object-fit-cover" />
       <div class="row align-items-center position-relative z-1">
-        <div class="col-lg-6 p-lg-5">
-          <div class="position-relative d-inline-block mb-4">
-            <p class="text-white fs-5 mb-2">
+        <div class="col-12 col-lg-6 p-3 p-lg-5">
+          <div class="position-relative d-inline-block mb-3 mb-lg-4">
+            <p class="text-white fs-6 fs-lg-5 mb-2">
               Working for your Better Health.
             </p>
-            <h2 class="text-white fw-bold fs-2">
+            <h2 class="text-white fw-bold fs-4 fs-lg-2">
               Download the Doccure App today!
             </h2>
           </div>
-          <div class="d-flex flex-column justify-content-center gap-3 mt-3 mb-5">
+          <div class="d-flex flex-column justify-content-center gap-2 gap-lg-3 mt-3 mb-4 mb-lg-5">
             <p class="text-white mb-0 small">
               Scan the QR code to get the app now
             </p>
-            <img src="assets/images/Home/imgi_54_scan-img.png" alt="QR Code" class="img-fluid" style="width: 80px" />
+            <img src="assets/images/Home/imgi_54_scan-img.png" alt="QR Code" class="img-fluid" style="width: 70px" />
           </div>
-          <div class="d-flex align-items-center gap-3 flex-wrap">
+          <div class="d-flex align-items-center gap-2 gap-lg-3 flex-wrap">
             <a href="#" class="d-inline-block">
               <img src="assets/images/Home/imgi_55_google-play-icon.svg" alt="Google Play" class="img-fluid"
-                style="height: 50px" />
+                style="height: 40px" />
             </a>
             <a href="#" class="d-inline-block">
               <img src="assets/images/Home/imgi_56_app-store-icon.svg" alt="App Store" class="img-fluid"
-                style="height: 50px" />
+                style="height: 40px" />
             </a>
           </div>
         </div>
-        <div class="col-lg-6 text-center align-self-end position-relative">
+        <div class="col-12 col-lg-6 text-center align-self-end position-relative d-none d-lg-block">
           <img src="assets/images/Home/imgi_57_mobile-img.png" alt="Mobile App"
-            class="img-fluid d-lg-block position-absolute bottom-0 end-0 me-5" style="max-height: 550px" />
+            class="img-fluid position-absolute bottom-0 end-0 me-5" style="max-height: 550px" />
         </div>
       </div>
     </div>
   </section>
 
   <!-- FAQ Section -->
-  <section class="faq-section py-lg-5">
+  <section class="faq-section py-4 py-lg-5">
     <div class="container">
-      <div class="row mb-5">
+      <div class="row mb-4 mb-lg-5">
         <div class="col-12">
           <p class="text-primary small fw-bold mb-2">Get Your Answer</p>
           <div class="position-relative d-inline-block">
             <h3 class="text-dark fw-bold">Frequently Asked Questions</h3>
             <img src="assets/images/Home/imgi_18_header-icon.svg" alt="icon"
-              class="img-fluid position-absolute top-0 end-0" width="35" style="transform: translate(70%, -50%)" />
+              class="img-fluid position-absolute top-0 end-0 d-none d-lg-block" width="35"
+              style="transform: translate(70%, -50%)" />
           </div>
         </div>
       </div>
 
       <div class="row align-items-center">
-        <div class="col-lg-6 mb-4 mb-lg-0">
+        <div class="col-12 col-lg-6 mb-4 mb-lg-0">
           <div class="position-relative">
             <img src="assets/images/Home/imgi_58_faq-img.png" alt="FAQ" class="img-fluid rounded-4" />
             <div
-              class="position-absolute top-100 start-50 translate-middle mb-4 bg-white px-4 py-3 rounded-4 shadow-lg d-flex align-items-center gap-2">
-              <span style="font-size: 2rem">😊</span>
+              class="position-absolute top-100 start-50 translate-middle mb-4 bg-white px-3 px-lg-4 py-2 py-lg-3 rounded-4 shadow-lg d-flex align-items-center gap-2 d-none d-md-flex">
+              <span style="font-size: 1.5rem">😊</span>
               <div>
-                <h5 class="text-dark fw-bold mb-0">95k+</h5>
-                <p class="text-muted small mb-0">Happy Patients</p>
+                <h5 class="text-dark fw-bold mb-0 small">95k+</h5>
+                <p class="text-muted mb-0" style="font-size: 0.75rem;">Happy Patients</p>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-lg-6">
+        <div class="col-12 col-lg-6">
           <div class="accordion" id="faqAccordion">
-            <!-- FAQ 1 -->
             <div class="accordion-item border-0 rounded-3 mb-3 overflow-hidden">
               <h2 class="accordion-header">
                 <button class="accordion-button fw-semibold text-dark d-flex align-items-center" type="button"
@@ -1080,7 +1080,6 @@
               </div>
             </div>
 
-            <!-- FAQ 2 -->
             <div class="accordion-item border-0 rounded-3 mb-3 overflow-hidden">
               <h2 class="accordion-header">
                 <button class="accordion-button collapsed fw-semibold text-dark" type="button" data-bs-toggle="collapse"
@@ -1097,7 +1096,6 @@
               </div>
             </div>
 
-            <!-- FAQ 3 -->
             <div class="accordion-item border-0 rounded-3 mb-3 overflow-hidden">
               <h2 class="accordion-header">
                 <button class="accordion-button collapsed fw-semibold text-dark" type="button" data-bs-toggle="collapse"
@@ -1115,7 +1113,6 @@
               </div>
             </div>
 
-            <!-- FAQ 4 -->
             <div class="accordion-item border-0 rounded-3 mb-3 overflow-hidden">
               <h2 class="accordion-header">
                 <button class="accordion-button collapsed fw-semibold text-dark" type="button" data-bs-toggle="collapse"
@@ -1132,7 +1129,6 @@
               </div>
             </div>
 
-            <!-- FAQ 5 -->
             <div class="accordion-item border-0 rounded-3 overflow-hidden">
               <h2 class="accordion-header">
                 <button class="accordion-button collapsed fw-semibold text-dark" type="button" data-bs-toggle="collapse"
@@ -1155,41 +1151,39 @@
   </section>
 
   <!-- Testimonials Section -->
-  <section class="testimonials-section py-5 position-relative">
+  <section class="testimonials-section py-4 py-lg-5 position-relative">
     <div class="container">
       <div class="position-relative">
-        <!-- Arrows -->
         <button id="testimonialsArrowPrev" type="button"
-          class="btn bg-secondary-subtle rounded-circle position-absolute top-50 start-0 translate-middle"
-          style="width: 40px; height: 40px; z-index: 10;">
+          class="btn bg-secondary-subtle rounded-circle position-absolute top-50 d-none d-lg-block"
+          style="width: 40px; height: 40px; z-index: 10; left: -20px;">
           <i class="fas fa-chevron-left"></i>
         </button>
         <button id="testimonialsArrowNext" type="button"
-          class="btn bg-secondary-subtle rounded-circle position-absolute top-50 end-0 translate-middle"
-          style="width: 40px; height: 40px; z-index: 10;">
+          class="btn bg-secondary-subtle rounded-circle position-absolute top-50 d-none d-lg-block"
+          style="width: 40px; height: 40px; z-index: 10; right: -20px;">
           <i class="fas fa-chevron-right"></i>
         </button>
 
-        <!-- Slider -->
         <div class="testimonial-slider mx-auto">
-          <!-- Testimonial 1 -->
           <div class="h-100">
-            <div class="row align-items-center rounded-4 p-4 mx-2">
-              <div class="col-lg-4 text-center mb-4 mb-lg-0">
+            <div class="row align-items-center rounded-4 p-3 p-lg-4 mx-2">
+              <div class="col-12 col-lg-4 text-center mb-4 mb-lg-0">
                 <img src="assets/images/Home/imgi_61_client-01.jpg" alt="John Doe"
-                  class="rounded-circle img-fluid object-fit-cover" style="width: 240px; height: 240px;">
+                  class="rounded-circle img-fluid object-fit-cover"
+                  style="width: 180px; height: 180px; max-width: 100%;">
               </div>
-              <div class=" col-lg-8">
+              <div class="col-12 col-lg-8">
                 <p class="text-primary fw-semibold mb-2">
                   Testimonials
                 </p>
                 <div class="position-relative d-inline-block">
-                  <h3 class="text-dark fs-3 fw-bold">What Our Client Says</h3>
+                  <h3 class="text-dark fs-5 fs-lg-3 fw-bold">What Our Client Says</h3>
                   <img src="assets/images/Home/imgi_18_header-icon.svg" alt="icon"
-                    class="img-fluid position-absolute top-0 end-0" width="35"
+                    class="img-fluid position-absolute top-0 end-0 d-none d-lg-block" width="35"
                     style="transform: translate(70%, -50%)" />
                 </div>
-                <p class="text-muted mb-4 fs-6 lh-lg">
+                <p class="text-muted mb-3 mb-lg-4 small fs-lg-6 lh-lg">
                   Doccure exceeded my expectations in healthcare. The seamless booking process, coupled with the
                   expertise of the doctors, made my experience exceptional. Their commitment to quality care and
                   convenience truly sets them apart. I highly recommend Doccure for anyone seeking reliable and
@@ -1201,19 +1195,19 @@
             </div>
           </div>
 
-          <!-- Testimonial 2 -->
           <div class="h-100">
-            <div class="row align-items-center rounded-4 p-4 mx-2">
-              <div class="col-lg-4 text-center mb-4 mb-lg-0">
+            <div class="row align-items-center rounded-4 p-3 p-lg-4 mx-2">
+              <div class="col-12 col-lg-4 text-center mb-4 mb-lg-0">
                 <img src="assets/images/Home/imgi_62_client-03.jpg" alt="Andrew Denner"
-                  class="rounded-circle img-fluid object-fit-cover" style="width: 240px; height: 240px;">
+                  class="rounded-circle img-fluid object-fit-cover"
+                  style="width: 180px; height: 180px; max-width: 100%;">
               </div>
-              <div class="col-lg-8">
+              <div class="col-12 col-lg-8">
                 <p class="text-primary fw-semibold mb-2">Testimonials</p>
                 <div class="position-relative d-inline-block">
-                  <h3 class="text-dark fs-4 fw-bold">What Our Client Says</h3>
+                  <h3 class="text-dark fs-5 fs-lg-4 fw-bold">What Our Client Says</h3>
                 </div>
-                <p class="text-muted mb-4 small lh-lg">
+                <p class="text-muted mb-3 mb-lg-4 small lh-lg">
                   As a busy professional, I don't have time to wait on hold or play phone tag to schedule doctor
                   appointments. Thanks to Doccure, booking appointments has never been easier! The user-friendly
                   interface allows me to quickly find available appointment slots that fit my schedule and book them
@@ -1226,21 +1220,21 @@
             </div>
           </div>
 
-          <!-- Testimonial 3 -->
           <div class="h-100">
-            <div class="row align-items-center rounded-4 p-4 mx-2">
-              <div class="col-lg-4 text-center mb-4 mb-lg-0">
+            <div class="row align-items-center rounded-4 p-3 p-lg-4 mx-2">
+              <div class="col-12 col-lg-4 text-center mb-4 mb-lg-0">
                 <img src="assets/images/Home/imgi_60_client-11.jpg" alt="Niya Patel"
-                  class="rounded-circle img-fluid object-fit-cover" style="width: 240px; height: 240px;">
+                  class="rounded-circle img-fluid object-fit-cover"
+                  style="width: 180px; height: 180px; max-width: 100%;">
               </div>
-              <div class="col-lg-8">
+              <div class="col-12 col-lg-8">
                 <p class="text-primary fw-semibold mb-2">
                   Testimonials
                 </p>
                 <div class="position-relative d-inline-block">
-                  <h3 class="text-dark fs-4 fw-bold">What Our Client Says</h3>
+                  <h3 class="text-dark fs-5 fs-lg-4 fw-bold">What Our Client Says</h3>
                 </div>
-                <p class="text-muted mb-4 small lh-lg">
+                <p class="text-muted mb-3 mb-lg-4 small lh-lg">
                   As a parent, coordinating doctor appointments for my family can be overwhelming. Doccure has
                   simplified the process and made scheduling appointments a breeze! I love being able to see all
                   available appointment times in one place and book appointments for multiple family members with ease.
@@ -1257,24 +1251,22 @@
     </div>
   </section>
 
-
-
-
   <!-- Partners Section -->
-  <section class=" autoplay-4 partners-section py-lg-5 bg-white">
+  <section class="autoplay-4 partners-section py-4 py-lg-5 bg-white">
     <div class="container">
-      <div class="row mb-5">
+      <div class="row mb-4 mb-lg-5">
         <div class="col-12 text-center">
           <div class="position-relative d-inline-block">
             <h3 class="text-dark fw-bold">Our Partners</h3>
             <img src="assets/images/Home/imgi_18_header-icon.svg" alt="icon"
-              class="img-fluid position-absolute top-0 end-0" width="35" style="transform: translate(70%, -50%)" />
+              class="img-fluid position-absolute top-0 end-0 d-none d-lg-block" width="35"
+              style="transform: translate(70%, -50%)" />
           </div>
         </div>
       </div>
 
-      <div class=" autoplay-3 row g-4 align-items-center justify-content-center">
-        <div class="col-lg-2 mx-2 text-center">
+      <div class="autoplay-3 row g-3 g-lg-4 align-items-center justify-content-center">
+        <div class="col-6 col-md-4 col-lg-2 mx-2 text-center">
           <div
             class="bg-white border border-1 border-secondary-subtle p-2 rounded-3 d-flex align-items-center justify-content-center partner-logo"
             style="min-height: 75px">
@@ -1282,7 +1274,7 @@
               style="max-height: 40px" />
           </div>
         </div>
-        <div class="col-lg-2 mx-2 text-center">
+        <div class="col-6 col-md-4 col-lg-2 mx-2 text-center">
           <div
             class="bg-white border border-1 border-secondary-subtle p-1 rounded-3 d-flex align-items-center justify-content-center partner-logo"
             style="min-height: 75px">
@@ -1290,7 +1282,7 @@
               style="max-height: 40px" />
           </div>
         </div>
-        <div class="col-lg-2 mx-2 text-center">
+        <div class="col-6 col-md-4 col-lg-2 mx-2 text-center">
           <div
             class="bg-white border border-1 border-secondary-subtle p-1 rounded-3 d-flex align-items-center justify-content-center partner-logo"
             style="min-height: 75px">
@@ -1298,7 +1290,7 @@
               style="max-height: 40px" />
           </div>
         </div>
-        <div class="col-lg-2 mx-2 text-center">
+        <div class="col-6 col-md-4 col-lg-2 mx-2 text-center">
           <div
             class="bg-white border border-1 border-secondary-subtle p-1 rounded-3 d-flex align-items-center justify-content-center partner-logo"
             style="min-height: 75px">
@@ -1306,7 +1298,7 @@
               style="max-height: 40px" />
           </div>
         </div>
-        <div class="col-lg-2 mx-2 text-center">
+        <div class="col-6 col-md-4 col-lg-2 mx-2 text-center">
           <div
             class="bg-white border border-1 border-secondary-subtle p-1 rounded-3 d-flex align-items-center justify-content-center partner-logo"
             style="min-height: 75px">
@@ -1314,7 +1306,7 @@
               style="max-height: 40px" />
           </div>
         </div>
-        <div class="col-lg-2 mx-2 text-center">
+        <div class="col-6 col-md-4 col-lg-2 mx-2 text-center">
           <div
             class="bg-white border border-1 border-secondary-subtle p-1 rounded-3 d-flex align-items-center justify-content-center partner-logo"
             style="min-height: 75px">
@@ -1322,7 +1314,7 @@
               style="max-height: 40px" />
           </div>
         </div>
-        <div class="col-lg-2 mx-2 text-center">
+        <div class="col-6 col-md-4 col-lg-2 mx-2 text-center">
           <div
             class="bg-white border border-1 border-secondary-subtle p-1 rounded-3 d-flex align-items-center justify-content-center partner-logo"
             style="min-height: 75px">
@@ -1330,7 +1322,7 @@
               style="max-height: 40px" />
           </div>
         </div>
-        <div class="col-lg-2 mx-2 text-center">
+        <div class="col-6 col-md-4 col-lg-2 mx-2 text-center">
           <div
             class="bg-white border border-1 border-secondary-subtle p-1 rounded-3 d-flex align-items-center justify-content-center partner-logo"
             style="min-height: 75px">
@@ -1338,7 +1330,7 @@
               style="max-height: 40px" />
           </div>
         </div>
-        <div class="col-lg-2 mx-2 text-center">
+        <div class="col-6 col-md-4 col-lg-2 mx-2 text-center">
           <div
             class="bg-white border border-1 border-secondary-subtle p-1 rounded-3 d-flex align-items-center justify-content-center partner-logo"
             style="min-height: 75px">
@@ -1346,7 +1338,7 @@
               style="max-height: 40px" />
           </div>
         </div>
-        <div class="col-lg-2 mx-2 text-center">
+        <div class="col-6 col-md-4 col-lg-2 mx-2 text-center">
           <div
             class="bg-white border border-1 border-secondary-subtle p-1 rounded-3 d-flex align-items-center justify-content-center partner-logo"
             style="min-height: 75px">
@@ -1354,7 +1346,7 @@
               style="max-height: 40px" />
           </div>
         </div>
-        <div class="col-lg-2 mx-2 text-center">
+        <div class="col-6 col-md-4 col-lg-2 mx-2 text-center">
           <div
             class="bg-white border border-1 border-secondary-subtle p-1 rounded-3 d-flex align-items-center justify-content-center partner-logo"
             style="min-height: 75px">
@@ -1362,7 +1354,7 @@
               style="max-height: 40px" />
           </div>
         </div>
-        <div class="col-lg-2 mx-2 text-center">
+        <div class="col-6 col-md-4 col-lg-2 mx-2 text-center">
           <div
             class="bg-white border border-1 border-secondary-subtle p-1 rounded-3 d-flex align-items-center justify-content-center partner-logo"
             style="min-height: 75px">
@@ -1375,10 +1367,126 @@
     </div>
   </section>
 
+  <!-- Footer Section -->
+  <footer class="footer-section bg-light pt-4 pt-lg-5">
+    <div class="container">
+      <div class="row container g-4">
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="footer-widget">
+            <a href="#" class="footer-logo d-inline-block mb-3">
+              <img src="assets/images/Home/imgi_1_logo.svg" alt="Doccure Logo" class="img-fluid"
+                style="max-width: 200px;" />
+            </a>
+            <p class="text-muted mb-3 small">
+              Effortlessly schedule your medical appointments with Doccure. Connect with healthcare professionals,
+              manage appointments & prioritize your well being
+            </p>
+          </div>
+        </div>
 
+        <div class="col-6 col-sm-6 col-lg-2">
+          <div class="footer-widget">
+            <h5 class="fw-bold text-dark mb-3 mb-lg-4">Company</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="#" class="text-muted text-decoration-none small">Home</a>
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-muted text-decoration-none small">Specialities</a>
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-muted text-decoration-none small">Video Consult</a>
+              </li>
+            </ul>
+          </div>
+        </div>
 
-  <circle-progress id="toTop" value="0" max="100" class="position-fixed bottom-0 end-0 m-3 d-none"
-    style="width: 60px; height: 60px"></circle-progress>
+        <div class="col-6 col-sm-6 col-lg-2">
+          <div class="footer-widget">
+            <h5 class="fw-bold text-dark mb-3 mb-lg-4">Specialities</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="#" class="text-muted text-decoration-none small">Neurology</a>
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-muted text-decoration-none small">Cardiologist</a>
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-muted text-decoration-none small">Dentist</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-6 col-sm-6 col-lg-2">
+          <div class="footer-widget">
+            <h5 class="fw-bold text-dark mb-3 mb-lg-4">Contact Us</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2 d-flex align-items-start gap-2">
+                <i class="fas fa-map-marker-alt text-dark mt-1"></i>
+                <span class="text-muted small">3556 Beech Street, USA</span>
+              </li>
+              <li class="mb-2 d-flex align-items-start gap-2">
+                <i class="fas fa-phone-alt text-dark mt-1"></i>
+                <span class="text-muted small">+1 315 369 5943</span>
+              </li>
+              <li class="mb-2 d-flex align-items-start gap-2">
+                <i class="fas fa-envelope text-dark mt-1"></i>
+                <span class="text-muted small">doccure@example.com</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-12 col-lg-3">
+          <div class="footer-widget">
+            <h5 class="fw-bold text-dark mb-3 mb-lg-4">Join Our Newsletter</h5>
+            <form action="#" class="position-relative mb-3">
+              <input type="email" class="form-control pe-5 small h-100" placeholder="Enter Email" required />
+              <button type="submit"
+                class="btn btn-primary rounded-0 position-absolute end-0 top-0 bottom-0   rounded-end small">
+                <i class="fas fa-paper-plane"></i> <span class="d-none d-md-inline">Submit</span>
+              </button>
+            </form>
+            <div class="social-links d-flex gap-2 gap-lg-3 mt-3 mt-lg-4">
+              <a href="#" class="social-icon">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-pinterest-p"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-secondary-subtle mt-4 mt-lg-5">
+      <div class="row py-3 container mx-auto g-2">
+        <div class="col-12 col-md-6 text-center text-md-start">
+          <p class="text-muted mb-0 small">Copyright © 2025 Doccure. All Rights Reserved</p>
+        </div>
+        <div class="col-12 col-md-6 text-center text-md-end">
+          <div class="footer-links">
+            <a href="#" class="text-muted text-decoration-none me-2 me-md-3 small">Privacy Policy</a>
+            <span class="text-muted">|</span>
+            <a href="#" class="text-muted text-decoration-none ms-2 ms-md-3 small">Terms and Conditions</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <circle-progress id="toTop" value="0" max="100"></circle-progress>
 
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/script.js"></script>

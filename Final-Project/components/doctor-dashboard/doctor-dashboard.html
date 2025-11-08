@@ -1,0 +1,1071 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="Icon" href="../../assets/images/favicon.png" />
+    <link rel="stylesheet" href="../../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="stylesheet" href="doctor-dashboard.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+
+    <title>Doccure</title>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar navbar-expand-lg bg-white shadow-sm fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="../../index.html"><img src="../../assets/images/Home/imgi_1_logo.svg"
+                        alt="logo" width="160" /></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0 mx-auto ms-lg-auto">
+                        <li class="nav-item dropdown mx-lg-1">
+                            <a class="nav-link small fw-normal dropdown-toggle" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Home
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../index.html">Home 1</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown mx-lg-1">
+                            <a class="nav-link small fw-normal dropdown-toggle active" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Doctors
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Doctor Dashboard</a>
+                                </li>
+                                <li><a class="dropdown-item"
+                                        href="../doctor-profile-seetings/doctor-profile-settings.html">Doctor
+                                        Profile Settings</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown mx-lg-1">
+                            <a class="nav-link small fw-normal dropdown-toggle" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Patients
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../doctor-profile/doctor-profile.html">Doctor
+                                        Profile 1</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown mx-lg-1">
+                            <a class="nav-link small fw-normal dropdown-toggle" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Pharmacy
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider" />
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown mx-lg-1">
+                            <a class="nav-link small fw-normal dropdown-toggle" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Pages
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider" />
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown mx-lg-1">
+                            <a class="nav-link small fw-normal dropdown-toggle" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Blog
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider" />
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown mx-lg-1">
+                            <a class="nav-link small fw-normal dropdown-toggle" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Admin
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider" />
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="d-lg-flex align-items-center gap-3 d-none">
+                        <span
+                            class="text-dark p-0 header-icon header-icon-search d-flex align-items-center justify-content-center rounded-circle">
+                            <i class="fas fa-search"></i>
+                        </span>
+
+                        <span
+                            class="text-dark p-0 header-icon header-icon-settings d-flex align-items-center justify-content-center rounded-circle bg-secondary-subtle">
+                            <i class="fa-regular fa-sun text-success"></i>
+                        </span>
+
+                        <span
+                            class="text-dark p-0 position-relative header-icon header-icon-circle d-flex align-items-center justify-content-center rounded-circle bg-secondary-subtle">
+                            <i class="fa-regular fa-bell"></i>
+                            <span class="header-badge bg-danger"></span>
+                        </span>
+
+                        <span
+                            class="text-dark p-0 position-relative header-icon header-icon-circle d-flex align-items-center justify-content-center rounded-circle bg-secondary-subtle">
+                            <i class="fa-regular fa-comment"></i>
+                            <span class="header-badge bg-success"></span>
+                        </span>
+
+                        <span
+                            class="text-dark p-0 position-relative header-icon header-icon-circle d-flex align-items-center justify-content-center rounded-circle bg-secondary-subtle">
+                            <i class="fa-solid fa-shopping-cart"></i>
+                            <span class="header-badge bg-purple-badge"></span>
+                        </span>
+
+                        <div class="dropdown">
+                            <button class="btn p-0 border-0" data-bs-toggle="dropdown">
+                                <img src="../../assets/images/Doctor Profile/imgi_25_doctor-profile-img.jpg"
+                                    alt="Profile" class="rounded-circle header-profile-img" width="40" height="40"
+                                    style="object-fit: cover;" />
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li><a class="dropdown-item" href="#">Profile</a></li>
+                                <li><a class="dropdown-item" href="#">Settings</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Logout</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Breadcrumb -->
+    <section class="breadcrumb-section py-5 mt-5 position-relative overflow-hidden d-flex align-items-center"
+        style="min-height: 200px;">
+        <div class="breadcrumb-bg-shape-1 position-absolute top-0 start-0  bottom-0"></div>
+        <div class="breadcrumb-bg-shape-2 position-absolute bottom-0 end-0 top-0"></div>
+        <div class="breadcrumb-icon position-absolute top-50 translate-middle-y" style="right: 15%;"></div>
+        <div class="container position-relative z-1">
+            <nav aria-label="breadcrumb">
+                <div class="d-flex flex-column align-items-center justify-content-center">
+                    <ol class="breadcrumb mb-3 bg-transparent p-0 d-flex align-items-center gap-2">
+                        <li class="breadcrumb-item">
+                            <a href="../../index.html" class="text-decoration-none text-dark">
+                                <i class="fas fa-home text-primary"></i>
+                            </a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="doctor-dashboard.html" class="text-decoration-none text-dark">Doctor</a>
+                        </li>
+                        <li class="breadcrumb-item active text-muted" aria-current="page">Dashboard</li>
+                    </ol>
+                    <h2 class="mb-0 fw-bold text-dark fs-1">Dashboard</h2>
+                </div>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Main -->
+    <section class="py-4">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-3">
+                    <div class="bg-white rounded-3 shadow-sm overflow-hidden">
+                        <div class="doctor-card text-center">
+                            <div class="doctor-bg"></div>
+                            <div class="doctor-profile-wrapper">
+                                <div class="position-relative d-inline-block">
+                                    <img src="../../assets/images/Doctor Profile/imgi_25_doctor-profile-img.jpg"
+                                        alt="Dr Edalin Hendry" class="doctor-avatar rounded-circle" />
+                                    <span class="online-status"></span>
+                                </div>
+                                <h5 class="mt-3 mb-1 fw-bold text-dark">Dr Edalin Hendry</h5>
+                                <p class="text-muted small mb-2">BDS, MDS - Oral & Maxillofacial Surgery</p>
+                                <p class="text-dark small mb-3 d-flex align-items-center justify-content-center gap-2 ">
+                                    <i class="fas fa-circle text-dark" style="font-size: 6px;"></i> Dentist
+                                </p>
+
+                                <div class="availability-dropdown mb-3">
+                                    <label class="text-muted small d-block mb-1">Availability *</label>
+                                    <select class="form-select form-select-sm">
+                                        <option>I am Available Now</option>
+                                        <option>Not Available</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-3 px-lg-4">
+                            <a href="#"
+                                class="sidebar-item d-flex align-items-center text-decoration-none p-3 position-relative active">
+                                <i class="fas fa-th-large me-3"></i>
+                                <span>Dashboard</span>
+                            </a>
+                            <a href="#"
+                                class="sidebar-item d-flex align-items-center text-decoration-none p-3 position-relative">
+                                <i class="fas fa-file-alt me-3"></i>
+                                <span>Requests</span>
+                                <span class="notification-badge rounded-circle ms-auto">2</span>
+                            </a>
+                            <a href="#"
+                                class="sidebar-item d-flex align-items-center text-decoration-none p-3 position-relative">
+                                <i class="far fa-calendar-check me-3"></i>
+                                <span>Appointments</span>
+                            </a>
+                            <a href="#"
+                                class="sidebar-item d-flex align-items-center text-decoration-none p-3 position-relative">
+                                <i class="far fa-clock me-3"></i>
+                                <span>Available Timings</span>
+                            </a>
+                            <a href="#"
+                                class="sidebar-item d-flex align-items-center text-decoration-none p-3 position-relative">
+                                <i class="fas fa-user-friends me-3"></i>
+                                <span>My Patients</span>
+                            </a>
+                            <a href="#"
+                                class="sidebar-item d-flex align-items-center text-decoration-none p-3 position-relative">
+                                <i class="fas fa-hospital me-3"></i>
+                                <span>Specialties & Services</span>
+                            </a>
+                            <a href="#"
+                                class="sidebar-item d-flex align-items-center text-decoration-none p-3 position-relative">
+                                <i class="far fa-star me-3"></i>
+                                <span>Reviews</span>
+                            </a>
+                            <a href="#"
+                                class="sidebar-item d-flex align-items-center text-decoration-none p-3 position-relative">
+                                <i class="fas fa-wallet me-3"></i>
+                                <span>Accounts</span>
+                            </a>
+                            <a href="#"
+                                class="sidebar-item d-flex align-items-center text-decoration-none p-3 position-relative">
+                                <i class="fas fa-file-invoice me-3"></i>
+                                <span>Invoices</span>
+                            </a>
+                            <a href="#"
+                                class="sidebar-item d-flex align-items-center text-decoration-none p-3 position-relative">
+                                <i class="fas fa-credit-card me-3"></i>
+                                <span>Payout Settings</span>
+                            </a>
+                            <a href="#"
+                                class="sidebar-item d-flex align-items-center text-decoration-none p-3 position-relative">
+                                <i class="far fa-comment me-3"></i>
+                                <span>Message</span>
+                                <span class="notification-badge rounded-circle ms-auto">7</span>
+                            </a>
+                            <a href="../doctor-profile-seetings/doctor-profile-settings.html"
+                                class="sidebar-item  d-flex align-items-center text-decoration-none p-3 position-relative">
+                                <i class="fas fa-user-cog me-3"></i>
+                                <span>Profile Settings</span>
+                            </a>
+                            <a href="#"
+                                class="sidebar-item d-flex align-items-center text-decoration-none p-3 position-relative">
+                                <i class="fas fa-share-alt me-3"></i>
+                                <span>Social Media</span>
+                            </a>
+                            <a href="#"
+                                class="sidebar-item d-flex align-items-center text-decoration-none p-3 position-relative">
+                                <i class="fas fa-key me-3"></i>
+                                <span>Change Password</span>
+                            </a>
+                            <a href="#"
+                                class="sidebar-item d-flex align-items-center text-decoration-none p-3 position-relative">
+                                <i class="fas fa-sign-out-alt me-3"></i>
+                                <span>Logout</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-9">
+                    <div class="row g-4 mb-2">
+                        <div class="col-lg-4">
+                            <div class="row flex-column g-4">
+                                <div class="col-md-12">
+                                    <div class="card border-0 shadow-sm p-2  h-100">
+                                        <div class="card-body d-flex justify-content-between align-items-center">
+                                            <div class="d-flex flex-column justify-content-center align-items-start">
+                                                <h3 class="fw-bold mb-1">978</h3>
+                                                <div class="text-muted small">Total Patient</div>
+                                                <div class="text-success small mb-0"><i
+                                                        class="fa-solid fa-arrow-up me-1"></i>15% From Last Week</div>
+                                            </div>
+                                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                                <div class="rounded-3 p-3 bg-light text-muted d-flex justify-content-center align-items-center"
+                                                    style="width: 60px; height: 60px;"><i
+                                                        class="fa-solid fa-user-injured fs-4"></i></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="card border-0 shadow-sm p-2  h-100">
+                                        <div class="card-body d-flex justify-content-between align-items-center">
+                                            <div class="d-flex flex-column justify-content-center align-items-start">
+                                                <h3 class="fw-bold mb-1">80</h3>
+                                                <div class="text-muted small">Patients Today</div>
+                                                <div class="text-danger small mb-0"><i
+                                                        class="fa-solid fa-arrow-down me-1"></i>15% From Yesterday</div>
+                                            </div>
+                                            <div class="d-flex justify-content-between align-items-start">
+                                                <div class="rounded-3 p-3 bg-light text-muted d-flex justify-content-center align-items-center"
+                                                    style="width: 60px; height: 60px;"><i
+                                                        class="fa-solid fa-user-clock fs-4"></i></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="card border-0 shadow-sm p-2 h-100">
+                                        <div class="card-body d-flex justify-content-between align-items-center">
+                                            <div class="d-flex flex-column justify-content-center align-items-start">
+                                                <h3 class="fw-bold mb-1">50</h3>
+                                                <div class="text-muted small">Appointments Today</div>
+                                                <div class="text-success small mb-0"><i
+                                                        class="fa-solid fa-arrow-up me-1"></i>20% From Yesterday</div>
+                                            </div>
+                                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                                <div class="rounded-3 p-3 bg-light text-muted d-flex justify-content-center align-items-center"
+                                                    style="width: 60px; height: 60px;"><i
+                                                        class="fa-regular fa-calendar-check fs-4"></i></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-8">
+                            <div class="card shadow-sm h-100 py-3">
+                                <div
+                                    class="card-header bg-white border-0 d-flex justify-content-between align-items-center py-3 mb-2 border-bottom border-1 border-secondary-subtle">
+                                    <h4 class="mb-0 fw-bold" style="color: #1e3a5f;">Appointment</h4>
+                                    <div class="dropdown">
+                                        <button class="btn btn-outline-secondary btn-sm dropdown-toggle" type="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            Last 7 Days
+                                        </button>
+                                        <ul class="dropdown-menu dropdown-menu-end">
+                                            <li><a class="dropdown-item" href="#">Today</a></li>
+                                            <li><a class="dropdown-item" href="#">This Month</a></li>
+                                            <li><a class="dropdown-item" href="#">Last 7 Days</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="card-body p-0">
+                                    <div class="table-responsive">
+                                        <table class="table table-borderless table-hover mb-0">
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <div class="d-flex align-items-center gap-3">
+                                                            <img src="../../assets/images/Dashboard/imgi_18_client-01.jpg"
+                                                                class="rounded-3 avatar-48" alt="">
+                                                            <div>
+                                                                <a href="#"
+                                                                    class="small text-decoration-none d-block text-primary fw-semibold">#Apt0001</a>
+                                                                <div class="fw-bold">Adrian Marshall</div>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div>
+                                                            <div class="fw-semibold">11 Nov 2025 10.45 AM</div>
+                                                            <span
+                                                                class="badge bg-primary text-white mt-1">General</span>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="d-flex gap-2">
+                                                            <button
+                                                                class="btn btn-outline-success btn-sm rounded-circle"><i
+                                                                    class="fa-solid fa-check"></i></button>
+                                                            <button
+                                                                class="btn btn-outline-danger btn-sm rounded-circle"><i
+                                                                    class="fa-solid fa-xmark"></i></button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="d-flex align-items-center gap-3">
+                                                            <img src="../../assets/images/Dashboard/imgi_19_client-02.jpg"
+                                                                class="rounded-3 avatar-48" alt="">
+                                                            <div>
+                                                                <a href="#"
+                                                                    class="small text-decoration-none d-block text-primary fw-semibold">#Apt0002</a>
+                                                                <div class="fw-bold">Kelly Stevens</div>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div>
+                                                            <div class="fw-semibold">10 Nov 2025 11.00 AM</div>
+                                                            <span class="badge bg-primary text-white mt-1">Clinic
+                                                                Consulting</span>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="d-flex gap-2">
+                                                            <button
+                                                                class="btn btn-outline-success btn-sm rounded-circle"><i
+                                                                    class="fa-solid fa-check"></i></button>
+                                                            <button
+                                                                class="btn btn-outline-danger btn-sm rounded-circle"><i
+                                                                    class="fa-solid fa-xmark"></i></button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="d-flex align-items-center gap-3">
+                                                            <img src="../../assets/images/Dashboard/imgi_20_client-03.jpg"
+                                                                class="rounded-3 avatar-48" alt="">
+                                                            <div>
+                                                                <a href="#"
+                                                                    class="small text-decoration-none d-block text-primary fw-semibold">#Apt0003</a>
+                                                                <div class="fw-bold">Samuel Anderson</div>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div>
+                                                            <div class="fw-semibold">03 Nov 2025 02.00 PM</div>
+                                                            <span
+                                                                class="badge bg-primary text-white mt-1">General</span>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="d-flex gap-2">
+                                                            <button
+                                                                class="btn btn-outline-success btn-sm rounded-circle"><i
+                                                                    class="fa-solid fa-check"></i></button>
+                                                            <button
+                                                                class="btn btn-outline-danger btn-sm rounded-circle"><i
+                                                                    class="fa-solid fa-xmark"></i></button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="d-flex align-items-center gap-3">
+                                                            <img src="../../assets/images/Dashboard/imgi_21_client-04.jpg"
+                                                                class="rounded-3 avatar-48" alt="">
+                                                            <div>
+                                                                <a href="#"
+                                                                    class="small text-decoration-none d-block text-primary fw-semibold">#Apt0004</a>
+                                                                <div class="fw-bold">Catherine Griffin</div>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div>
+                                                            <div class="fw-semibold">01 Nov 2025 04.00 PM</div>
+                                                            <span class="badge bg-primary text-white mt-1">Clinic
+                                                                Consulting</span>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="d-flex gap-2">
+                                                            <button
+                                                                class="btn btn-outline-success btn-sm rounded-circle"><i
+                                                                    class="fa-solid fa-check"></i></button>
+                                                            <button
+                                                                class="btn btn-outline-danger btn-sm rounded-circle"><i
+                                                                    class="fa-solid fa-xmark"></i></button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="d-flex align-items-center gap-3">
+                                                            <img src="../../assets/images/Dashboard/imgi_18_client-01.jpg"
+                                                                class="rounded-3 avatar-48" alt="">
+                                                            <div>
+                                                                <a href="#"
+                                                                    class="small text-decoration-none d-block text-primary fw-semibold">#Apt0005</a>
+                                                                <div class="fw-bold">Robert Hutchinson</div>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div>
+                                                            <div class="fw-semibold">28 Oct 2025 05.30 PM</div>
+                                                            <span
+                                                                class="badge bg-primary text-white mt-1">General</span>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="d-flex gap-2">
+                                                            <button
+                                                                class="btn btn-outline-success btn-sm rounded-circle"><i
+                                                                    class="fa-solid fa-check"></i></button>
+                                                            <button
+                                                                class="btn btn-outline-danger btn-sm rounded-circle"><i
+                                                                    class="fa-solid fa-xmark"></i></button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row g-4 pe-0">
+                            <div class="col-xl-5">
+                                <div class="col-12 mb-4">
+                                    <div class="card border-1 border-secondary-subtle shadow-sm">
+                                        <div class="card-header bg-white border-0 py-3">
+                                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                                <h4 class="mb-0 fw-bold">Weekly Overview</h4>
+                                                <span class="fw-semibold">Mar 14 - Mar 21</span>
+                                            </div>
+                                            <ul class="nav nav-tabs border-bottom border-1 border-secondary-subtle"
+                                                id="weeklyOverviewTabs" role="tablist">
+                                                <li class="nav-item" role="presentation">
+                                                    <button class="nav-link active px-3 py-1" id="tabRevenue-tab"
+                                                        data-bs-toggle="tab" data-bs-target="#tabRevenue" type="button"
+                                                        role="tab" aria-controls="tabRevenue"
+                                                        aria-selected="true">Revenue</button>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <button class="nav-link px-3 py-1" id="tabAppointments-tab"
+                                                        data-bs-toggle="tab" data-bs-target="#tabAppointments"
+                                                        type="button" role="tab" aria-controls="tabAppointments"
+                                                        aria-selected="false">Appointments</button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="card-body p-3">
+                                            <div class="tab-content" id="weeklyOverviewTabsContent">
+                                                <div class="tab-pane fade show active" id="tabRevenue" role="tabpanel"
+                                                    aria-labelledby="tabRevenue-tab">
+                                                    <div class="position-relative" style="height: 200px;">
+                                                        <canvas id="revenueChart"></canvas>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane fade" id="tabAppointments" role="tabpanel"
+                                                    aria-labelledby="tabAppointments-tab">
+                                                    <div class="position-relative" style="height: 200px;">
+                                                        <canvas id="appointmentsChart"></canvas>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 mt-3">
+                                    <div class="card border-1 border-secondary-subtle shadow-sm py-3">
+                                        <div
+                                            class="card-header bg-white border-0 d-flex justify-content-between align-items-center border-bottom border-1 border-secondary-subtle">
+                                            <h6 class="mb-0 fw-bold">Recent Patients</h6>
+                                            <a href="#" class="small text-decoration-none text-primary">View All</a>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="row g-3">
+                                                <div class="col-6">
+                                                    <div class="text-start p-3 bg-light rounded">
+                                                        <img src="../../assets/images/Dashboard/imgi_30_profile-01-DT2Z6e8O.jpg"
+                                                            class="rounded-3 mb-2" width="60" height="60" alt="">
+                                                        <div class="fw-bold">Adrian Marshall</div>
+                                                        <div
+                                                            class="small pb-2 mb-2 border-bottom border-1 border-secondary-subtle">
+                                                            <span class="text-primary">Patient ID :</span>
+                                                            <span class="text-primary"> P0001</span>
+                                                        </div>
+                                                        <div class="small text-muted">Last Appointment 15 Mar 2025</div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="text-start p-3 bg-light rounded">
+                                                        <img src="../../assets/images/Dashboard/imgi_31_profile-02-CfwraHe7.jpg"
+                                                            class="rounded-3 mb-2" width="60" height="60" alt="">
+                                                        <div class="fw-bold">Kelly Stevens</div>
+                                                        <div
+                                                            class="small pb-2 mb-2 border-bottom border-1 border-secondary-subtle">
+                                                            <span class="text-primary">Patient ID :</span>
+                                                            <span class="text-primary"> P0002</span>
+                                                        </div>
+                                                        <div class="small text-muted">Last Appointment 13 Mar 2025</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-7 mb-4 px-0">
+                                <div class="col-12 mb-3">
+                                    <div class="card border-0 shadow-sm text-white bg-primary p-3 h-100">
+                                        <div class="card-body">
+                                            <h5 class="fw-bold mb-4">Upcoming Appointment</h5>
+                                            <div
+                                                class="d-flex align-items-start gap-3 mb-4 border-bottom border-1 pb-3 border-light">
+                                                <img src="../../assets/images/Dashboard/imgi_30_profile-01-DT2Z6e8O.jpg"
+                                                    class="rounded-3 avatar-60" alt="">
+                                                <div class="flex-grow-1">
+                                                    <div class="small mb-1">#Apt0001</div>
+                                                    <div class="fw-bold mb-2">Adrian Marshall</div>
+                                                </div>
+                                                <div class="text-start">
+                                                    <div class="small mb-2">General visit</div>
+                                                    <div class="fw-semibold">Today, 10:45 AM</div>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div class="d-flex align-items-center">
+                                                    <i class="fa-solid fa-video me-2"></i>
+                                                    <span>Video Appointment</span>
+                                                </div>
+                                                <div class="d-flex gap-2">
+                                                    <button class="btn btn-light text-dark btn-sm rounded">Chat
+                                                        Now</button>
+                                                    <button class="btn btn-light text-dark btn-sm rounded">Start
+                                                        Appointment</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="card border-1 shadow-sm rounded-3 overflow-hidden h-100">
+                                        <div
+                                            class="card-header bg-white border-bottom border-1 border-secondary-subtle d-flex justify-content-between align-items-center">
+                                            <h6 class="mb-0 fw-bold">Recent Invoices</h6>
+                                            <a href="#" class="small text-decoration-none text-primary">View All</a>
+                                        </div>
+                                        <div class="card-body p-0">
+                                            <div class="list-group list-group-flush">
+                                                <div
+                                                    class="list-group-item border-0 d-flex align-items-center gap-3 py-3">
+                                                    <img src="../../assets/images/Dashboard/imgi_18_client-01.jpg"
+                                                        class="rounded-3" width="40" height="40" alt="">
+                                                    <div class="flex-grow-1">
+                                                        <div class="fw-bold" style="color: #1e3a5f;">Adrian</div>
+                                                        <div class="small text-primary">#Apt0001</div>
+                                                    </div>
+                                                    <div class="text-end me-2">
+                                                        <div class="fw-bold text-dark">$450</div>
+                                                        <div class="small text-muted">Paid On 11 Nov 2025</div>
+                                                    </div>
+                                                    <button class="btn btn-light rounded-circle"
+                                                        style="width: 32px; height: 32px; padding: 0;"><i
+                                                            class="fa-regular fa-eye text-muted"></i></button>
+                                                </div>
+                                                <div
+                                                    class="list-group-item border-0 d-flex align-items-center gap-3 py-3">
+                                                    <img src="../../assets/images/Dashboard/imgi_19_client-02.jpg"
+                                                        class="rounded-3" width="40" height="40" alt="">
+                                                    <div class="flex-grow-1">
+                                                        <div class="fw-bold" style="color: #1e3a5f;">Kelly</div>
+                                                        <div class="small text-primary">#Apt0002</div>
+                                                    </div>
+                                                    <div class="text-end me-2">
+                                                        <div class="fw-bold text-dark">$500</div>
+                                                        <div class="small text-muted">Paid On 10 Nov 2025</div>
+                                                    </div>
+                                                    <button class="btn btn-light rounded-circle"
+                                                        style="width: 32px; height: 32px; padding: 0;"><i
+                                                            class="fa-regular fa-eye text-muted"></i></button>
+                                                </div>
+                                                <div
+                                                    class="list-group-item border-0 d-flex align-items-center gap-3 py-3">
+                                                    <img src="../../assets/images/Dashboard/imgi_20_client-03.jpg"
+                                                        class="rounded-3" width="40" height="40" alt="">
+                                                    <div class="flex-grow-1">
+                                                        <div class="fw-bold" style="color: #1e3a5f;">Samuel</div>
+                                                        <div class="small text-primary">#Apt0003</div>
+                                                    </div>
+                                                    <div class="text-end me-2">
+                                                        <div class="fw-bold text-dark">$320</div>
+                                                        <div class="small text-muted">Paid On 03 Nov 2025</div>
+                                                    </div>
+                                                    <button class="btn btn-light rounded-circle"
+                                                        style="width: 32px; height: 32px; padding: 0;"><i
+                                                            class="fa-regular fa-eye text-muted"></i></button>
+                                                </div>
+                                                <div
+                                                    class="list-group-item border-0 d-flex align-items-center gap-3 py-3">
+                                                    <img src="../../assets/images/Dashboard/imgi_21_client-04.jpg"
+                                                        class="rounded-3" width="40" height="40" alt="">
+                                                    <div class="flex-grow-1">
+                                                        <div class="fw-bold" style="color: #1e3a5f;">Catherine</div>
+                                                        <div class="small text-primary">#Apt0004</div>
+                                                    </div>
+                                                    <div class="text-end me-2">
+                                                        <div class="fw-bold text-dark">$240</div>
+                                                        <div class="small text-muted">Paid On 01 Nov 2025</div>
+                                                    </div>
+                                                    <button class="btn btn-light rounded-circle"
+                                                        style="width: 32px; height: 32px; padding: 0;"><i
+                                                            class="fa-regular fa-eye text-muted"></i></button>
+                                                </div>
+                                                <div
+                                                    class="list-group-item border-0 d-flex align-items-center gap-3 py-3">
+                                                    <img src="../../assets/images/Dashboard/imgi_18_client-01.jpg"
+                                                        class="rounded-3" width="40" height="40" alt="">
+                                                    <div class="flex-grow-1">
+                                                        <div class="fw-bold" style="color: #1e3a5f;">Robert</div>
+                                                        <div class="small text-primary">#Apt0005</div>
+                                                    </div>
+                                                    <div class="text-end me-2">
+                                                        <div class="fw-bold text-dark">$380</div>
+                                                        <div class="small text-muted">Paid On 28 Oct 2025</div>
+                                                    </div>
+                                                    <button class="btn btn-light rounded-circle"
+                                                        style="width: 32px; height: 32px; padding: 0;"><i
+                                                            class="fa-regular fa-eye text-muted"></i></button>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row gx-4">
+                        <div class="col-xl-7">
+                            <div
+                                class="card border-1 border-secondary-subtle shadow-sm py-3 rounded-3 overflow-hidden h-100">
+                                <div
+                                    class="card-header bg-white border-bottom border-1 border-secondary-subtle d-flex justify-content-between align-items-center">
+                                    <h6 class="mb-0 fw-bold">Notifications</h6>
+                                    <a href="#" class="text-decoration-none small">View All</a>
+                                </div>
+                                <div class="card-body p-0">
+                                    <div class="list-group list-group-flush">
+                                        <div class="list-group-item border-0 d-flex gap-3 align-items-start py-3">
+                                            <span class="rounded-3 p-3 bg-light" style="color: #9333ea;"><i
+                                                    class="fa-solid fa-bell"></i></span>
+                                            <div class="small">
+                                                Booking Confirmed on <strong>21 Mar 2025 10:30 AM</strong><br>
+                                                <span class="badge bg-light text-dark">Just Now</span>
+                                            </div>
+                                        </div>
+                                        <div class="list-group-item border-0 d-flex gap-3 align-items-start py-3">
+                                            <span class="rounded-3 p-3 bg-light text-primary"><i
+                                                    class="fa-solid fa-star"></i></span>
+                                            <div class="small">
+                                                You have a <strong>New Review</strong> for your Appointment<br>
+                                                <span class="badge bg-light text-dark">5 Days ago</span>
+                                            </div>
+                                        </div>
+                                        <div class="list-group-item border-0 d-flex gap-3 align-items-start py-3">
+                                            <span class="rounded-3 p-3 bg-light text-danger"><i
+                                                    class="fa-solid fa-calendar-check"></i></span>
+                                            <div class="small">
+                                                You have Appointment with <strong>Ahmed</strong> by 01:20 PM<br>
+                                                <span class="badge bg-light text-dark">12:55 PM</span>
+                                            </div>
+                                        </div>
+                                        <div class="list-group-item border-0 d-flex gap-3 align-items-start py-3">
+                                            <span class="rounded-3 p-3 bg-light text-warning"><i
+                                                    class="fa-solid fa-money-bill"></i></span>
+                                            <div class="small">
+                                                Sent an amount of <strong>$200</strong> for an Appointment by 01:20
+                                                PM<br>
+                                                <span class="badge bg-light text-dark">2 Days ago</span>
+                                            </div>
+                                        </div>
+                                        <div class="list-group-item border-0 d-flex gap-3 align-items-start py-3">
+                                            <span class="rounded-3 p-3 bg-light text-primary"><i
+                                                    class="fa-solid fa-star"></i></span>
+                                            <div class="small">
+                                                You have a <strong>New Review</strong> for your Appointment<br>
+                                                <span class="badge bg-light text-dark">5 Days ago</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-5 d-flex">
+                            <div
+                                class="card border-1 border-secondary-subtle shadow-sm w-100 py-3 rounded-3 overflow-hidden h-100">
+                                <div class="card-header bg-white border-bottom border-1 border-secondary-subtle">
+                                    <div class="header-title">
+                                        <h5 class="mb-0 fw-bold">Clinics & Availability</h5>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div
+                                        class="border-bottom border-1 border-secondary-subtle p-3 mb-3 bg-light rounded-3">
+                                        <div class="d-flex justify-content-between align-items-start mb-3">
+                                            <div class="d-flex align-items-center gap-3 flex-grow-1">
+                                                <span class="rounded overflow-hidden"
+                                                    style="width: 80px; height: 80px; flex-shrink: 0;">
+                                                    <img alt="Img"
+                                                        src="../../assets/images/Dashboard/imgi_35_clinic-02-Dk-Adecs.jpg"
+                                                        class="w-100 h-100" style="object-fit: cover;">
+                                                </span>
+                                                <h6 class="mb-0 fw-bold">Sofi's Clinic</h6>
+                                            </div>
+                                            <div>
+                                                <span class="text-primary fw-bold">$900</span>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="d-flex justify-content-between align-items-center mt-3 mx-3 px-3 bg-white rounded-3 p-2">
+                                            <ul class="list-unstyled mb-2 d-flex flex-column gap-2">
+                                                <li class="small"><span class="fw-semibold">Tue:</span>07:00 AM -
+                                                    09:00 PM</li>
+                                                <li class="small"><span class="fw-semibold">Wed:</span>07:00 AM -
+                                                    09:00 PM</li>
+                                            </ul>
+                                            <a href="#" class="small text-dark text-decoration-underline"
+                                                data-discover="true">Change </a>
+                                        </div>
+                                    </div>
+                                    <div class="mb-0 p-3 mb-3 bg-light rounded-3">
+                                        <div class="d-flex justify-content-between align-items-start mb-3">
+                                            <div class="d-flex align-items-center gap-3 flex-grow-1">
+                                                <span class="rounded overflow-hidden"
+                                                    style="width: 80px; height: 80px; flex-shrink: 0;">
+                                                    <img alt="Img"
+                                                        src="../../assets/images/Dashboard/imgi_36_clinic-01-DaCJn46U.jpg"
+                                                        class="w-100 h-100" style="object-fit: cover;">
+                                                </span>
+                                                <h6 class="mb-0 fw-bold">The Family Dentistry Clinic</h6>
+                                            </div>
+                                            <div>
+                                                <span class="text-primary fw-bold">$600</span>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="d-flex justify-content-between align-items-center mt-3 mx-3 px-3 bg-white rounded-3 p-2">
+                                            <ul class="list-unstyled mb-2 d-flex flex-column gap-2">
+                                                <li class="small"><span class="fw-semibold">Sat:</span>07:00 AM -
+                                                    09:00 PM</li>
+                                                <li class="small"><span class="fw-semibold">Tue:</span>07:00 AM -
+                                                    09:00 PM</li>
+                                            </ul>
+                                            <a href="#" class="small text-dark text-decoration-underline"
+                                                data-discover="true">Change </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-section py-5 mt-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-2 col-md-6">
+                    <div class="footer-widget">
+                        <h5 class="fw-bold text-dark mb-4">Company</h5>
+                        <ul class="list-unstyled">
+                            <li class="mb-3">
+                                <a href="#" class="text-muted text-decoration-none">About</a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="#" class="text-muted text-decoration-none">Features</a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="#" class="text-muted text-decoration-none">Works</a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="#" class="text-muted text-decoration-none">Careers</a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="#" class="text-muted text-decoration-none">Locations</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-6">
+                    <div class="footer-widget">
+                        <h5 class="fw-bold text-dark mb-4">Treatments</h5>
+                        <ul class="list-unstyled">
+                            <li class="mb-3">
+                                <a href="#" class="text-muted text-decoration-none">Dental</a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="#" class="text-muted text-decoration-none">Cardiac</a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="#" class="text-muted text-decoration-none">Spinal Cord</a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="#" class="text-muted text-decoration-none">Hair Growth</a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="#" class="text-muted text-decoration-none">Anemia & Disorder</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-6">
+                    <div class="footer-widget">
+                        <h5 class="fw-bold text-dark mb-4">Specialities</h5>
+                        <ul class="list-unstyled">
+                            <li class="mb-3">
+                                <a href="#" class="text-muted text-decoration-none">Transplant</a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="#" class="text-muted text-decoration-none">Cardiologist</a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="#" class="text-muted text-decoration-none">Oncology</a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="#" class="text-muted text-decoration-none">Pediatrics</a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="#" class="text-muted text-decoration-none">Gynaecology</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-6">
+                    <div class="footer-widget">
+                        <h5 class="fw-bold text-dark mb-4">Utilities</h5>
+                        <ul class="list-unstyled">
+                            <li class="mb-3">
+                                <a href="#" class="text-muted text-decoration-none">Pricing</a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="#" class="text-muted text-decoration-none">Contact</a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="#" class="text-muted text-decoration-none">Request A Quote</a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="#" class="text-muted text-decoration-none">Premium Membership</a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="#" class="text-muted text-decoration-none">Integrations</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-12">
+                    <div class="footer-widget">
+                        <h5 class="fw-bold text-dark mb-4">Newsletter</h5>
+                        <p class="text-muted mb-3">Subscribe & Stay Updated from the Doccure</p>
+                        <form action="#" class=" position-relative mb-4">
+                            <input type="email" class="form-control" placeholder="Enter Email Address" required />
+                            <button type="submit"
+                                class="btn btn-primary position-absolute end-0 top-0 rounded-start-0 h-100">
+                                <i class="fas fa-paper-plane me-2"></i>Send
+                            </button>
+                        </form>
+
+                        <h6 class="fw-bold text-dark mb-3">Connect With Us</h6>
+                        <div class="social-links d-flex gap-3">
+                            <a href="#" class="social-icon">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="social-icon">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="social-icon">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="social-icon">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="#" class="social-icon">
+                                <i class="fab fa-pinterest-p"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="border-top mt-5 pt-4" style="border-color: #E5E7EB !important;">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-4 text-center text-md-start mb-3 mb-md-0">
+                        <p class="text-muted mb-0 small">Copyright © 2025 Doccure. All Rights Reserved</p>
+                    </div>
+                    <div class="col-md-4 text-center mb-3 mb-md-0">
+                        <div class="footer-links d-flex align-items-center justify-content-center gap-2">
+                            <a href="#" class="text-muted text-decoration-none small">Legal Notice</a>
+                            <span class="text-muted">•</span>
+                            <a href="#" class="text-muted text-decoration-none small">Privacy Policy</a>
+                            <span class="text-muted">•</span>
+                            <a href="#" class="text-muted text-decoration-none small">Refund Policy</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-center text-md-end">
+                        <div
+                            class="payment-icons d-flex align-items-center justify-content-center justify-content-md-end gap-2 flex-wrap">
+                            <img src="../../assets/images/Doctor Profile/imgi_35_card-01.svg" alt="Visa" height="18">
+                            <img src="../../assets/images/Doctor Profile/imgi_36_card-02.svg" alt="Amex" height="18">
+                            <img src="../../assets/images/Doctor Profile/imgi_37_card-03.svg" alt="Discover"
+                                height="18">
+                            <img src="../../assets/images/Doctor Profile/imgi_38_card-04.svg" alt="Mastercard"
+                                height="18">
+                            <img src="../../assets/images/Doctor Profile/imgi_39_card-05.svg" alt="Stripe" height="18">
+                            <img src="../../assets/images/Doctor Profile/imgi_40_card-06.svg" alt="PayPal" height="18">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../js/bootstrap.bundle.min.js"></script>
+    <script src="../../js/script.js"></script>
+    <script src="doctor-dashboard.js"></script>
+</body>
+
+</html>
